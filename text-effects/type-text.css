@@ -1,0 +1,22 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #232323;
+  overflow: hidden;
+}
+h1,
+i {
+  display: inline-block;
+  color: #afafaf;
+  font-size: 3rem;
+  font-weight: bold;
+  font-family: sans-serif;
+}
+i {
+  width: 2px;
+  height: 1em;
+  background-color: currentColor;
+  margin-left: 0.3rem;
+}

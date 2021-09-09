@@ -1,0 +1,34 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Baloo 2", sans-serif;
+  min-height: 100vh;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+}
+
+header,
+footer {
+  display: grid;
+  place-items: center;
+  background-color: rebeccapurple;
+  color: #fff;
+}
+
+main {
+  padding: 1rem;
+  max-width: 80ch;
+  margin: 0 auto;
+  outline: 2px dashed grey;
+}
+
+h1 {
+  font-size: 4rem;
+}
+
+p {
+  font-size: 1.125rem;
+  line-height: 1.5;
+}
