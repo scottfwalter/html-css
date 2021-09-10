@@ -1,0 +1,112 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans&display=swap");
+body {
+  font-family: "Open Sans", sans-serif;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 40px;
+}
+
+.button {
+  border: none;
+  margin: 0;
+  padding: 0;
+  line-height: 0;
+}
+
+.list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.combo-select {
+  display: inline-block;
+  position: relative;
+}
+
+.combo-select__button {
+  background: #ffffff;
+  padding: 0px;
+  width: auto;
+  color: #727388;
+  cursor: pointer;
+  border-radius: 4px;
+  border: 2px solid #9595a3;
+  font-size: 16px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+.combo-select__button:hover {
+  background: #F1F1F3;
+}
+
+.combo-select--active .combo-select__button,
+.combo-select--active .combo-select__icon,
+.combo-select__button:focus {
+  border-color: #009EEF;
+}
+
+.combo-select__text {
+  padding: 16px;
+  display: inline-block;
+}
+
+.combo-select__icon {
+  border-left: 2px solid #9595a3;
+  padding: 12px;
+  display: inline-block;
+  transition: all 0.3s ease;
+}
+
+.combo-select__menu-wrapper {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  background-color: #ffffff;
+  color: #727388;
+  transition: all 0.3s ease;
+  visibility: hidden;
+  opacity: 0;
+  margin-top: 4px;
+  box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.2);
+}
+
+.combo-select__menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.combo-select__item {
+  color: #727388;
+  padding: 12px 20px;
+  cursor: pointer;
+  background-color: #ffffff;
+  transition: all 0.3s ease;
+  font-weight: 600;
+  display: flex;
+  justify-content: space-between;
+}
+.combo-select__item:hover, .combo-select__item:focus, .combo-select__item:active {
+  background-color: #F1F1F3;
+  color: #007AE6;
+}
+.combo-select__item:hover .combo-select__download-icon {
+  opacity: 1;
+}
+
+.combo-select__download-icon {
+  opacity: 0;
+  transition: all 0.3s ease;
+}
+
+.combo-select--active .combo-select__menu-wrapper {
+  opacity: 1;
+  visibility: visible;
+}

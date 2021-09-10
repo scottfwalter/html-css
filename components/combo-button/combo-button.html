@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Responsive Combo Button</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1"><link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css'>
+<link rel='stylesheet' href='https://fonts.googleapis.com/icon?family=Material+Icons'><link rel="stylesheet" href="./combo-button.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div class="btn-group btn-combo col-xs-3">
+    <button type="button" class="btn btn-primary col-xs-10">Add to Cart</button>
+    <button type="button" class="btn btn-primary dropdown-toggle col-xs-2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      <i class="material-icons">&#xE313;</i>
+      <span class="sr-only">Toggle Dropdown</span>
+    </button>
+  <ul class="dropdown-menu col-xs-12">
+    <li><a href="#">Add to Joblist</a></li>
+    <li><a href="#">Save/Share Product</a></li>
+    <li><a href="#">Tertiary Option</a></li>
+  </ul>
+    <div class="loading"></div>
+</div>
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js'></script><script  src="./combo-button.js"></script>
+
+</body>
+</html>

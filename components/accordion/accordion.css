@@ -1,0 +1,42 @@
+:root {
+  --margin: auto;
+}
+
+body {
+  margin: 0;
+  padding: 40px;
+}
+
+.accordion {
+  margin: 0 auto 20px;
+  max-width: 600px;
+  overflow: hidden;
+}
+
+.accordion-trigger {
+  background-color: #ffffff;
+  border: 1px solid #d6dde2;
+  color: #006be6;
+  cursor: pointer;
+  display: block;
+  padding: 8px 32px 8px 8px;
+  position: relative;
+  transition: all 0.25s ease;
+  width: 100%;
+  z-index: 1;
+}
+
+.accordion-trigger:hover,
+.accordion-trigger:focus {
+  border-color: #006be6;
+  box-shadow: 0 2px 2px 0 rgba(0, 107, 230, .2);
+  outline: none;
+}
+
+.accordion-content {
+  border: 1px solid #d6dde2;
+  border-top: 0;
+  margin-top: var(--margin);
+  padding: 8px;
+  transition: margin-top ease-in-out 0.25s;
+}
