@@ -1,0 +1,92 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  display: grid;
+  justify-items: center;
+  align-content: start;
+  min-height: 100vh;
+  gap: 2rem;
+  padding: 2rem;
+  font-family: system-ui, sans-serif;
+  background-color: #d3e6f5;
+}
+
+:is(a, button, input, textarea, summary) {
+  --outline-size: max(2px, 0.08em);
+  --outline-style: solid;
+  --outline-color: currentColor;
+}
+
+:is(a, button, input, textarea, summary):focus {
+  outline: var(--outline-size) var(--outline-style) var(--outline-color);
+  outline-offset: var(--outline-offset, var(--outline-size));
+}
+
+:is(a, button, input, textarea, summary):focus-visible {
+  outline: var(--outline-size) var(--outline-style) var(--outline-color);
+  outline-offset: var(--outline-offset, var(--outline-size));
+}
+
+:is(a, button, input, textarea, summary):focus:not(:focus-visible) {
+  outline: none;
+}
+
+/* Focus customizations */
+.large-button {
+  --outline-offset: -0.25em;
+}
+
+input {
+  --outline-style: dashed;
+}
+
+summary {
+  --outline-color: blue;
+  --outline-offset: 0.5em;
+  --outline-style: dotted;
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #222;
+    color: #fff;
+  }
+
+  a {
+    color: yellow;
+  }
+
+  input,
+button:not([class]) {
+    --outline-color: #fff;
+  }
+
+  summary {
+    --outline-color: lightskyblue;
+  }
+}
+/* demo element styles */
+button {
+  padding: 0.25em 0.75em;
+}
+
+button:not([class]) {
+  border-radius: 0.25em;
+  border: 1px solid;
+}
+
+.large-button {
+  font-size: 2.35rem;
+}
+
+.form-group {
+  display: grid;
+  gap: 0.5rem;
+}
+
+details p {
+  margin-top: 1rem;
+}
