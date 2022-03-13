@@ -9,13 +9,13 @@
     height: 1em;
 
     &:focus + .input__control {
-      box-shadow: 0 0 0 0.05em #fff, 0 0 0.15em 0.15em color("primary");
+      box-shadow: 0 0 0 0.05em #fff, 0 0 0.15em 0.15em color('primary');
     }
   }
 
   &__input {
     display: grid;
-    grid-template-areas: "input";
+    grid-template-areas: 'input';
     place-content: center;
     font-size: 1em;
 
@@ -29,11 +29,11 @@
     place-content: center;
     width: 1em;
     height: 1em;
-    border: 0.1em solid var(--color-default, color("default"));
+    border: 0.1em solid var(--color-default, color('default'));
   }
 
   &:focus-within {
-    color: var(--color-primary, color("primary"));
+    color: var(--color-primary, color('primary'));
   }
 
   &.form-control--disabled {
@@ -51,10 +51,10 @@
   }
 
   .input__control::before {
-    content: "";
+    content: '';
     width: 0.5em;
     height: 0.5em;
-    box-shadow: inset 1em 1em var(--color-primary, color("primary"));
+    box-shadow: inset 1em 1em var(--color-primary, color('primary'));
     border-radius: 50%;
     transform: scale(0);
     transition: 180ms transform ease-in-out;
@@ -72,7 +72,7 @@
 .checkbox {
   .input__control {
     border-radius: var(--border-radius);
-    color: var(--color-primary, color("primary"));
+    color: var(--color-primary, color('primary'));
   }
 
   .input__control svg {

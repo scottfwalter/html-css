@@ -1,6 +1,6 @@
-@import url("https://fonts.googleapis.com/css?family=Open+Sans&display=swap");
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
 body {
-  font-family: "Open Sans", sans-serif;
+  font-family: 'Open Sans', sans-serif;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -43,13 +43,13 @@ body {
   transition: all 0.3s ease;
 }
 .combo-select__button:hover {
-  background: #F1F1F3;
+  background: #f1f1f3;
 }
 
 .combo-select--active .combo-select__button,
 .combo-select--active .combo-select__icon,
 .combo-select__button:focus {
-  border-color: #009EEF;
+  border-color: #009eef;
 }
 
 .combo-select__text {
@@ -93,9 +93,11 @@ body {
   display: flex;
   justify-content: space-between;
 }
-.combo-select__item:hover, .combo-select__item:focus, .combo-select__item:active {
-  background-color: #F1F1F3;
-  color: #007AE6;
+.combo-select__item:hover,
+.combo-select__item:focus,
+.combo-select__item:active {
+  background-color: #f1f1f3;
+  color: #007ae6;
 }
 .combo-select__item:hover .combo-select__download-icon {
   opacity: 1;

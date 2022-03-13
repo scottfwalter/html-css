@@ -11,7 +11,7 @@ class TextScramble {
   setText(newText) {
     const oldText = this.el.innerText
     const length = Math.max(oldText.length, newText.length)
-    const promise = new Promise((resolve) => this.resolve = resolve)
+    const promise = new Promise((resolve) => (this.resolve = resolve))
     this.queue = []
     for (let i = 0; i < length; i++) {
       const from = oldText[i] || ''
@@ -60,9 +60,7 @@ class TextScramble {
 // Example
 // ——————————————————————————————————————————————————
 
-const phrases = [
-'Built with love in Texas'
-]
+const phrases = ['Built with love in Texas']
 
 const el = document.querySelector('.text')
 const fx = new TextScramble(el)

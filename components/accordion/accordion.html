@@ -1,87 +1,208 @@
 <!DOCTYPE html>
-<html lang="en" >
-<head>
-  <meta charset="UTF-8">
-  <title>CodePen - Accordions with CSS Properties</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
-<link rel="stylesheet" href="./accordion.css">
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>CodePen - Accordions with CSS Properties</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css"
+    />
+    <link rel="stylesheet" href="./accordion.css" />
+  </head>
+  <body>
+    <!-- partial:index.partial.html -->
+    <div class="accordion">
+      <button
+        id="acc1-trigger"
+        class="accordion-trigger"
+        aria-expanded="false"
+        aria-controls="acc1"
+      >
+        The Hitchhiker's Guide to the Galaxy
+      </button>
+      <div
+        id="acc1"
+        class="accordion-content"
+        aria-hidden="true"
+        aria-labelledby="acc1-trigger"
+      >
+        <p>
+          Far out in the uncharted backwaters of the unfashionable end of the
+          western spiral arm of the Galaxy lies a small unregarded yellow sun.
+        </p>
+        <p>
+          Orbiting this at a distance of roughly ninety-two million miles is an
+          utterly insignificant little blue green planet whose ape-descended
+          life forms are so amazingly primitive that they still think digital
+          watches are a pretty neat idea.
+        </p>
+        <p>
+          This planet has - or rather had - a problem, which was this: most of
+          the people on it were unhappy for pretty much of the time. Many
+          solutions were suggested for this problem, but most of these were
+          largely concerned with the movements of small green pieces of paper,
+          which is odd because on the whole it wasn't the small green pieces of
+          paper that were unhappy.
+        </p>
+        <p>
+          And so the problem remained; lots of the people were mean, and most of
+          them were miserable, even the ones with digital watches.
+        </p>
+      </div>
+    </div>
 
-</head>
-<body>
-<!-- partial:index.partial.html -->
-<div class="accordion">
-  <button id="acc1-trigger" class="accordion-trigger" aria-expanded="false" aria-controls="acc1">The Hitchhiker's Guide to the Galaxy</button>
-  <div id="acc1" class="accordion-content" aria-hidden="true" aria-labelledby="acc1-trigger">
-    <p>Far out in the uncharted backwaters of the unfashionable  end  of the  western  spiral  arm  of  the Galaxy lies a small unregarded yellow sun.</p>
-    <p>Orbiting this at a distance of roughly ninety-two  million  miles is an utterly insignificant little blue green planet whose ape-descended life forms are so amazingly primitive that  they  still think digital watches are a pretty neat idea.</p>
-    <p>This planet has - or rather had - a problem, which was this: most of  the  people  on  it were unhappy for pretty much of the time.
-Many solutions were suggested for this problem, but most of these were  largely  concerned with the movements of small green pieces of paper, which is odd because on the whole it wasn't  the  small green pieces of paper that were unhappy.</p>
-      <p>And so the problem remained; lots of the people  were  mean,  and most of them were miserable, even the ones with digital watches.</p>
-  </div>
-</div>
+    <div class="accordion">
+      <button
+        id="acc2-trigger"
+        class="accordion-trigger"
+        aria-expanded="false"
+        aria-controls="acc2"
+      >
+        The Restaurant at the End of the Universe
+      </button>
+      <div
+        id="acc2"
+        class="accordion-content"
+        aria-hidden="true"
+        aria-labelledby="acc2-trigger"
+      >
+        <p>
+          There is a theory which states that if ever anyone discovers exactly
+          what the Universe is for and why it is here, it will instantly
+          disappear and be replaced by something even more bizarre and
+          inexplicable.
+        </p>
+        <p>
+          There is another theory which states that this has already happened.
+        </p>
+        <p><strong>The story so far:</strong></p>
+        <p>In the beginning the Universe was created.</p>
+        <p>
+          This has made a lot of people very angry and been widely regarded as a
+          bad move.
+        </p>
+      </div>
+    </div>
 
-<div class="accordion">
-  <button id="acc2-trigger" class="accordion-trigger" aria-expanded="false" aria-controls="acc2">The Restaurant at the End of the Universe</button>
-  <div id="acc2" class="accordion-content" aria-hidden="true" aria-labelledby="acc2-trigger">
-    <p>There is a theory which states  that  if  ever  anyone  discovers exactly  what  the  Universe  is  for and why it is here, it will
-instantly disappear  and  be  replaced  by  something  even  more bizarre and inexplicable.</p>
-    <p>There is another  theory  which  states  that  this  has  already happened.</p>
-    <p><strong>The story so far:</strong></p>
-    <p>In the beginning the Universe was created.</p>
-      <p>This has made a lot of people very angry and been widely regarded
-as a bad move.</p>
-  </div>
-</div>
+    <div class="accordion">
+      <button
+        id="acc3-trigger"
+        class="accordion-trigger"
+        aria-expanded="false"
+        aria-controls="acc3"
+      >
+        Life, the Universe, and Everything
+      </button>
+      <div
+        id="acc3"
+        class="accordion-content"
+        aria-hidden="true"
+        aria-labelledby="acc3-trigger"
+      >
+        <p>
+          The regular early morning yell of horror was the sound of Arthur Dent
+          waking up and suddenly remembering where he was.
+        </p>
+        <p>
+          It wasn't just that the cave was cold, it wasn't just that it was damp
+          and smelly. It was the fact that the cave was in the middle of
+          Islington and there wasn't a bus due for two million years.
+        </p>
+        <p>
+          Time is the worst place, so to speak, to get lost in, as Arthur Dent
+          could testify, having been lost in both time and space a good deal. At
+          least being lost in space kept you busy.
+        </p>
+        <p>
+          He was stranded in prehistoric Earth as the result of a complex
+          sequence of events which had involved him being alternately blown up
+          and insulted in more bizarre regions of the Galaxy than he ever dreamt
+          existed, and though his life had now turned very, very, very quiet, he
+          was still feeling jumpy.
+        </p>
+      </div>
+    </div>
 
-<div class="accordion">
-  <button id="acc3-trigger" class="accordion-trigger" aria-expanded="false" aria-controls="acc3">Life, the Universe, and Everything</button>
-  <div id="acc3" class="accordion-content" aria-hidden="true" aria-labelledby="acc3-trigger">
-    <p>The regular early morning yell of horror was the sound of  Arthur
-Dent waking up and suddenly remembering where he was.</p>
-    <p>It wasn't just that the cave was cold, it wasn't just that it was
-damp  and smelly. It was the fact that the cave was in the middle
-of Islington and there wasn't a bus due for two million years.</p>
-    <p>Time is the worst place, so to speak, to get lost in,  as  Arthur
-Dent  could  testify,  having  been lost in both time and space a
-good deal. At least being lost in space kept you busy.</p>
-      <p>He was stranded in prehistoric Earth as the result of  a  complex sequence of events which had involved him being alternately blown up and insulted in more bizarre regions of  the  Galaxy  than  he
-ever  dreamt  existed,  and  though his life had now turned very, very, very quiet, he was still feeling jumpy.</p>
-  </div>
-</div>
+    <div class="accordion">
+      <button
+        id="acc4-trigger"
+        class="accordion-trigger"
+        aria-expanded="false"
+        aria-controls="acc4"
+      >
+        So Long, and Thanks for All the Fish
+      </button>
+      <div
+        id="acc4"
+        class="accordion-content"
+        aria-hidden="true"
+        aria-labelledby="acc4-trigger"
+      >
+        <p>
+          Far out in the uncharted backwaters of the unfashionable end of the
+          western spiral arm of the Galaxy lies a small unregarded yellow sun.
+        </p>
+        <p>
+          Orbiting this at a distance of roughly ninety-two million miles is an
+          utterly insignificant little blue green planet whose ape- descended
+          life forms are so amazingly primitive that they still think digital
+          watches are a pretty neat idea.
+        </p>
+        <p>
+          This planet has - or rather had - a problem, which was this: most of
+          the people on it were unhappy for pretty much of the time. Many
+          solutions were suggested for this problem, but most of these were
+          largely concerned with the movements of small green pieces of paper,
+          which is odd because on the whole it wasn't the small green pieces of
+          paper that were unhappy.
+        </p>
+        <p>
+          And so the problem remained; lots of the people were mean, and most of
+          them were miserable, even the ones with digital watches.
+        </p>
+      </div>
+    </div>
 
-<div class="accordion">
-  <button id="acc4-trigger" class="accordion-trigger" aria-expanded="false" aria-controls="acc4">So Long, and Thanks for All the Fish</button>
-  <div id="acc4" class="accordion-content" aria-hidden="true" aria-labelledby="acc4-trigger">
-    <p>Far out in the uncharted backwaters of the unfashionable  end  of
-the  western  spiral  arm  of  the Galaxy lies a small unregarded
-yellow sun.</p>
-    <p>Orbiting this at a distance of roughly ninety-two  million  miles
-is  an  utterly insignificant little blue green planet whose ape-
-descended life forms are so amazingly primitive that  they  still
-think digital watches are a pretty neat idea.</p>
-    <p>This planet has - or rather had - a problem, which was this: most of  the  people  on  it were unhappy for pretty much of the time.
-Many solutions were suggested for this problem, but most of these were  largely  concerned with the movements of small green pieces of paper, which is odd because on the whole it wasn't  the  small green pieces of paper that were unhappy.</p>
-      <p>And so the problem remained; lots of the people  were  mean,  and most of them were miserable, even the ones with digital watches.</p>
-  </div>
-</div>
-
-<div class="accordion">
-  <button id="acc5-trigger" class="accordion-trigger" aria-expanded="false" aria-controls="acc5">Mostly Harmless</button>
-  <div id="acc5" class="accordion-content" aria-hidden="true" aria-labelledby="acc5-trigger">
-    <p>Anything that happens, happens.<br>Anything that, in happening, causes something else to happen, causes something else to happen.<br>Anything that, in happening, causes itself to happen again, happens again.</p>
-    <p>It doesn't necessarily do it in chronological order, though. The history of the Galaxy has got a little muddled, for a number of reasons: partly because those who are trying to keep track of it have got a little muddled, but also because some very muddling things have been happening anyway.</p>
-    <p>One of the problems has to do with the speed of light and
-the difficulties involved in trying to exceed it. You can't. Nothing
-travels faster than the speed of light with the possible exception
-of bad news, which obeys its own special laws. The Hingefreel
-people of Arkintoofle Minor did try to build spaceships that were
-powered by bad news but they didn't work particularly well and
-were so extremely unwelcome whenever they arrived anywhere
-that there wasn't really any point in being there.</p>
-  </div>
-</div>
-<!-- partial -->
-  <script  src="./accordion.js"></script>
-
-</body>
+    <div class="accordion">
+      <button
+        id="acc5-trigger"
+        class="accordion-trigger"
+        aria-expanded="false"
+        aria-controls="acc5"
+      >
+        Mostly Harmless
+      </button>
+      <div
+        id="acc5"
+        class="accordion-content"
+        aria-hidden="true"
+        aria-labelledby="acc5-trigger"
+      >
+        <p>
+          Anything that happens, happens.<br />Anything that, in happening,
+          causes something else to happen, causes something else to happen.<br />Anything
+          that, in happening, causes itself to happen again, happens again.
+        </p>
+        <p>
+          It doesn't necessarily do it in chronological order, though. The
+          history of the Galaxy has got a little muddled, for a number of
+          reasons: partly because those who are trying to keep track of it have
+          got a little muddled, but also because some very muddling things have
+          been happening anyway.
+        </p>
+        <p>
+          One of the problems has to do with the speed of light and the
+          difficulties involved in trying to exceed it. You can't. Nothing
+          travels faster than the speed of light with the possible exception of
+          bad news, which obeys its own special laws. The Hingefreel people of
+          Arkintoofle Minor did try to build spaceships that were powered by bad
+          news but they didn't work particularly well and were so extremely
+          unwelcome whenever they arrived anywhere that there wasn't really any
+          point in being there.
+        </p>
+      </div>
+    </div>
+    <!-- partial -->
+    <script src="./accordion.js"></script>
+  </body>
 </html>

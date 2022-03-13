@@ -9,7 +9,7 @@ html,
 body {
   background: #ecf0f1;
   color: #444;
-  font-family: "Lato", Tahoma, Geneva, sans-serif;
+  font-family: 'Lato', Tahoma, Geneva, sans-serif;
   font-size: 16px;
   padding: 10px;
 }
@@ -20,7 +20,7 @@ body {
 
 .charts-container:after {
   clear: both;
-  content: "";
+  content: '';
   display: table;
 }
 
@@ -31,7 +31,7 @@ body {
   margin: 15px;
   position: relative;
 }
-.pie-wrapper:nth-child(3n+1) {
+.pie-wrapper:nth-child(3n + 1) {
   clear: both;
 }
 .pie-wrapper .pie {
@@ -159,7 +159,7 @@ body {
 }
 .pie-wrapper--solid:before {
   border-radius: 0 100% 100% 0/50%;
-  content: "";
+  content: '';
   display: block;
   height: 100%;
   margin-left: 50%;

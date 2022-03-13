@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;0,600;1,200&display=swap');
 
-*
-{
+* {
   padding: 0;
   margin: 0;
   text-decoration: none;
@@ -9,20 +8,17 @@
   box-sizing: border-box;
 }
 
-body
-{
-  font-family: "poppins", sans-serif;
+body {
+  font-family: 'poppins', sans-serif;
 }
 
-nav
-{
+nav {
   background: #27ae60;
   height: 60px;
   width: 100%;
 }
 
-label.logo
-{
+label.logo {
   color: #fff;
   font-size: 35px;
   line-height: 60px;
@@ -30,21 +26,18 @@ label.logo
   font-weight: bold;
 }
 
-nav ul
-{
+nav ul {
   float: right;
   margin-right: 20px;
 }
 
-nav ul li
-{
+nav ul li {
   display: inline-block;
   line-height: 60px;
   margin: 0 5px;
 }
 
-nav ul li a
-{
+nav ul li a {
   color: #fff;
   font-size: 17px;
   padding: 5px 13px;
@@ -52,14 +45,13 @@ nav ul li a
   text-transform: upparcase;
 }
 
-a.active,a:hover
-{
+a.active,
+a:hover {
   background: #2ecc71;
-  trasition: .5s;
+  trasition: 0.5s;
 }
 
-.checkbtn
-{
+.checkbtn {
   font-size: 28px;
   color: #fff;
   float: right;
@@ -69,49 +61,39 @@ a.active,a:hover
   display: none;
 }
 
-#check
-{
+#check {
   display: none;
 }
 
-section
-{
+section {
   background: url(https://source.unsplash.com/1600x900/?car) no-repeat;
   background-size: cover;
   height: calc(100vh - 60px);
 }
 
 /* ------------ Small laptop screen ----------- */
-@media screen and (max-width: 952px)
-{
-  label.logo
-  {
+@media screen and (max-width: 952px) {
+  label.logo {
     font-size: 30px;
     padding-left: 50px;
   }
-  nav ul li a
-  {
+  nav ul li a {
     font-size: 16px;
   }
 }
 
-
 /* --------------- tablet and mobile screen ----------------- */
-@media screen and (max-width: 858px)
-{
-  label.logo
-  {
+@media screen and (max-width: 858px) {
+  label.logo {
     font-size: 20px;
     padding-left: 50px;
   }
-  
-  .checkbtn
-  {
+
+  .checkbtn {
     display: block;
   }
-  
-  ul
-  {
+
+  ul {
     position: fixed;
     width: 100%;
     height: 100vh;
@@ -119,29 +101,26 @@ section
     top: 60px;
     left: -100%;
     text-align: center;
-    transition: all .5s;
+    transition: all 0.5s;
   }
-  
-  nav ul li
-  {
+
+  nav ul li {
     display: block;
     margin: 50px 0;
     line-height: 30px;
   }
-  
-  nav ul li a
-  {
+
+  nav ul li a {
     font-size: 20px;
   }
-  
-  a:hover,a.active
-  {
+
+  a:hover,
+  a.active {
     background: none;
     color: #000;
   }
-  
-  #check:checked ~ ul
-  {
+
+  #check:checked ~ ul {
     left: 0;
   }
 }

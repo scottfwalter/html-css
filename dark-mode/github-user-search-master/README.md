@@ -118,12 +118,12 @@ I also set the default colour theme based on the users colour preference on thei
 
 ```js
 // If user has dark preference, set the dark theme by default.
-const prefersDarkScheme = window.matchMedia('(prefers-color-scheme: dark)');
+const prefersDarkScheme = window.matchMedia('(prefers-color-scheme: dark)')
 
 if (prefersDarkScheme.matches) {
-  document.body.classList.add('dark-theme');
+  document.body.classList.add('dark-theme')
 } else {
-  document.body.classList.remove('dark-theme');
+  document.body.classList.remove('dark-theme')
 }
 ```
 
@@ -137,20 +137,20 @@ function initTheme() {
 
   // LocalStorage overrides this however, as the user has then changed the theme,
   // which we want to persist to those settings then.
-  const prefersDarkScheme = window.matchMedia('(prefers-color-scheme: dark)');
-  const storedTheme = localStorage.getItem('theme');
+  const prefersDarkScheme = window.matchMedia('(prefers-color-scheme: dark)')
+  const storedTheme = localStorage.getItem('theme')
 
   if (storedTheme === 'dark') {
-    ThemeSwitchTxt.innerText = 'Light';
+    ThemeSwitchTxt.innerText = 'Light'
 
     // Update theme classes toggles body class, and toggles the moon/sun icons to change over.
-    return updateThemeClasses();
+    return updateThemeClasses()
   }
 
   if (prefersDarkScheme.matches) {
-    ThemeSwitchTxt.innerText = 'Dark';
+    ThemeSwitchTxt.innerText = 'Dark'
 
-    return updateThemeClasses();
+    return updateThemeClasses()
   }
 }
 ```

@@ -1,16 +1,84 @@
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
   margin: 0;
   padding: 0;
   border: 0;
@@ -23,7 +91,8 @@ html {
   line-height: 1;
 }
 
-ol, ul {
+ol,
+ul {
   list-style: none;
 }
 
@@ -32,17 +101,23 @@ table {
   border-spacing: 0;
 }
 
-caption, th, td {
+caption,
+th,
+td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle;
 }
 
-q, blockquote {
+q,
+blockquote {
   quotes: none;
 }
-q:before, q:after, blockquote:before, blockquote:after {
-  content: "";
+q:before,
+q:after,
+blockquote:before,
+blockquote:after {
+  content: '';
   content: none;
 }
 
@@ -50,7 +125,19 @@ a img {
   border: none;
 }
 
-article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section,
+summary {
   display: block;
 }
 
@@ -72,12 +159,13 @@ a {
   text-decoration: none;
 }
 
-header, form {
+header,
+form {
   padding: 4em 10%;
 }
 
 header {
-  background-color: #077ABC;
+  background-color: #077abc;
   color: white;
 }
 header h1 {
@@ -96,12 +184,12 @@ header p {
   font-weight: 400;
   font-size: 16px;
   color: rgba(255, 255, 255, 0.9);
-  letter-spacing: .05em;
+  letter-spacing: 0.05em;
   margin-bottom: 10px;
 }
 header h3,
 header h3 a {
-  color: #32CCFE;
+  color: #32ccfe;
 }
 header h3 a,
 header h3 a a {
@@ -134,9 +222,9 @@ h2.heading {
   text-align: left;
   position: relative;
 }
-.controls input[type="text"],
-.controls input[type="email"],
-.controls input[type="tel"],
+.controls input[type='text'],
+.controls input[type='email'],
+.controls input[type='tel'],
 .controls textarea,
 .controls button,
 .controls select {
@@ -158,11 +246,12 @@ h2.heading {
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
 }
-.controls input[type="text"]:focus, .controls input[type="text"]:hover,
-.controls input[type="email"]:focus,
-.controls input[type="email"]:hover,
-.controls input[type="tel"]:focus,
-.controls input[type="tel"]:hover,
+.controls input[type='text']:focus,
+.controls input[type='text']:hover,
+.controls input[type='email']:focus,
+.controls input[type='email']:hover,
+.controls input[type='tel']:focus,
+.controls input[type='tel']:hover,
 .controls textarea:focus,
 .controls textarea:hover,
 .controls button:focus,
@@ -170,20 +259,21 @@ h2.heading {
 .controls select:focus,
 .controls select:hover {
   outline: none;
-  border-color: #9FB1C1;
+  border-color: #9fb1c1;
 }
-.controls input[type="text"]:focus + label, .controls input[type="text"]:hover + label,
-.controls input[type="email"]:focus + label,
-.controls input[type="email"]:hover + label,
-.controls input[type="tel"]:focus + label,
-.controls input[type="tel"]:hover + label,
+.controls input[type='text']:focus + label,
+.controls input[type='text']:hover + label,
+.controls input[type='email']:focus + label,
+.controls input[type='email']:hover + label,
+.controls input[type='tel']:focus + label,
+.controls input[type='tel']:hover + label,
 .controls textarea:focus + label,
 .controls textarea:hover + label,
 .controls button:focus + label,
 .controls button:hover + label,
 .controls select:focus + label,
 .controls select:hover + label {
-  color: #077ABC;
+  color: #077abc;
   cursor: text;
 }
 .controls .fa-sort {
@@ -224,7 +314,7 @@ h2.heading {
 }
 .controls button {
   cursor: pointer;
-  background-color: #07B3A1;
+  background-color: #07b3a1;
   border: none;
   color: #fff;
   padding: 12px 0;

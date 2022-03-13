@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Quicksand:400,500,700&subset=latin-ext");
+@import url('https://fonts.googleapis.com/css?family=Quicksand:400,500,700&subset=latin-ext');
 html {
   position: relative;
   overflow-x: hidden !important;
@@ -9,11 +9,12 @@ html {
 }
 
 body {
-  font-family: "Quicksand", sans-serif;
+  font-family: 'Quicksand', sans-serif;
   color: #324e63;
 }
 
-a, a:hover {
+a,
+a:hover {
   text-decoration: none;
 }
 
@@ -198,7 +199,15 @@ a, a:hover {
   box-shadow: 0px 4px 30px rgba(19, 127, 212, 0.7);
 }
 .profile-card-social__item.instagram {
-  background: linear-gradient(45deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d);
+  background: linear-gradient(
+    45deg,
+    #405de6,
+    #5851db,
+    #833ab4,
+    #c13584,
+    #e1306c,
+    #fd1d1d
+  );
   box-shadow: 0px 4px 30px rgba(120, 64, 190, 0.6);
 }
 .profile-card-social__item.behance {
@@ -234,7 +243,7 @@ a, a:hover {
 .profile-card__button {
   background: none;
   border: none;
-  font-family: "Quicksand", sans-serif;
+  font-family: 'Quicksand', sans-serif;
   font-weight: 700;
   font-size: 19px;
   margin: 15px 35px;
@@ -354,7 +363,7 @@ a, a:hover {
   padding: 15px 20px;
   color: #324e63;
   font-weight: 500;
-  font-family: "Quicksand", sans-serif;
+  font-family: 'Quicksand', sans-serif;
   outline: none;
   transition: all 0.3s;
 }

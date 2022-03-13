@@ -29,7 +29,7 @@ body {
 .accordion-trigger:hover,
 .accordion-trigger:focus {
   border-color: #006be6;
-  box-shadow: 0 2px 2px 0 rgba(0, 107, 230, .2);
+  box-shadow: 0 2px 2px 0 rgba(0, 107, 230, 0.2);
   outline: none;
 }
 

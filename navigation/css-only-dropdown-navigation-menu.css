@@ -40,7 +40,8 @@ nav > ul > li .dropdown__title {
   border-top: 3px solid transparent;
   transition: 280ms all 120ms ease-out;
 }
-nav > ul > li > a:hover, nav > ul > li > a:focus,
+nav > ul > li > a:hover,
+nav > ul > li > a:focus,
 nav > ul > li .dropdown__title:hover,
 nav > ul > li .dropdown__title:focus {
   border-top-color: pink;
@@ -64,7 +65,7 @@ nav ul li {
   align-items: center;
 }
 .dropdown .dropdown__title:after {
-  content: "";
+  content: '';
   border: 0.35rem solid transparent;
   border-top-color: rgba(255, 255, 255, 0.45);
   margin-left: 0.25em;
@@ -100,7 +101,7 @@ nav ul li {
   background-color: rgba(102, 51, 153, 0.25);
 }
 .dropdown:after {
-  content: "";
+  content: '';
   border: 0.5rem solid transparent;
   border-bottom-color: #fff;
   position: absolute;
@@ -111,23 +112,27 @@ nav ul li {
   opacity: 0;
   will-change: opacity;
 }
-.dropdown:hover .dropdown__title, .dropdown:focus-within .dropdown__title {
+.dropdown:hover .dropdown__title,
+.dropdown:focus-within .dropdown__title {
   border-top-color: pink;
 }
-.dropdown:hover .dropdown__menu, .dropdown:focus-within .dropdown__menu {
+.dropdown:hover .dropdown__menu,
+.dropdown:focus-within .dropdown__menu {
   opacity: 1;
   transform: rotateX(0) translateX(-50%);
   visibility: visible;
 }
-.dropdown:hover .dropdown__menu a, .dropdown:focus-within .dropdown__menu a {
+.dropdown:hover .dropdown__menu a,
+.dropdown:focus-within .dropdown__menu a {
   opacity: 1;
 }
-.dropdown:hover:after, .dropdown:focus-within:after {
+.dropdown:hover:after,
+.dropdown:focus-within:after {
   opacity: 1;
 }
 
 body {
-  font-family: "Baloo 2", sans-serif;
+  font-family: 'Baloo 2', sans-serif;
   min-height: 100vh;
   display: grid;
   grid-template-rows: auto 1fr auto;

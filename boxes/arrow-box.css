@@ -9,7 +9,7 @@
   border-radius: 4px;
 }
 .box:after {
-  content: "";
+  content: '';
   display: block;
   border-width: 20px 20px 0;
   border-style: solid;

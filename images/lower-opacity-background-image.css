@@ -1,27 +1,27 @@
 .hero {
-    position: relative; 
-    height: 100vh;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.hero::before {    
-      content: "";
-      background-image: url('https://placekitten.com/1200/800');
-      background-size: cover;
-      position: absolute;
-      top: 0px;
-      right: 0px;
-      bottom: 0px;
-      left: 0px;
-      opacity: 0.5;
+.hero::before {
+  content: '';
+  background-image: url('https://placekitten.com/1200/800');
+  background-size: cover;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  opacity: 0.5;
 }
 
 h1 {
   position: relative;
-  color: #ffffff;  
+  color: #ffffff;
   font-size: 14rem;
   line-height: 0.9;
   text-align: center;

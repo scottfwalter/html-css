@@ -32,7 +32,8 @@ svg {
 .darkmode-icon .moon-shadow {
   fill: black;
 }
-.darkmode-icon .rays, .darkmode-icon .sun-stroke {
+.darkmode-icon .rays,
+.darkmode-icon .sun-stroke {
   stroke: #777;
   fill: none;
 }

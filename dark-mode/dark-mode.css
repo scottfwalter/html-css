@@ -4,6 +4,7 @@ body div.darkmode {
   padding: 1rem 1rem 0.75rem 1rem;
   cursor: pointer;
 }
-body.dark .darkmode .light, body:not(.dark) .darkmode .dark {
+body.dark .darkmode .light,
+body:not(.dark) .darkmode .dark {
   display: none;
 }

@@ -6,9 +6,9 @@ body {
   display: -webkit-box;
   display: flex;
   -webkit-box-align: center;
-          align-items: center;
+  align-items: center;
   -webkit-box-pack: center;
-          justify-content: center;
+  justify-content: center;
   background: #bae3f7;
 }
 .cellphone {
@@ -34,7 +34,8 @@ body {
   width: 25vmin;
   top: 50%;
   left: 50%;
-  background: radial-gradient(transparent 0 65%, #19a1e6 65% 100%), radial-gradient(transparent 0 55%, #19a1e6 55% 60%, transparent 60%);
+  background: radial-gradient(transparent 0 65%, #19a1e6 65% 100%),
+    radial-gradient(transparent 0 55%, #19a1e6 55% 60%, transparent 60%);
   border-radius: 50%;
   top: 50%;
   margin-top: -12.5vmin;
@@ -47,11 +48,11 @@ body {
 }
 .cellphone {
   -webkit-animation: ring 0.1s infinite;
-          animation: ring 0.1s infinite;
+  animation: ring 0.1s infinite;
 }
 .cellphone:after {
   -webkit-animation: flash 2s infinite steps(1);
-          animation: flash 2s infinite steps(1);
+  animation: flash 2s infinite steps(1);
 }
 .cellphone:before {
   animation: ring 2s infinite steps(1) reverse;
@@ -72,36 +73,39 @@ input {
 }
 :checked ~ .cellphone {
   -webkit-animation-play-state: paused;
-          animation-play-state: paused;
+  animation-play-state: paused;
 }
 :checked ~ .cellphone:after,
 :checked ~ .cellphone:before {
   -webkit-animation-play-state: paused;
-          animation-play-state: paused;
+  animation-play-state: paused;
   display: none;
 }
 @-webkit-keyframes ring {
-  0%, 100% {
+  0%,
+  100% {
     -webkit-transform: rotate(-3deg);
-            transform: rotate(-3deg);
+    transform: rotate(-3deg);
   }
   50% {
     -webkit-transform: rotate(3deg);
-            transform: rotate(3deg);
+    transform: rotate(3deg);
   }
 }
 @keyframes ring {
-  0%, 100% {
+  0%,
+  100% {
     -webkit-transform: rotate(-3deg);
-            transform: rotate(-3deg);
+    transform: rotate(-3deg);
   }
   50% {
     -webkit-transform: rotate(3deg);
-            transform: rotate(3deg);
+    transform: rotate(3deg);
   }
 }
 @-webkit-keyframes flash {
-  0%, 100% {
+  0%,
+  100% {
     opacity: 0;
   }
   50% {
@@ -109,7 +113,8 @@ input {
   }
 }
 @keyframes flash {
-  0%, 100% {
+  0%,
+  100% {
     opacity: 0;
   }
   50% {

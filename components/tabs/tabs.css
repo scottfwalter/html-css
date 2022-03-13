@@ -9,9 +9,9 @@ ul#tabs-list {
 
 label.panel-label {
   -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
   display: block;
   width: 100%;
   color: #bdc3c7;
@@ -367,7 +367,7 @@ label.panel-label:hover {
     padding: 24px 0;
   }
   ul#tabs-list li label.panel-label::after {
-    content: "";
+    content: '';
     position: absolute;
     width: 100%;
     left: 0;
@@ -385,7 +385,7 @@ label.panel-label:hover {
   }
 
   #open-nav-label,
-#close-nav-label {
+  #close-nav-label {
     display: none;
   }
 
@@ -431,7 +431,7 @@ label.panel-label:hover {
 body {
   background: #e74c3c;
   color: #444444;
-  font-family: "Open Sans", "Helvetica Neue", Helvetica, sans-serif;
+  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, sans-serif;
 }
 
 #introduction {
@@ -466,9 +466,9 @@ label.demo-label {
   cursor: pointer;
   display: inline-block;
   -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 label.demo-label:hover {
   background-color: #e74c3c;
@@ -490,7 +490,7 @@ label.demo-label:hover {
 code,
 pre {
   color: #c0392b;
-  font-family: Inconsolata, "Andale Mono", Andale, monowidth;
+  font-family: Inconsolata, 'Andale Mono', Andale, monowidth;
   background-color: #ecf0f1;
   border: 1px solid #dfdfdf;
   border-radius: 2px;

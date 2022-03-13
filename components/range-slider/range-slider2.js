@@ -1,5 +1,5 @@
 class Slider {
-  constructor (rangeElement, valueElement, options) {
+  constructor(rangeElement, valueElement, options) {
     this.rangeElement = rangeElement
     this.valueElement = valueElement
     this.options = options
@@ -19,32 +19,43 @@ class Slider {
 
   // Format the money
   asMoney(value) {
-    return '$' + parseFloat(value)
-      .toLocaleString('en-US', { maximumFractionDigits: 2 })
+    return (
+      '$' +
+      parseFloat(value).toLocaleString('en-US', { maximumFractionDigits: 2 })
+    )
   }
 
-  generateBackground(rangeElement) {   
+  generateBackground(rangeElement) {
     if (this.rangeElement.value === this.options.min) {
       return
     }
 
-    let percentage =  (this.rangeElement.value - this.options.min) / (this.options.max - this.options.min) * 100
-    return 'background: linear-gradient(to right, #50299c, #7a00ff ' + percentage + '%, #d3edff ' + percentage + '%, #dee1e2 100%)'
+    let percentage =
+      ((this.rangeElement.value - this.options.min) /
+        (this.options.max - this.options.min)) *
+      100
+    return (
+      'background: linear-gradient(to right, #50299c, #7a00ff ' +
+      percentage +
+      '%, #d3edff ' +
+      percentage +
+      '%, #dee1e2 100%)'
+    )
   }
 
-  updateSlider (newValue) {
+  updateSlider(newValue) {
     this.valueElement.innerHTML = this.asMoney(this.rangeElement.value)
     this.rangeElement.style = this.generateBackground(this.rangeElement.value)
   }
 }
 
 let rangeElement = document.querySelector('.range [type="range"]')
-let valueElement = document.querySelector('.range .range__value span') 
+let valueElement = document.querySelector('.range .range__value span')
 
 let options = {
   min: 2000,
   max: 75000,
-  cur: 37500
+  cur: 37500,
 }
 
 if (rangeElement) {

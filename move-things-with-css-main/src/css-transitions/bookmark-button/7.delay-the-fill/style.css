@@ -6,9 +6,9 @@ body {
   display: flex;
   min-height: 100vh;
   -webkit-box-align: center;
-          align-items: center;
+  align-items: center;
   -webkit-box-pack: center;
-          justify-content: center;
+  justify-content: center;
 }
 .bookmark-button {
   outline: transparent;
@@ -16,9 +16,9 @@ body {
   display: flex;
   cursor: pointer;
   -webkit-box-align: center;
-          align-items: center;
+  align-items: center;
   -webkit-box-pack: center;
-          justify-content: center;
+  justify-content: center;
   padding: 12px 24px;
   border: 0;
   border-radius: 6px;
@@ -45,7 +45,7 @@ body {
   stroke-width: 2px;
   margin-right: 8px;
   -webkit-transform: translate(0, -5%);
-          transform: translate(0, -5%);
+  transform: translate(0, -5%);
 }
 
 /* Active state */
@@ -63,7 +63,8 @@ body {
   transform-origin: 50% 50%;
   transition-property: fill, transform, -webkit-transform;
   transition-duration: 0.2s, 0.6s, 0.6s;
-  transition-timing-function: ease, cubic-bezier(.5,-1.5,.6,2.5), cubic-bezier(.5,-1.5,.6,2.5);
+  transition-timing-function: ease, cubic-bezier(0.5, -1.5, 0.6, 2.5),
+    cubic-bezier(0.5, -1.5, 0.6, 2.5);
   transition-delay: 0.4s, 0s, 0s;
 }
 

@@ -6,7 +6,7 @@ form > div {
   margin: 0 0 20px 0;
 }
 
-input[type=text] {
+input[type='text'] {
   border: 1px solid #ccc;
   background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/3/line.svg);
   background-position: -1px 0;

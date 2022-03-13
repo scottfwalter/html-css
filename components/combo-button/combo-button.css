@@ -1,61 +1,64 @@
 body {
-    padding: 20px;
-    font-size: 16px;
-    line-height: 1.5rem;
+  padding: 20px;
+  font-size: 16px;
+  line-height: 1.5rem;
 }
 
 .btn-primary {
-    color: #fff;
-    background: #0068b4;
-    background: -moz-linear-gradient(top, #0068b4 0%, #00528e 100%);
-    background: -webkit-linear-gradient(top, #0068b4 0%,#00528e 100%);
-    background: linear-gradient(to bottom, #0068b4 0%,#00528e 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0068b4', endColorstr='#00528e',GradientType=0 );
+  color: #fff;
+  background: #0068b4;
+  background: -moz-linear-gradient(top, #0068b4 0%, #00528e 100%);
+  background: -webkit-linear-gradient(top, #0068b4 0%, #00528e 100%);
+  background: linear-gradient(to bottom, #0068b4 0%, #00528e 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0068b4', endColorstr='#00528e',GradientType=0 );
 }
 
 .btn-primary:hover,
 .btn-primary:focus,
 .btn-primary:active {
-    background: #00528e;
+  background: #00528e;
 }
 
 .btn-combo {
-    padding: 0;
+  padding: 0;
 }
 
 .btn-combo .btn {
-    height: 40px;
-    border-radius: 0;
+  height: 40px;
+  border-radius: 0;
 }
 
 .btn-combo .dropdown-menu {
-    margin: 0;
-    border-radius: 0;
+  margin: 0;
+  border-radius: 0;
 }
 
 .loading {
-/*     display: none; */
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    height: 32px;
-    width: 32px;
-    background: url(loader.png) 50% 50% no-repeat;
-    border: 1px solid red;
-	-webkit-animation:spin 2s linear infinite;
-	-moz-animation:spin 2s linear infinite;
-	animation:spin 2s linear infinite;
+  /*     display: none; */
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  height: 32px;
+  width: 32px;
+  background: url(loader.png) 50% 50% no-repeat;
+  border: 1px solid red;
+  -webkit-animation: spin 2s linear infinite;
+  -moz-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
 }
-@-moz-keyframes spin { 100% { 
-	-moz-transform:rotate(360deg); 
-	}
+@-moz-keyframes spin {
+  100% {
+    -moz-transform: rotate(360deg);
+  }
 }
-@-webkit-keyframes spin { 100% { 
-	-webkit-transform:rotate(360deg); 
-	}
+@-webkit-keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
 }
-@keyframes spin { 100% {
-	-webkit-transform:rotate(360deg);
-	transform:rotate(360deg);
-	}
+@keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
 }

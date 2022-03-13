@@ -1,4 +1,6 @@
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   box-sizing: border-box;
 }
 
@@ -32,7 +34,7 @@ body {
 }
 .range-slider__range::-webkit-slider-thumb {
   -webkit-appearance: none;
-          appearance: none;
+  appearance: none;
   width: 20px;
   height: 20px;
   border-radius: 50%;
@@ -88,7 +90,7 @@ body {
   border-top: 7px solid transparent;
   border-right: 7px solid #2c3e50;
   border-bottom: 7px solid transparent;
-  content: "";
+  content: '';
 }
 
 ::-moz-range-track {

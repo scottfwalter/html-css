@@ -1,41 +1,57 @@
 <!DOCTYPE html>
-<html lang="en" >
-<head>
-  <meta charset="UTF-8">
-  <title>CodePen - HSL Monochromatic Palette Generator </title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
-<link rel='stylesheet' href='https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css'><link rel="stylesheet" href="./HSL-Monochromatic-Palette-Generator.css">
-
-</head>
-<body>
-<!-- partial:index.partial.html -->
-<div class="result">
-  <pre><code class="language-css"></code></pre>
-  <div class="palette">
-    <div class="palette__shade" style="--shade: var(--shade-1);"></div>
-    <div class="palette__shade" style="--shade: var(--shade-2);"></div>
-    <div class="palette__shade" style="--shade: var(--shade-3);"></div>
-    <div class="palette__shade" style="--shade: var(--shade-4);"></div>
-    <div class="palette__shade" style="--shade: var(--shade-5);"></div>
-    <div class="palette__shade" style="--shade: var(--shade-6);"></div>
-    <div class="palette__shade" style="--shade: var(--shade-7);"></div>
-    <div class="palette__shade" style="--shade: var(--shade-8);"></div>
-    <div class="palette__shade" style="--shade: var(--shade-9);"></div>
-  </div>
-</div>
-<style id="update"></style>
-<div class="controls">
-  <label>hue</label>
-  <div id="hue"></div>
-  <label>saturation</label>
-  <div id="saturation"></div>
-  <label>lightness</label>
-  <div id="lightness"></div>
-</div><p class="disclaimer">This is a fork of <a href="https://codepen.io/jh3y/pen/JjEjJjN">@jhey's incredibly useful pen</a>. I simply added an extra shade to have an odd number of values between the darkest and lightest shades where I can tweak the colors and set rules around color contrast. (e.g. <strong>--shade-6</strong> is at least 4.5:1 on white or <strong>--shade-2</strong>.) Great for design systems work. Thanks, Jhey!</p>
-<!-- partial -->
-  <script src='https://assets.codepen.io/605876/prism.js'></script>
-<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js'></script>
-<script src='https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js'></script><script  src="./HSL-Monochromatic-Palette-Generator.js"></script>
-
-</body>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>CodePen - HSL Monochromatic Palette Generator</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css"
+    />
+    <link rel="stylesheet" href="./HSL-Monochromatic-Palette-Generator.css" />
+  </head>
+  <body>
+    <!-- partial:index.partial.html -->
+    <div class="result">
+      <pre><code class="language-css"></code></pre>
+      <div class="palette">
+        <div class="palette__shade" style="--shade: var(--shade-1)"></div>
+        <div class="palette__shade" style="--shade: var(--shade-2)"></div>
+        <div class="palette__shade" style="--shade: var(--shade-3)"></div>
+        <div class="palette__shade" style="--shade: var(--shade-4)"></div>
+        <div class="palette__shade" style="--shade: var(--shade-5)"></div>
+        <div class="palette__shade" style="--shade: var(--shade-6)"></div>
+        <div class="palette__shade" style="--shade: var(--shade-7)"></div>
+        <div class="palette__shade" style="--shade: var(--shade-8)"></div>
+        <div class="palette__shade" style="--shade: var(--shade-9)"></div>
+      </div>
+    </div>
+    <style id="update"></style>
+    <div class="controls">
+      <label>hue</label>
+      <div id="hue"></div>
+      <label>saturation</label>
+      <div id="saturation"></div>
+      <label>lightness</label>
+      <div id="lightness"></div>
+    </div>
+    <p class="disclaimer">
+      This is a fork of
+      <a href="https://codepen.io/jh3y/pen/JjEjJjN"
+        >@jhey's incredibly useful pen</a
+      >. I simply added an extra shade to have an odd number of values between
+      the darkest and lightest shades where I can tweak the colors and set rules
+      around color contrast. (e.g. <strong>--shade-6</strong> is at least 4.5:1
+      on white or <strong>--shade-2</strong>.) Great for design systems work.
+      Thanks, Jhey!
+    </p>
+    <!-- partial -->
+    <script src="https://assets.codepen.io/605876/prism.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script src="./HSL-Monochromatic-Palette-Generator.js"></script>
+  </body>
 </html>

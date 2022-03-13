@@ -16,7 +16,7 @@ body {
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  -moz-font-feature-settings: "liga" on;
+  -moz-font-feature-settings: 'liga' on;
 }
 img {
   height: auto;
@@ -84,7 +84,7 @@ img {
   transition: filter 0.5s cubic-bezier(0.43, 0.41, 0.22, 0.91);
 }
 .card__image::before {
-  content: "";
+  content: '';
   display: block;
   padding-top: 56.25%;
 }

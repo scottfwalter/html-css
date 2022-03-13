@@ -30,7 +30,7 @@ body {
   transform-style: preserve-3d;
   transition: transform 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
   border-radius: 6px;
-  box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
   cursor: pointer;
 }
 .card div {
@@ -48,7 +48,7 @@ body {
   justify-content: center;
   -o-box-align: center;
   align-items: center;
-  font: 16px/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font: 16px/1.5 'Helvetica Neue', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   color: #47525d;
 }

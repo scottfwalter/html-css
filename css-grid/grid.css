@@ -1,6 +1,6 @@
 body {
   color: #fff;
-  font-family: "Nunito Semibold";
+  font-family: 'Nunito Semibold';
   text-align: center;
 }
 
@@ -13,11 +13,11 @@ body {
   max-width: 960px;
   margin: 0 auto;
   grid-template-areas:
-    "header header header header"    
-    "main main main main"
-    "aside aside nav nav"
-    "section section section section"
-    "footer footer footer footer";
+    'header header header header'
+    'main main main main'
+    'aside aside nav nav'
+    'section section section section'
+    'footer footer footer footer';
 }
 
 /* desktop grid */
@@ -30,11 +30,11 @@ body {
     max-width: 960px;
     margin: 0 auto;
     grid-template-areas:
-      "header header header header"
-      "aside main main main"
-      "nav main main main"
-      "section section section section"
-      "footer footer footer footer";
+      'header header header header'
+      'aside main main main'
+      'nav main main main'
+      'section section section section'
+      'footer footer footer footer';
   }
 }
 #content > * {

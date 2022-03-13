@@ -12,8 +12,8 @@
 
 select {
   -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
+  -moz-appearance: none;
+  appearance: none;
   background-color: transparent;
   border: none;
   padding: 0 1em 0 0;
@@ -32,7 +32,7 @@ select::-ms-expand {
 
 .select {
   display: grid;
-  grid-template-areas: "select";
+  grid-template-areas: 'select';
   align-items: center;
   position: relative;
   min-width: 15ch;
@@ -46,17 +46,18 @@ select::-ms-expand {
   background-color: #fff;
   background-image: linear-gradient(to top, #f9f9f9, #fff 33%);
 }
-.select select, .select::after {
+.select select,
+.select::after {
   grid-area: select;
 }
 .select:not(.select--multiple)::after {
-  content: "";
+  content: '';
   justify-self: end;
   width: 0.8em;
   height: 0.5em;
   background-color: var(--select-arrow);
   -webkit-clip-path: polygon(100% 0%, 0 0%, 50% 100%);
-          clip-path: polygon(100% 0%, 0 0%, 50% 100%);
+  clip-path: polygon(100% 0%, 0 0%, 50% 100%);
 }
 
 select:focus + .focus {
@@ -110,7 +111,7 @@ body {
   display: grid;
   place-content: center;
   grid-gap: 0.5rem;
-  font-family: "Baloo 2", sans-serif;
+  font-family: 'Baloo 2', sans-serif;
   background-color: #e9f2fd;
   padding: 1rem;
 }

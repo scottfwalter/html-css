@@ -14,8 +14,8 @@ h4 {
   color: #7ed321;
 }
 input,
-input[type="radio"] + label,
-input[type="checkbox"] + label:before,
+input[type='radio'] + label,
+input[type='checkbox'] + label:before,
 select option,
 select {
   width: 100%;
@@ -36,10 +36,10 @@ input:focus + .input-icon i {
 input:focus + .input-icon:after {
   border-right-color: #7ed321;
 }
-input[type="radio"] {
+input[type='radio'] {
   display: none;
 }
-input[type="radio"] + label,
+input[type='radio'] + label,
 select {
   display: inline-block;
   width: 50%;
@@ -47,18 +47,18 @@ select {
   float: left;
   border-radius: 0;
 }
-input[type="radio"] + label:first-of-type {
+input[type='radio'] + label:first-of-type {
   border-top-left-radius: 3px;
   border-bottom-left-radius: 3px;
 }
-input[type="radio"] + label:last-of-type {
+input[type='radio'] + label:last-of-type {
   border-top-right-radius: 3px;
   border-bottom-right-radius: 3px;
 }
-input[type="radio"] + label i {
+input[type='radio'] + label i {
   padding-right: 0.4em;
 }
-input[type="radio"]:checked + label,
+input[type='radio']:checked + label,
 input:checked + label:before,
 select:focus,
 select:active {
@@ -66,15 +66,15 @@ select:active {
   color: #fff;
   border-color: #64ac15;
 }
-input[type="checkbox"] {
+input[type='checkbox'] {
   display: none;
 }
-input[type="checkbox"] + label {
+input[type='checkbox'] + label {
   position: relative;
   display: block;
   padding-left: 1.6em;
 }
-input[type="checkbox"] + label:before {
+input[type='checkbox'] + label:before {
   position: absolute;
   top: 0.2em;
   left: 0;
@@ -82,9 +82,9 @@ input[type="checkbox"] + label:before {
   width: 1em;
   height: 1em;
   padding: 0;
-  content: "";
+  content: '';
 }
-input[type="checkbox"] + label:after {
+input[type='checkbox'] + label:after {
   position: absolute;
   top: 0.45em;
   left: 0.2em;
@@ -92,7 +92,7 @@ input[type="checkbox"] + label:after {
   color: #fff;
   opacity: 0;
   font-family: FontAwesome;
-  content: "\f00c";
+  content: '\f00c';
 }
 input:checked + label:after {
   opacity: 1;
@@ -123,7 +123,7 @@ select option {
 }
 .input-group:before,
 .input-group:after {
-  content: "";
+  content: '';
   display: table;
 }
 .input-group:after {
@@ -152,7 +152,7 @@ select option {
   left: 3.4em;
   display: block;
   border-right: 1px solid #e5e5e5;
-  content: "";
+  content: '';
   transition: all 0.35s ease-in-out;
 }
 .input-group-icon .input-icon i {
@@ -171,7 +171,7 @@ select option {
 }
 .row:before,
 .row:after {
-  content: "";
+  content: '';
   display: table;
 }
 .row:after {

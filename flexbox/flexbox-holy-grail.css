@@ -47,6 +47,7 @@ main {
   flex: 3;
 }
 
-nav, aside {
+nav,
+aside {
   flex: 1;
 }

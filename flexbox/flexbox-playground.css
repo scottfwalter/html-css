@@ -8,7 +8,7 @@ div {
 }
 
 .right-container {
-    display:flex;
+  display: flex;
 }
 
 .right {
@@ -16,26 +16,26 @@ div {
 }
 
 .jr-container {
-  display:flex;
+  display: flex;
   justify-content: flex-end;
 }
 
 .center-container {
-  display:flex;
+  display: flex;
   justify-content: center;
 }
 
 .between-container {
-  display:flex;
+  display: flex;
   justify-content: space-between;
 }
 
 .flex1 {
-  display:flex;
+  display: flex;
 }
 
 .flex1-column {
-  display:flex;
+  display: flex;
   flex-direction: column;
 }
 
@@ -58,11 +58,11 @@ div {
 }
 
 .flex1-shrink1 {
-  flex-shrink:2;
+  flex-shrink: 2;
 }
 
 .flex1-shrink2 {
-   flex-shrink:1;
+  flex-shrink: 1;
 }
 
 .flex1-right {
@@ -70,7 +70,7 @@ div {
 }
 
 .flex-center {
-  display:flex;
+  display: flex;
   width: 100px;
   height: 100px;
   border: 5px solid red;

@@ -160,17 +160,24 @@ body {
   -webkit-clip-path: circle(270% at 91.5% 75px);
 }
 .cards #overview .right {
-  background: url(https://dl.dropboxusercontent.com/u/26808427/cdn/james.png) no-repeat bottom right;
+  background: url(https://dl.dropboxusercontent.com/u/26808427/cdn/james.png)
+    no-repeat bottom right;
   background-size: contain;
 }
-.cards #dribbble .card-content, .cards #behance .card-content, .cards #linkedin .card-content, .cards #twitter .card-content {
+.cards #dribbble .card-content,
+.cards #behance .card-content,
+.cards #linkedin .card-content,
+.cards #twitter .card-content {
   color: white;
 }
-.cards #dribbble .card-content p, .cards #behance .card-content p, .cards #linkedin .card-content p, .cards #twitter .card-content p {
+.cards #dribbble .card-content p,
+.cards #behance .card-content p,
+.cards #linkedin .card-content p,
+.cards #twitter .card-content p {
   color: rgba(255, 255, 255, 0.8);
 }
 .cards #dribbble .card-content {
-  background-color: #F46899;
+  background-color: #f46899;
   -webkit-clip-path: circle(0% at 76px 88%);
   clip-path: circle(0% at 50px 88%);
 }
@@ -179,7 +186,7 @@ body {
   clip-path: circle(270% at 50px 88%);
 }
 .cards #behance .card-content {
-  background-color: #2F98D1;
+  background-color: #2f98d1;
   -webkit-clip-path: circle(0% at 150px 88%);
   clip-path: circle(0% at 150px 88%);
 }
@@ -188,7 +195,7 @@ body {
   clip-path: circle(270% at 150px 88%);
 }
 .cards #linkedin .card-content {
-  background-color: #03679B;
+  background-color: #03679b;
   -webkit-clip-path: circle(0% at 220px 88%);
   clip-path: circle(0% at 220px 88%);
 }
@@ -197,7 +204,7 @@ body {
   clip-path: circle(270% at 220px 88%);
 }
 .cards #twitter .card-content {
-  background-color: #7FD0ED;
+  background-color: #7fd0ed;
   -webkit-clip-path: circle(0% at 292px 88%);
   clip-path: circle(0% at 292px 88%);
 }
@@ -224,23 +231,26 @@ form .control label {
 form .control.submit {
   text-align: right;
 }
-form input, form textarea {
+form input,
+form textarea {
   width: 100%;
   border: none;
   border-bottom: 1px solid #e3e3e3;
   outline: none;
   padding: 10px 0;
 }
-form .filled label, form input:focus + label, form textarea:focus + label {
+form .filled label,
+form input:focus + label,
+form textarea:focus + label {
   top: 0;
   font-size: 12px;
 }
 form textarea {
   height: 100px;
 }
-form input[type=submit] {
+form input[type='submit'] {
   width: auto;
-  background-color: #F06292;
+  background-color: #f06292;
   padding: 10px 40px;
   color: white;
   border-radius: 40px;

@@ -1,5 +1,5 @@
-$(document).ready( function() {
-    $('.btn-group').click( function() {
-        $('.loading').show();
-    });
-});
+$(document).ready(function () {
+  $('.btn-group').click(function () {
+    $('.loading').show()
+  })
+})

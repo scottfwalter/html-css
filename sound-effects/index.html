@@ -1,24 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
 
-  <script>
-    function play(selector) {
-      const audio = document.querySelector(selector);
-      audio.currentTime = 0;
-      audio.play();
-    }
-  </script>
-</head>
-<body>
-  <audio src="./audio/audio_light-on.mp3" class="light-on"></audio>
-  <audio src="./audio/audio_light-off.mp3" class="light-off"></audio>
+    <script>
+      function play(selector) {
+        const audio = document.querySelector(selector)
+        audio.currentTime = 0
+        audio.play()
+      }
+    </script>
+  </head>
+  <body>
+    <audio src="./audio/audio_light-on.mp3" class="light-on"></audio>
+    <audio src="./audio/audio_light-off.mp3" class="light-off"></audio>
 
-  <button onclick="play('.light-on')">Light On</button>
-  <button onclick="play('.light-off')">Light Off</button>
-</body>
+    <button onclick="play('.light-on')">Light On</button>
+    <button onclick="play('.light-off')">Light Off</button>
+  </body>
 </html>

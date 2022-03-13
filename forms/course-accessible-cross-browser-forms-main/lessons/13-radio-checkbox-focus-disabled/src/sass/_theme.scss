@@ -13,14 +13,14 @@ $color-disabled-background: scale-color($color-default, $lightness: 75%);
 
 // Create map of theme colors
 $colors: (
-  "primary": $color-primary,
-  "error": $color-error,
-  "background": $color-background,
-  "default": $color-default,
-  "disabled-border": $color-disabled-border,
-  "disabled-background": $color-disabled-background,
-  "text": $color-text,
-  "white": #fff,
+  'primary': $color-primary,
+  'error': $color-error,
+  'background': $color-background,
+  'default': $color-default,
+  'disabled-border': $color-disabled-border,
+  'disabled-background': $color-disabled-background,
+  'text': $color-text,
+  'white': #fff,
 );
 
 // Function to return colors by key

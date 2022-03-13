@@ -23,17 +23,17 @@ svg {
 body {
   min-block-size: 100%;
   font-family: system-ui, sans-serif;
-  
+
   display: grid;
   place-content: center;
 }
 
 .github-corner {
   fill: deeppink;
-  color: Canvas; 
-  
+  color: Canvas;
+
   &:hover .octo-arm {
-    animation: octocat-wave 560ms ease-in-out
+    animation: octocat-wave 560ms ease-in-out;
   }
 
   @media (--dark) {
@@ -41,14 +41,17 @@ body {
   }
 }
 
-@keyframes octocat-wave{
-  0%,100% {
-    transform: rotate(0)
+@keyframes octocat-wave {
+  0%,
+  100% {
+    transform: rotate(0);
   }
-  20%,60% {
-    transform: rotate(-25deg)
+  20%,
+  60% {
+    transform: rotate(-25deg);
   }
-  40%,80% {
-    transform: rotate(10deg)
+  40%,
+  80% {
+    transform: rotate(10deg);
   }
 }

@@ -1,6 +1,6 @@
 @import url(https://fonts.googleapis.com/css?family=Vollkorn|Roboto);
 body {
-  background: #F5F5F5;
+  background: #f5f5f5;
 }
 
 .container {
@@ -11,7 +11,7 @@ body {
   top: 40%;
   left: 0;
   margin: 0 auto;
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 .container p {
   font-size: 20px;
@@ -20,16 +20,16 @@ body {
   display: inline-block;
   position: relative;
   text-align: center;
-  color: #FF5252;
+  color: #ff5252;
   text-decoration: none;
   font-size: 20px;
   overflow: hidden;
   top: 5px;
 }
 .container a:after {
-  content: "";
+  content: '';
   position: absolute;
-  background: #FF5252;
+  background: #ff5252;
   height: 2px;
   width: 0%;
   transform: translateX(-50%);
@@ -44,7 +44,7 @@ body {
 h1 {
   position: relative;
   text-align: center;
-  font-family: "Vollkorn", sans-serif;
+  font-family: 'Vollkorn', sans-serif;
 }
 
 .button_container {
@@ -62,18 +62,18 @@ h1 {
 }
 .button_container.active .top {
   transform: translateY(10px) translateX(0) rotate(45deg);
-  background: #FFF;
+  background: #fff;
 }
 .button_container.active .middle {
   opacity: 0;
-  background: #FFF;
+  background: #fff;
 }
 .button_container.active .bottom {
   transform: translateY(-10px) translateX(0) rotate(-45deg);
-  background: #FFF;
+  background: #fff;
 }
 .button_container span {
-  background: #FF5252;
+  background: #ff5252;
   border: none;
   height: 5px;
   width: 100%;
@@ -102,8 +102,8 @@ h1 {
   z-index: 50;
 }
 .overlay:before {
-  content: "";
-  background: #FF5252;
+  content: '';
+  background: #ff5252;
   left: -55%;
   top: 0;
   width: 50%;
@@ -112,8 +112,8 @@ h1 {
   transition: left 0.35s ease;
 }
 .overlay:after {
-  content: "";
-  background: #FF5252;
+  content: '';
+  background: #ff5252;
   right: -55%;
   top: 0;
   width: 50%;
@@ -134,21 +134,21 @@ h1 {
 }
 .overlay.open li {
   -webkit-animation: fadeInRight 0.5s ease forwards;
-          animation: fadeInRight 0.5s ease forwards;
+  animation: fadeInRight 0.5s ease forwards;
   -webkit-animation-delay: 0.35s;
-          animation-delay: 0.35s;
+  animation-delay: 0.35s;
 }
 .overlay.open li:nth-of-type(2) {
   -webkit-animation-delay: 0.45s;
-          animation-delay: 0.45s;
+  animation-delay: 0.45s;
 }
 .overlay.open li:nth-of-type(3) {
   -webkit-animation-delay: 0.55s;
-          animation-delay: 0.55s;
+  animation-delay: 0.55s;
 }
 .overlay.open li:nth-of-type(4) {
   -webkit-animation-delay: 0.65s;
-          animation-delay: 0.65s;
+  animation-delay: 0.65s;
 }
 .overlay nav {
   position: relative;
@@ -156,7 +156,7 @@ h1 {
   top: 50%;
   transform: translateY(-50%);
   font-size: 50px;
-  font-family: "Vollkorn", serif;
+  font-family: 'Vollkorn', serif;
   font-weight: 400;
   text-align: center;
   z-index: 100;
@@ -180,22 +180,24 @@ h1 {
 .overlay ul li a {
   display: block;
   position: relative;
-  color: #FFF;
+  color: #fff;
   text-decoration: none;
   overflow: hidden;
 }
-.overlay ul li a:hover:after, .overlay ul li a:focus:after, .overlay ul li a:active:after {
+.overlay ul li a:hover:after,
+.overlay ul li a:focus:after,
+.overlay ul li a:active:after {
   width: 100%;
 }
 .overlay ul li a:after {
-  content: "";
+  content: '';
   position: absolute;
   bottom: 0;
   left: 50%;
   width: 0%;
   transform: translateX(-50%);
   height: 3px;
-  background: #FFF;
+  background: #fff;
   transition: 0.35s;
 }
 

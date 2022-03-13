@@ -22,6 +22,7 @@ body {
 .tooltip.tooltip--top .tooltip-container {
   bottom: 100%;
 }
-.tooltip:focus .tooltip-container, .tooltip:hover .tooltip-container {
+.tooltip:focus .tooltip-container,
+.tooltip:hover .tooltip-container {
   display: block;
 }

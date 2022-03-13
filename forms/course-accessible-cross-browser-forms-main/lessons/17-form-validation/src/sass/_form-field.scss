@@ -1,5 +1,5 @@
 .form-field {
-  border-color: var(--color-default, color("default"));
+  border-color: var(--color-default, color('default'));
 
   &:focus {
     @include field-focus;
@@ -13,12 +13,12 @@
 .form-field.select {
   position: relative;
   display: grid;
-  grid-template-areas: "select";
+  grid-template-areas: 'select';
   align-items: center;
   background-image: linear-gradient(
     to top,
-    scale-color(color("white"), $lightness: -10%),
-    color("white") 33%
+    scale-color(color('white'), $lightness: -10%),
+    color('white') 33%
   );
 
   select,
@@ -27,10 +27,10 @@
   }
 
   &:not(.select--multiple)::after {
-    content: "";
+    content: '';
     width: 0.8em;
     height: 0.5em;
-    background-color: var(--color-default, color("default"));
+    background-color: var(--color-default, color('default'));
     clip-path: polygon(100% 0%, 0 0%, 50% 100%);
     justify-self: end;
   }

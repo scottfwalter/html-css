@@ -1,10 +1,10 @@
-html{
-  text-align:center;
-  font-family:"Tahoma";
+html {
+  text-align: center;
+  font-family: 'Tahoma';
 }
 
-.multi-radio-toggle{
-  position:relative;
+.multi-radio-toggle {
+  position: relative;
   background: #eee;
   margin: 20px auto 80px;
   padding: 0 !important;
@@ -12,71 +12,71 @@ html{
   -moz-border-radius: 50px;
   border-radius: 50px;
   height: 30px;
-  box-shadow:inset 1px 1px 4px rgba(0, 0, 0, 0);
+  box-shadow: inset 1px 1px 4px rgba(0, 0, 0, 0);
 }
 
-.multi-radio-toggle--two{
-	width: 60px;
+.multi-radio-toggle--two {
+  width: 60px;
 }
 
-.multi-radio-toggle--three{
-	width: 90px;
+.multi-radio-toggle--three {
+  width: 90px;
 }
 
-.multi-radio-toggle--four{
-	width: 120px;
+.multi-radio-toggle--four {
+  width: 120px;
 }
 
-.multi-radio-toggle__label p{
-  display:block;
-  margin:0;
+.multi-radio-toggle__label p {
+  display: block;
+  margin: 0;
   line-height: 30px;
   font-size: 16px;
 }
 
-.multi-radio-toggle__label{
-  position:absolute;
-  z-index:99;
+.multi-radio-toggle__label {
+  position: absolute;
+  z-index: 99;
 }
 
 /* first pos */
-.multi-radio-toggle__label:nth-of-type(1){
+.multi-radio-toggle__label:nth-of-type(1) {
   left: -55px;
   width: 80px;
-  text-align:left;
+  text-align: left;
 }
 
 /* center */
-.multi-radio-toggle--three .multi-radio-toggle__label:nth-of-type(2){
-  text-align:center;
+.multi-radio-toggle--three .multi-radio-toggle__label:nth-of-type(2) {
+  text-align: center;
   width: 40px;
   left: 50%;
   margin-left: -20px;
 }
 
 /* left center */
-.multi-radio-toggle--four .multi-radio-toggle__label:nth-of-type(2){
-	left:20px;
-	width: 40px;
+.multi-radio-toggle--four .multi-radio-toggle__label:nth-of-type(2) {
+  left: 20px;
+  width: 40px;
 }
 
 /* right center */
-.multi-radio-toggle--four .multi-radio-toggle__label:nth-of-type(3){
-	right:20px;
-	width: 40px;
+.multi-radio-toggle--four .multi-radio-toggle__label:nth-of-type(3) {
+  right: 20px;
+  width: 40px;
 }
 
 /* last pos */
 .multi-radio-toggle--two .multi-radio-toggle__label:nth-of-type(2),
 .multi-radio-toggle--three .multi-radio-toggle__label:nth-of-type(3),
-.multi-radio-toggle--four .multi-radio-toggle__label:nth-of-type(4){
+.multi-radio-toggle--four .multi-radio-toggle__label:nth-of-type(4) {
   right: -55px;
-  text-align:right;
+  text-align: right;
   width: 80px;
 }
 
-.multi-radio-toggle__label--align-bottom p{
-  display:block;
+.multi-radio-toggle__label--align-bottom p {
+  display: block;
   margin-top: 30px;
 }
 
@@ -84,11 +84,11 @@ html{
   float: left;
 }
 
-.multi-radio-toggle input[type=radio]{
+.multi-radio-toggle input[type='radio'] {
   display: none;
 }
 
-.multi-radio-toggle__label{
+.multi-radio-toggle__label {
   width: 30px;
   height: 30px;
   margin: 0;
@@ -101,7 +101,7 @@ html{
   width: 70px;
 }
 
-.multi-radio-toggle__slide-bg{
+.multi-radio-toggle__slide-bg {
   width: 36px;
   height: 36px;
   position: absolute;
@@ -109,33 +109,35 @@ html{
   -webkit-border-radius: 50px;
   -moz-border-radius: 50px;
   border-radius: 50px;
-  -webkit-transition: all .4s ease;
-  -moz-transition: all .4s ease;
-  -o-transition: all .4s ease;
-  -ms-transition: all .4s ease;
-  transition: all .4s ease;
+  -webkit-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  -ms-transition: all 0.4s ease;
+  transition: all 0.4s ease;
 }
 
-.multi-radio-toggle input:checked ~ .multi-radio-toggle__slide-bg{
-	background: #db159e;
+.multi-radio-toggle input:checked ~ .multi-radio-toggle__slide-bg {
+  background: #db159e;
 }
 
-.multi-radio-toggle input:nth-child(1):checked ~ .multi-radio-toggle__slide-bg{
-	left: -3px;
+.multi-radio-toggle input:nth-child(1):checked ~ .multi-radio-toggle__slide-bg {
+  left: -3px;
 }
 
-.multi-radio-toggle input:nth-child(2):checked ~ .multi-radio-toggle__slide-bg{
-	left: 27px;
+.multi-radio-toggle input:nth-child(2):checked ~ .multi-radio-toggle__slide-bg {
+  left: 27px;
 }
 
-.multi-radio-toggle--four input:nth-child(2):checked ~ .multi-radio-toggle__slide-bg{
-	left: 22px;
+.multi-radio-toggle--four
+  input:nth-child(2):checked
+  ~ .multi-radio-toggle__slide-bg {
+  left: 22px;
 }
 
-.multi-radio-toggle input:nth-child(3):checked ~ .multi-radio-toggle__slide-bg{
-	left: 63px;
+.multi-radio-toggle input:nth-child(3):checked ~ .multi-radio-toggle__slide-bg {
+  left: 63px;
 }
 
-.multi-radio-toggle input:nth-child(4):checked ~ .multi-radio-toggle__slide-bg{
-	left: 93px;
+.multi-radio-toggle input:nth-child(4):checked ~ .multi-radio-toggle__slide-bg {
+  left: 93px;
 }

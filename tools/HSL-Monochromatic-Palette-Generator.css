@@ -5,8 +5,8 @@ https://prismjs.com/download.html#themes=prism-tomorrow&languages=css+css-extras
  * Based on https://github.com/chriskempson/tomorrow-theme
  * @author Rose Pritchard
  */
-code[class*="language-"],
-pre[class*="language-"] {
+code[class*='language-'],
+pre[class*='language-'] {
   color: #ccc;
   background: none;
   font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
@@ -25,18 +25,18 @@ pre[class*="language-"] {
   hyphens: none;
 }
 /* Code blocks */
-pre[class*="language-"] {
+pre[class*='language-'] {
   padding: 2rem;
   margin: 0;
   overflow: auto;
   outline: transparent;
 }
-:not(pre) > code[class*="language-"],
-pre[class*="language-"] {
+:not(pre) > code[class*='language-'],
+pre[class*='language-'] {
   background: #2d2d2d;
 }
 /* Inline code */
-:not(pre) > code[class*="language-"] {
+:not(pre) > code[class*='language-'] {
   padding: 0.1em;
   border-radius: 0.3em;
   white-space: normal;
@@ -103,12 +103,12 @@ pre[class*="language-"] {
 .token.inserted {
   color: #008000;
 }
-pre[class*="language-"].line-numbers {
+pre[class*='language-'].line-numbers {
   position: relative;
   padding-left: 3.8em;
   counter-reset: linenumber;
 }
-pre[class*="language-"].line-numbers > code {
+pre[class*='language-'].line-numbers > code {
   position: relative;
   white-space: inherit;
 }
@@ -138,7 +138,7 @@ pre[class*="language-"].line-numbers > code {
   text-align: right;
 }
 span.inline-color-wrapper {
-/*
+  /*
    * The background image is the following SVG inline in base 64:
    *
    * <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2 2">
@@ -149,8 +149,8 @@ span.inline-color-wrapper {
    * SVG-inlining explained:
    * https://stackoverflow.com/a/21626701/7595472
    */
-  background: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyIDIiPjxwYXRoIGZpbGw9ImdyYXkiIGQ9Ik0wIDBoMnYySDB6Ii8+PHBhdGggZmlsbD0id2hpdGUiIGQ9Ik0wIDBoMXYxSDB6TTEgMWgxdjFIMXoiLz48L3N2Zz4=");
-/* This is to prevent visual glitches where one pixel from the repeating pattern could be seen. */
+  background: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyIDIiPjxwYXRoIGZpbGw9ImdyYXkiIGQ9Ik0wIDBoMnYySDB6Ii8+PHBhdGggZmlsbD0id2hpdGUiIGQ9Ik0wIDBoMXYxSDB6TTEgMWgxdjFIMXoiLz48L3N2Zz4=');
+  /* This is to prevent visual glitches where one pixel from the repeating pattern could be seen. */
   background-position: center;
   background-size: 110%;
   display: inline-block;
@@ -159,12 +159,12 @@ span.inline-color-wrapper {
   margin: 0 0.333ch;
   box-sizing: border-box;
   border: 1px solid #fff;
-  outline: 1px solid rgba(0,0,0,0.5);
+  outline: 1px solid rgba(0, 0, 0, 0.5);
   overflow: hidden;
 }
 span.inline-color {
   display: block;
-/* To prevent visual glitches again */
+  /* To prevent visual glitches again */
   height: 120%;
   width: 120%;
 }

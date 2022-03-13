@@ -57,7 +57,7 @@ input {
   background: #1a252f;
 }
 .tab-label::after {
-  content: "❯";
+  content: '❯';
   width: 1em;
   height: 1em;
   text-align: center;

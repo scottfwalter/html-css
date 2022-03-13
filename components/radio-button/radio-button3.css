@@ -1,12 +1,13 @@
 /* Font from Google fonts */
-@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,900");
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,900');
 /* Color palette */
 /* Basic styles */
-html, body {
+html,
+body {
   height: 100%;
-  font-family: "Source Sans Pro", sans-serif;
-  background-color: #00171F;
-  color: #FAFAFA;
+  font-family: 'Source Sans Pro', sans-serif;
+  background-color: #00171f;
+  color: #fafafa;
 }
 
 /* Form Styles */
@@ -60,7 +61,9 @@ label {
   opacity: 0.5;
   transition: all 0.5s ease-in-out;
 }
-label:hover, label:focus, label:active {
+label:hover,
+label:focus,
+label:active {
   border: 1px solid rgba(250, 250, 250, 0.5);
 }
 
@@ -68,9 +71,9 @@ label:hover, label:focus, label:active {
   height: 40px;
   border: none;
   background-color: #00703f;
-  color: #FAFAFA;
+  color: #fafafa;
   text-transform: uppercase;
-  font-family: "Source Sans Pro", sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
   padding: 0 20px;
   border-radius: 20px;
   font-weight: 900;
@@ -78,26 +81,27 @@ label:hover, label:focus, label:active {
   margin: 40px 0;
   transition: all 0.25s ease-in-out;
 }
-.form__button:hover, .form__button:focus {
-  background-color: #00824A;
+.form__button:hover,
+.form__button:focus {
+  background-color: #00824a;
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.25);
   outline: none;
 }
 
 /* Input style */
-input[type=radio] {
+input[type='radio'] {
   opacity: 0;
   width: 0;
   height: 0;
 }
 
-input[type=radio]:active ~ label {
+input[type='radio']:active ~ label {
   opacity: 1;
 }
 
-input[type=radio]:checked ~ label {
+input[type='radio']:checked ~ label {
   opacity: 1;
-  border: 1px solid #FAFAFA;
+  border: 1px solid #fafafa;
 }
 
 /* Footer Styles */
@@ -106,7 +110,10 @@ footer {
   position: relative;
   padding: 20px;
 }
-footer h2, footer h3, footer p, footer ul {
+footer h2,
+footer h3,
+footer p,
+footer ul {
   max-width: 610px;
   margin: 20px auto;
 }
@@ -114,19 +121,23 @@ footer h2, footer h3, footer p, footer ul {
 .footer__title {
   font-size: 30px;
   margin-top: 40px;
-  color: #00171F;
+  color: #00171f;
 }
 
 .footer__subtitle {
   font-size: 22px;
 }
 
-.footer__parragraph, .copyright, .footer__list {
+.footer__parragraph,
+.copyright,
+.footer__list {
   line-height: 1.5em;
   font-size: 22px;
 }
-.footer__parragraph a, .copyright a, .footer__list a {
-  color: #00A7E1;
+.footer__parragraph a,
+.copyright a,
+.footer__list a {
+  color: #00a7e1;
 }
 
 .copyright {

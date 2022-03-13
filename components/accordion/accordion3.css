@@ -4,7 +4,7 @@
 }
 
 body {
-  font-family: "Lato";
+  font-family: 'Lato';
 }
 
 .heading-primary {
@@ -19,7 +19,7 @@ body {
 }
 .accordion dl:after,
 .accordion-list:after {
-  content: "";
+  content: '';
   display: block;
   height: 1em;
   width: 100%;
@@ -62,7 +62,7 @@ body {
 }
 .accordionTitle:before,
 .accordion__Heading:before {
-  content: "+";
+  content: '+';
   font-size: 1.5em;
   line-height: 0.5em;
   float: left;
@@ -105,12 +105,12 @@ body {
 
 .animateIn {
   -webkit-animation: accordionIn 0.45s normal ease-in-out both 1;
-          animation: accordionIn 0.45s normal ease-in-out both 1;
+  animation: accordionIn 0.45s normal ease-in-out both 1;
 }
 
 .animateOut {
   -webkit-animation: accordionOut 0.45s alternate ease-in-out both 1;
-          animation: accordionOut 0.45s alternate ease-in-out both 1;
+  animation: accordionOut 0.45s alternate ease-in-out both 1;
 }
 
 @-webkit-keyframes accordionIn {

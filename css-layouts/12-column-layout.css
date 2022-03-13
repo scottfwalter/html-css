@@ -12,7 +12,7 @@ figure {
   margin: 0;
 }
 
-figure>img {
+figure > img {
   max-width: 100%;
   object-fit: contain;
 }
@@ -42,5 +42,5 @@ figure>img {
 .section {
   display: grid;
   place-items: center;
-  text-align: center
+  text-align: center;
 }

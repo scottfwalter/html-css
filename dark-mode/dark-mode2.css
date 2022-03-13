@@ -1,71 +1,71 @@
 :root {
-	/* Thanks Lea Verou! https://lea.verou.me/2020/10/the-var-space-hack-to-toggle-multiple-values-with-one-custom-property/ */
-	--ON: initial;
-	--OFF: ;
+  /* Thanks Lea Verou! https://lea.verou.me/2020/10/the-var-space-hack-to-toggle-multiple-values-with-one-custom-property/ */
+  --ON: initial;
+  --OFF: ;
 }
 
 .theme-default,
 .theme-light {
-	--light: var(--ON);
-	--dark: var(--OFF);
+  --light: var(--ON);
+  --dark: var(--OFF);
 }
 
 .theme-dark {
-	--light: var(--OFF);
-	--dark: var(--ON);
+  --light: var(--OFF);
+  --dark: var(--ON);
 }
 
 @media (prefers-color-scheme: dark) {
-	.theme-default {
-		--light: var(--OFF);
-		--dark: var(--ON);
-	}
+  .theme-default {
+    --light: var(--OFF);
+    --dark: var(--ON);
+  }
 }
 
 :root {
-	/* Define each variable in their light and dark mode */
-	--text: var(--light, black) var(--dark, white);
-	--bg: var(--light, orchid) var(--dark, rebeccapurple);
-	--accent: var(--light, #6d386b) var(--dark, #b399cc);
-	--link: var(--light, navy) var(--dark, gold);
-	/* Syntax is a bit confusing, so with a pre-processor you can make it clearer, see this fork:
+  /* Define each variable in their light and dark mode */
+  --text: var(--light, black) var(--dark, white);
+  --bg: var(--light, orchid) var(--dark, rebeccapurple);
+  --accent: var(--light, #6d386b) var(--dark, #b399cc);
+  --link: var(--light, navy) var(--dark, gold);
+  /* Syntax is a bit confusing, so with a pre-processor you can make it clearer, see this fork:
 	https://codepen.io/chriskirknielsen/pen/poNEzYB
 	*/
 }
 
 body {
-	color: var(--text, black);
-	background: var(--bg, white);
+  color: var(--text, black);
+  background: var(--bg, white);
 }
 
 /* Presentation */
 body {
-	display: grid;
-	place-items: center;
-	min-height: 100vh;
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
 }
 
 main {
-	text-align: center;
+  text-align: center;
 }
 
 button {
-	width: 100%;
+  width: 100%;
 }
 
 p {
-	padding: 1em;
-	border: 0.5em solid var(--accent, #808080);
+  padding: 1em;
+  border: 0.5em solid var(--accent, #808080);
 }
 
 a:-webkit-any-link {
-	color: var(--link, blue);
+  color: var(--link, blue);
 }
 
 a:-moz-any-link {
-	color: var(--link, blue);
+  color: var(--link, blue);
 }
 
 a:any-link {
-	color: var(--link, blue);
+  color: var(--link, blue);
 }

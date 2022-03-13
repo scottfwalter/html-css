@@ -1,44 +1,59 @@
 <!DOCTYPE html>
-<html lang="en" >
-<head>
-  <meta charset="UTF-8">
-  <title>CodePen - Accessible Custom Checkboxes with CSS only</title>
-  <link rel="stylesheet" href="./checkbox4.css">
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>CodePen - Accessible Custom Checkboxes with CSS only</title>
+    <link rel="stylesheet" href="./checkbox4.css" />
+  </head>
+  <body>
+    <!-- partial:index.partial.html -->
+    <h1>Accessible Custom checkboxes with CSS only</h1>
+    <h2>"automatic" fallback for IE</h2>
 
-</head>
-<body>
-<!-- partial:index.partial.html -->
-<h1>Accessible Custom checkboxes with CSS only</h1>
-<h2>"automatic" fallback for IE</h2>
+    <form action="#">
+      <p>
+        <input type="checkbox" id="test1" />
+        <label for="test1">Red</label>
+      </p>
+      <p>
+        <input type="checkbox" id="test2" checked="checked" />
+        <label for="test2">Yellow</label>
+      </p>
+      <p>
+        <input
+          type="checkbox"
+          id="test3"
+          checked="checked"
+          disabled="disabled"
+        />
+        <label for="test3">Green</label>
+      </p>
+      <p>
+        <input type="checkbox" id="test4" disabled="disabled" />
+        <label for="test4">Brown</label>
+      </p>
+    </form>
 
+    <p class="txtcenter">
+      <a
+        class="btn"
+        href="https://www.creativejuiz.fr/blog/en/tutorials/customize-checkbox-and-radio-button-with-css"
+        >Read the article</a
+      >
+    </p>
 
-<form action="#">
-  <p>
-    <input type="checkbox" id="test1" />
-    <label for="test1">Red</label>
-  </p>
-  <p>
-    <input type="checkbox" id="test2" checked="checked" />
-    <label for="test2">Yellow</label>
-  </p>
-  <p>
-    <input type="checkbox" id="test3" checked="checked" disabled="disabled" />
-    <label for="test3">Green</label>
-  </p>
-    <p>
-      <input type="checkbox" id="test4" disabled="disabled" />
-      <label for="test4">Brown</label>
-  </p>
-</form>
+    <p class="txtcenter">
+      Custom styles on modern browsers.<br />Classical checkboxes on IE8 and
+      lower.
+    </p>
 
-<p class="txtcenter">
-  <a class="btn" href="https://www.creativejuiz.fr/blog/en/tutorials/customize-checkbox-and-radio-button-with-css">Read the article</a>
-</p>
-
-<p class="txtcenter">Custom styles on modern browsers.<br/>Classical checkboxes on IE8 and lower.</p>
-
-<p class="txtcenter copy">by <a href="https://twitter.com/geoffreycrofte">@geoffreycrofte</a><br />see also <a href="https://codepen.io/CreativeJuiz/pen/zqKtp">Flat UI Styles for Checkboxes</a></p>
-<!-- partial -->
-
-</body>
+    <p class="txtcenter copy">
+      by <a href="https://twitter.com/geoffreycrofte">@geoffreycrofte</a
+      ><br />see also
+      <a href="https://codepen.io/CreativeJuiz/pen/zqKtp"
+        >Flat UI Styles for Checkboxes</a
+      >
+    </p>
+    <!-- partial -->
+  </body>
 </html>

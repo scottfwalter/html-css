@@ -1,11 +1,12 @@
-@import url("https://fonts.googleapis.com/css?family=Julius+Sans+One&display=swap");
+@import url('https://fonts.googleapis.com/css?family=Julius+Sans+One&display=swap');
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
-html, body {
+html,
+body {
   height: 100%;
   width: 100%;
 }
@@ -15,7 +16,7 @@ body {
   align-items: center;
   justify-content: center;
   background-color: #f0f0f0;
-  font-family: "Julius Sans One";
+  font-family: 'Julius Sans One';
   font-size: 32px;
 }
 

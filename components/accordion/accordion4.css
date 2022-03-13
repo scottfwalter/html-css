@@ -1,12 +1,18 @@
-.transition, ul li i:before, ul li i:after, p {
+.transition,
+ul li i:before,
+ul li i:after,
+p {
   transition: all 0.25s ease-in-out;
 }
 
-.flipIn, ul li, h1 {
+.flipIn,
+ul li,
+h1 {
   animation: flipdown 0.5s ease both;
 }
 
-.no-select, h2 {
+.no-select,
+h2 {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   -webkit-touch-callout: none;
   -webkit-user-select: none;
@@ -22,7 +28,7 @@ html {
   perspective: 900;
   overflow-y: scroll;
   background-color: #dce7eb;
-  font-family: "Titillium Web", sans-serif;
+  font-family: 'Titillium Web', sans-serif;
   color: rgba(48, 69, 92, 0.8);
 }
 
@@ -49,7 +55,8 @@ body {
   }
 }
 
-h1, h2 {
+h1,
+h2 {
   color: #ff6873;
 }
 
@@ -118,8 +125,9 @@ ul li i {
   margin-top: 16px;
   right: 0;
 }
-ul li i:before, ul li i:after {
-  content: "";
+ul li i:before,
+ul li i:after {
+  content: '';
   position: absolute;
   background-color: #ff6873;
   width: 3px;
@@ -131,7 +139,7 @@ ul li i:before {
 ul li i:after {
   transform: translate(2px, 0) rotate(-45deg);
 }
-ul li input[type=checkbox] {
+ul li input[type='checkbox'] {
   position: absolute;
   cursor: pointer;
   width: 100%;
@@ -139,16 +147,16 @@ ul li input[type=checkbox] {
   z-index: 1;
   opacity: 0;
 }
-ul li input[type=checkbox]:checked ~ p {
+ul li input[type='checkbox']:checked ~ p {
   margin-top: 0;
   max-height: 0;
   opacity: 0;
   transform: translate(0, 50%);
 }
-ul li input[type=checkbox]:checked ~ i:before {
+ul li input[type='checkbox']:checked ~ i:before {
   transform: translate(2px, 0) rotate(45deg);
 }
-ul li input[type=checkbox]:checked ~ i:after {
+ul li input[type='checkbox']:checked ~ i:after {
   transform: translate(-2px, 0) rotate(-45deg);
 }
 

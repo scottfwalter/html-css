@@ -6,9 +6,9 @@ body {
   display: -webkit-box;
   display: flex;
   -webkit-box-align: center;
-          align-items: center;
+  align-items: center;
   -webkit-box-pack: center;
-          justify-content: center;
+  justify-content: center;
   background: #e7f7de;
 }
 .contacts {
@@ -38,13 +38,13 @@ body {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-          flex-direction: column;
+  flex-direction: column;
 }
 .contact__line {
   background: #fff;
   border-radius: 2px;
   -webkit-box-flex: 1;
-          flex: 1;
+  flex: 1;
 }
 .contact__line + .contact__line {
   margin-top: 6px;
@@ -62,7 +62,7 @@ body {
 
 .contact {
   animation: fade 0.25s;
-  animation-delay: calc(var(--index) * 0.1s)
+  animation-delay: calc(var(--index) * 0.1s);
   animation-fill-mode: backwards;
 }
 

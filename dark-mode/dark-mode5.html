@@ -1,39 +1,37 @@
 <!DOCTYPE html>
-<html lang="en" >
-<head>
-  <meta charset="UTF-8">
-  <title>CodePen - Simple Theme Changer</title>
-  <link rel="stylesheet" href="./dark-mode5.css">
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>CodePen - Simple Theme Changer</title>
+    <link rel="stylesheet" href="./dark-mode5.css" />
+  </head>
+  <body>
+    <!-- partial:index.partial.html -->
+    <div>
+      <h1>Switch Theme</h1>
+      <form>
+        <label>
+          <input name="theme" type="radio" value="auto" checked />
+          Auto
+        </label>
 
-</head>
-<body>
-<!-- partial:index.partial.html -->
-<div>
-	<h1>Switch Theme</h1>
-	<form>
-		<label>
-			<input name="theme" type="radio" value="auto" checked>
-			Auto
-		</label>
+        <label>
+          <input name="theme" type="radio" value="light" />
+          Light
+        </label>
 
-		<label>
-			<input name="theme" type="radio" value="light">
-			Light
-		</label>
+        <label>
+          <input name="theme" type="radio" value="dark" />
+          Dark
+        </label>
 
-		<label>
-			<input name="theme" type="radio" value="dark">
-			Dark
-		</label>
-
-		<label>
-			<input name="theme" type="radio" value="cherry">
-			Cherry
-		</label>
-	</form>
-</div>
-<!-- partial -->
-  <script  src="./dark-mode5.js"></script>
-
-</body>
+        <label>
+          <input name="theme" type="radio" value="cherry" />
+          Cherry
+        </label>
+      </form>
+    </div>
+    <!-- partial -->
+    <script src="./dark-mode5.js"></script>
+  </body>
 </html>

@@ -36,7 +36,8 @@ body {
   background-color: #f4f6f7;
 }
 
-.cell, .col {
+.cell,
+.col {
   border-left: 1px solid #c2c2c2;
   flex: 1 100%;
   min-width: 100px;

@@ -4,18 +4,20 @@
 /* Calculations */
 /* Placeholders */
 @media (min-width: 1000px) {
-  #timeline .demo-card:nth-child(even) .head::after, #timeline .demo-card:nth-child(odd) .head::after {
+  #timeline .demo-card:nth-child(even) .head::after,
+  #timeline .demo-card:nth-child(odd) .head::after {
     position: absolute;
-    content: "";
+    content: '';
     width: 0;
     height: 0;
     border-top: 15px solid transparent;
     border-bottom: 15px solid transparent;
   }
 
-  #timeline .demo-card:nth-child(even) .head::before, #timeline .demo-card:nth-child(odd) .head::before {
+  #timeline .demo-card:nth-child(even) .head::before,
+  #timeline .demo-card:nth-child(odd) .head::before {
     position: absolute;
-    content: "";
+    content: '';
     width: 9px;
     height: 9px;
     background-color: #bdbdbd;
@@ -91,7 +93,7 @@ body {
 }
 #timeline .demo-card-wrapper::after {
   z-index: 1;
-  content: "";
+  content: '';
   position: absolute;
   top: 0;
   bottom: 0;

@@ -23,7 +23,7 @@ body {
 
 .loader::before {
   position: absolute;
-  content: "";
+  content: '';
   background: #fff;
   left: 50%;
   top: 50%;

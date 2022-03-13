@@ -11,7 +11,7 @@
 
   &__input {
     display: grid;
-    grid-template-areas: "input";
+    grid-template-areas: 'input';
     place-content: center;
     font-size: 1em;
 
@@ -25,7 +25,7 @@
     place-content: center;
     width: 1em;
     height: 1em;
-    border: 0.1em solid var(--color-default, color("default"));
+    border: 0.1em solid var(--color-default, color('default'));
   }
 }
 
@@ -35,10 +35,10 @@
   }
 
   .input__control::before {
-    content: "";
+    content: '';
     width: 0.5em;
     height: 0.5em;
-    box-shadow: inset 1em 1em var(--color-primary, color("primary"));
+    box-shadow: inset 1em 1em var(--color-primary, color('primary'));
     border-radius: 50%;
     transition: 180ms transform ease-in-out;
     transform: scale(0);
@@ -52,7 +52,7 @@
 .checkbox {
   .input__control {
     border-radius: var(--border-radius);
-    color: var(--color-primary, color("primary"));
+    color: var(--color-primary, color('primary'));
   }
 
   .input__control svg {

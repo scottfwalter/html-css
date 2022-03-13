@@ -10,7 +10,7 @@ body {
   background: #974fe4;
   color: #fff;
   display: flex;
-  font: 30px/1.375 "Lato", arial, sans-serif;
+  font: 30px/1.375 'Lato', arial, sans-serif;
   flex-flow: column nowrap;
   height: 100vh;
   justify-content: center;
@@ -35,14 +35,15 @@ body {
   transition: all 0.5s;
   width: 500px;
 }
-#search:hover, #search:focus {
+#search:hover,
+#search:focus {
   background: #853cd3;
 }
 #search button,
 #search input {
   -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
+  -moz-appearance: none;
+  appearance: none;
   background: transparent;
   border: 0;
   color: inherit;
@@ -67,7 +68,7 @@ body {
 }
 #search .spinner {
   -webkit-animation: spinner 1s infinite linear;
-          animation: spinner 1s infinite linear;
+  animation: spinner 1s infinite linear;
   display: none;
   padding: 0 0.25em;
 }

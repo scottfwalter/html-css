@@ -1,6 +1,8 @@
-@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@200;300;400;500;600;700&family=Open+Sans:wght@300;400;500;600;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@200;300;400;500;600;700&family=Open+Sans:wght@300;400;500;600;700&display=swap');
 
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
@@ -8,7 +10,7 @@
 
 body {
   background-color: #fff;
-  font-family: "Overpass", "Open Sans", Helvetica, sans-serif;
+  font-family: 'Overpass', 'Open Sans', Helvetica, sans-serif;
   font-size: 1rem;
   font-weight: 300;
   line-height: 1.5em;
@@ -21,7 +23,7 @@ body {
   margin: 30px;
 }
 
-.container > input[type="radio"] {
+.container > input[type='radio'] {
   position: absolute;
   left: -200vw;
 }
@@ -37,7 +39,7 @@ body {
 }
 
 .container > label::after {
-  content: "";
+  content: '';
   position: absolute;
   left: 15px;
   bottom: 10px;
@@ -46,11 +48,14 @@ body {
   background: #8d8d8d;
 }
 
-.container > label:hover, .container > input:focus + label {
+.container > label:hover,
+.container > input:focus + label {
   color: #06c;
 }
 
-.container > label:hover::after, .container > input:focus + label::after, .container > input:checked + label::after {
+.container > label:hover::after,
+.container > input:focus + label::after,
+.container > input:checked + label::after {
   background: #06c;
 }
 
@@ -73,6 +78,17 @@ body {
   display: none;
 }
 
-.container > input:first-child:checked ~ .tab-content > section.tab-panel:first-child, .container > input:nth-child(3):checked ~ .tab-content > section.tab-panel:nth-child(2), .container > input:nth-child(5):checked ~ .tab-content > section.tab-panel:nth-child(3) {
+.container
+  > input:first-child:checked
+  ~ .tab-content
+  > section.tab-panel:first-child,
+.container
+  > input:nth-child(3):checked
+  ~ .tab-content
+  > section.tab-panel:nth-child(2),
+.container
+  > input:nth-child(5):checked
+  ~ .tab-content
+  > section.tab-panel:nth-child(3) {
   display: block;
 }

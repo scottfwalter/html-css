@@ -2,7 +2,7 @@
 
 The accompanying code collection for "Move Things With CSS". An ebook for learning CSS animations and transitions by Jhey Tompkins.
 
------
+---
 
 Made with :bear: by Jhey
 

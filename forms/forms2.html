@@ -1,91 +1,96 @@
 <!DOCTYPE html>
-<html lang="en" >
-<head>
-  <meta charset="UTF-8">
-  <title>CodePen - Accessible Form Elements</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
-<link rel='stylesheet' href='https://fonts.googleapis.com/icon?family=Material+Icons'><link rel="stylesheet" href="./forms2.css">
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>CodePen - Accessible Form Elements</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+    <link rel="stylesheet" href="./forms2.css" />
+  </head>
+  <body>
+    <!-- partial:index.partial.html -->
+    <h1>Accessible Basic Form Elements</h1>
+    <form>
+      <h2>Buttons</h2>
+      <button type="submit">Basic Submit Button</button>
+      <button type="reset" data-dojo-icon="cached">Reset Icon Button</button>
+      <button type="button" data-dojo-icon="delete" class="icon-only">
+        <span class="visually-hidden">Delete your account</span>
+      </button>
 
-</head>
-<body>
-<!-- partial:index.partial.html -->
-<h1>Accessible Basic Form Elements</h1>
-<form>
-  <h2>Buttons</h2>
-  <button type="submit">Basic Submit Button</button>
-  <button type="reset" data-dojo-icon="cached">Reset Icon Button</button>
-  <button type="button" data-dojo-icon="delete" class="icon-only">
-    <span class="visually-hidden">Delete your account</span>
-  </button>
+      <h2>Checkboxes & Radio Buttons</h2>
+      <div class="checkbox">
+        <input id="widget1" type="checkbox" />
+        <label for="widget1"><span>Single Checkbox</span></label>
+      </div>
+      <fieldset>
+        <legend>Group of checkboxes: favorite colors</legend>
+        <div class="checkbox">
+          <input id="widget3" type="checkbox" name="color" checked />
+          <label for="widget3"><span>Red</span></label>
+        </div>
+        <div class="checkbox">
+          <input id="widget4" type="checkbox" name="color" />
+          <label for="widget4"><span>Green</span></label>
+        </div>
+        <div class="checkbox">
+          <input id="widget5" type="checkbox" name="color" />
+          <label for="widget5"><span>Blue</span></label>
+        </div>
+      </fieldset>
+      <fieldset>
+        <legend>Group of radio buttons: favorite animal</legend>
+        <div class="radio">
+          <input id="widget6" type="radio" name="animal" checked />
+          <label for="widget6"><span>Cat</span></label>
+        </div>
+        <div class="radio">
+          <input id="widget7" type="radio" name="animal" />
+          <label for="widget7"><span>Dog</span></label>
+        </div>
+        <div class="radio">
+          <input id="widget8" type="radio" name="animal" />
+          <label for="widget8"><span>Squirrel!</span></label>
+        </div>
+      </fieldset>
 
-  <h2>Checkboxes & Radio Buttons</h2>
-  <div class="checkbox">
-    <input id="widget1" type="checkbox">
-    <label for="widget1"><span>Single Checkbox</span></label>
-  </div>
-  <fieldset>
-    <legend>Group of checkboxes: favorite colors</legend>
-    <div class="checkbox">
-      <input id="widget3" type="checkbox" name="color" checked>
-      <label for="widget3"><span>Red</span></label>
-    </div>
-    <div class="checkbox">
-      <input id="widget4" type="checkbox" name="color">
-      <label for="widget4"><span>Green</span></label>
-    </div>
-    <div class="checkbox">
-      <input id="widget5" type="checkbox" name="color">
-      <label for="widget5"><span>Blue</span></label>
-    </div>
-  </fieldset>
-  <fieldset>
-    <legend>Group of radio buttons: favorite animal</legend>
-    <div class="radio">
-      <input id="widget6" type="radio" name="animal" checked>
-      <label for="widget6"><span>Cat</span></label>
-    </div>
-    <div class="radio">
-      <input id="widget7" type="radio" name="animal">
-      <label for="widget7"><span>Dog</span></label>
-    </div>
-    <div class="radio">
-      <input id="widget8" type="radio" name="animal">
-      <label for="widget8"><span>Squirrel!</span></label>
-    </div>
-  </fieldset>
+      <h2>Text and text-like inputs</h2>
+      <label class="text-field">
+        <span>Generic text input</span>
+        <input type="text" placeholder="type anything..." />
+      </label>
+      <label class="text-field">
+        <span>Required email input</span>
+        <input type="email" placeholder="name@example.com" required />
+      </label>
+      <label class="text-field hidden-label">
+        <span>Search stuff</span>
+        <input type="search" placeholder="search..." />
+      </label>
+      <label class="text-field">
+        <span>Text Area</span>
+        <textarea cols="30" rows="10"></textarea>
+      </label>
 
-  <h2>Text and text-like inputs</h2>
-  <label class="text-field">
-    <span>Generic text input</span>
-    <input type="text" placeholder="type anything...">
-  </label>
-  <label class="text-field">
-    <span>Required email input</span>
-    <input type="email" placeholder="name@example.com" required>
-  </label>
-  <label class="text-field hidden-label">
-    <span>Search stuff</span>
-    <input type="search" placeholder="search...">
-  </label>
-  <label class="text-field">
-    <span>Text Area</span>
-    <textarea cols="30" rows="10"></textarea>
-  </label>
-
-  <h2>Select field</h2>
-  <div class="select-field">
-    <label for="widget9">Choose a name for your cat</label>
-    <select id="widget9">
-      <option value="1" selected>Fluffy</option>
-      <option value="2">Pokeball</option>
-      <option value="3">Chairman Miao</option>
-      <option value="4">Thunderpaws</option>
-      <option value="5">Pumpkin</option>
-      <option value="6">Cthulu, Destroyer of Worlds</option>
-    </select>
-  </div>
-</form>
-<!-- partial -->
-
-</body>
+      <h2>Select field</h2>
+      <div class="select-field">
+        <label for="widget9">Choose a name for your cat</label>
+        <select id="widget9">
+          <option value="1" selected>Fluffy</option>
+          <option value="2">Pokeball</option>
+          <option value="3">Chairman Miao</option>
+          <option value="4">Thunderpaws</option>
+          <option value="5">Pumpkin</option>
+          <option value="6">Cthulu, Destroyer of Worlds</option>
+        </select>
+      </div>
+    </form>
+    <!-- partial -->
+  </body>
 </html>

@@ -1,21 +1,24 @@
 .box {
-  width: 200px; height: 300px;
+  width: 200px;
+  height: 300px;
   position: relative;
-  border: 1px solid #BBB;
-  background: #EEE;
+  border: 1px solid #bbb;
+  background: #eee;
 }
 .ribbon-right {
   position: absolute;
-  right: -5px; top: -5px;
+  right: -5px;
+  top: -5px;
   z-index: 1;
   overflow: hidden;
-  width: 75px; height: 75px;
+  width: 75px;
+  height: 75px;
   text-align: right;
 }
 .ribbon-right span {
   font-size: 10px;
   font-weight: bold;
-  color: #FFF;
+  color: #fff;
   text-transform: uppercase;
   text-align: center;
   line-height: 20px;
@@ -23,15 +26,18 @@
   -webkit-transform: rotate(45deg);
   width: 100px;
   display: block;
-  background: #79A70A;
+  background: #79a70a;
   background: linear-gradient(#2989d8 0%, #1e5799 100%);
   box-shadow: 0 3px 10px -5px rgba(0, 0, 0, 1);
   position: absolute;
-  top: 19px; right: -21px;
+  top: 19px;
+  right: -21px;
 }
 .ribbon-right span::before {
-  content: "";
-  position: absolute; left: 0px; top: 100%;
+  content: '';
+  position: absolute;
+  left: 0px;
+  top: 100%;
   z-index: -1;
   border-left: 3px solid #1e5799;
   border-right: 3px solid transparent;
@@ -39,8 +45,10 @@
   border-top: 3px solid #1e5799;
 }
 .ribbon-right span::after {
-  content: "";
-  position: absolute; right: 0px; top: 100%;
+  content: '';
+  position: absolute;
+  right: 0px;
+  top: 100%;
   z-index: -1;
   border-left: 3px solid transparent;
   border-right: 3px solid #1e5799;
@@ -48,19 +56,20 @@
   border-top: 3px solid #1e5799;
 }
 
-
 .ribbon-left {
   position: absolute;
-  left: -5px; top: -5px;
+  left: -5px;
+  top: -5px;
   z-index: 1;
   overflow: hidden;
-  width: 75px; height: 75px;
+  width: 75px;
+  height: 75px;
   text-align: right;
 }
 .ribbon-left span {
   font-size: 10px;
   font-weight: bold;
-  color: #FFF;
+  color: #fff;
   text-transform: uppercase;
   text-align: center;
   line-height: 20px;
@@ -68,15 +77,18 @@
   -webkit-transform: rotate(-45deg);
   width: 100px;
   display: block;
-  background: #79A70A;
+  background: #79a70a;
   background: linear-gradient(#2989d8 0%, #1e5799 100%);
   box-shadow: 0 3px 10px -5px rgba(0, 0, 0, 1);
   position: absolute;
-  top: 19px; left: -21px;
+  top: 19px;
+  left: -21px;
 }
 .ribbon-left span::before {
-  content: "";
-  position: absolute; left: 0px; top: 100%;
+  content: '';
+  position: absolute;
+  left: 0px;
+  top: 100%;
   z-index: -1;
   border-left: 3px solid #1e5799;
   border-right: 3px solid transparent;
@@ -84,8 +96,10 @@
   border-top: 3px solid #1e5799;
 }
 .ribbon-left span::after {
-  content: "";
-  position: absolute; right: 0px; top: 100%;
+  content: '';
+  position: absolute;
+  right: 0px;
+  top: 100%;
   z-index: -1;
   border-left: 3px solid transparent;
   border-right: 3px solid #1e5799;

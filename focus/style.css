@@ -60,7 +60,7 @@ summary {
   }
 
   input,
-button:not([class]) {
+  button:not([class]) {
     --outline-color: #fff;
   }
 

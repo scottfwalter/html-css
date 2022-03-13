@@ -1,7 +1,7 @@
 /* CORE STYLES */
 :root {
   --primary-color: rgba(13, 110, 139, 0.75);
-  --overlay-color: rgba(24, 39, 51 , 0.85);
+  --overlay-color: rgba(24, 39, 51, 0.85);
   --menu-speed: 0.75s;
 }
 
@@ -32,7 +32,8 @@ body {
 
 .showcase:before {
   content: '';
-  background: url('https://images.pexels.com/photos/533923/pexels-photo-533923.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260') no-repeat center center/cover;
+  background: url('https://images.pexels.com/photos/533923/pexels-photo-533923.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260')
+    no-repeat center center/cover;
   position: absolute;
   top: 0;
   left: 0;
@@ -165,7 +166,7 @@ body {
 
 .menu-wrap .toggler:checked ~ .menu > div > div {
   opacity: 1;
-  transition:  opacity 0.4s ease 0.4s;
+  transition: opacity 0.4s ease 0.4s;
 }
 
 .menu-wrap .menu {

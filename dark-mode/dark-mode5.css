@@ -1,46 +1,42 @@
 :root {
-	--theme-hue: 220deg;
-	--theme-sat: 10%;
-	--theme-lit: 80%;
+  --theme-hue: 220deg;
+  --theme-sat: 10%;
+  --theme-lit: 80%;
 }
 
 @media (prefers-color-scheme: dark) {
-	:root {
-		--theme-lit: 20%;
-	}
+  :root {
+    --theme-lit: 20%;
+  }
 }
 
-[data-theme="light"] {
-	--theme-lit: 80%;
+[data-theme='light'] {
+  --theme-lit: 80%;
 }
 
-[data-theme="dark"] {
-	--theme-lit: 20%;
+[data-theme='dark'] {
+  --theme-lit: 20%;
 }
 
-[data-theme="cherry"] {
-	--theme-lit: 30%;
-	--theme-sat: 100%;
-	--theme-hue: -20deg;
+[data-theme='cherry'] {
+  --theme-lit: 30%;
+  --theme-sat: 100%;
+  --theme-hue: -20deg;
 }
 
 body {
-	--background-color: hsl(
-		var(--theme-hue),
-		var(--theme-sat),
-		var(--theme-lit)
-	);
+  --background-color: hsl(var(--theme-hue), var(--theme-sat), var(--theme-lit));
 
-	--font-color: hsl(
-		var(--theme-hue),
-		var(--theme-sat),
-		clamp(0%, calc(100% - (var(--theme-lit) - 47%) * 1000), 100%)
-	);
-	
-	background: var(--background-color);
-	color: var(--font-color);
-	font-family: sans-serif;
-	display: grid;
-	place-items: center;
-	min-height: 80vh;
+  --font-color: hsl(
+    var(--theme-hue),
+    var(--theme-sat),
+    clamp(0%, calc(100% - (var(--theme-lit) - 47%) * 1000), 100%)
+  );
+
+  background: var(--background-color);
+  color: var(--font-color);
+  font-family: sans-serif;
+  display: grid;
+  place-items: center;
+  min-height: 80vh;
 }

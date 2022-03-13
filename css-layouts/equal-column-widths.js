@@ -1,12 +1,12 @@
-const widthIndicator = document.querySelectorAll(".width-indicator");
+const widthIndicator = document.querySelectorAll('.width-indicator')
 
 const addWidth = (el) => {
-  el.textContent = "width: " + el.offsetWidth + "px";
-};
+  el.textContent = 'width: ' + el.offsetWidth + 'px'
+}
 
 const showSizes = () => {
-  widthIndicator.forEach((indicator) => addWidth(indicator));
-};
+  widthIndicator.forEach((indicator) => addWidth(indicator))
+}
 
-window.onload = showSizes;
-window.onresize = showSizes;
+window.onload = showSizes
+window.onresize = showSizes

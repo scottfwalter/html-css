@@ -13,7 +13,10 @@
   box-sizing: border-box;
 }
 
-h1, h2, h3, p {
+h1,
+h2,
+h3,
+p {
   margin: 0;
 }
 
@@ -51,8 +54,8 @@ a {
 .custom-marker > ::marker {
   color: var(--clr-primary);
   font-size: 1em;
-  content: "";
-  font-family: "Font Awesome 5 Free";
+  content: '';
+  font-family: 'Font Awesome 5 Free';
   font-weight: 700;
 }
 

@@ -36,12 +36,12 @@ form {
   color: var(--form-control-color);
 }
 
-input[type=radio] {
+input[type='radio'] {
   /* Add if not using autoprefixer */
   -webkit-appearance: none;
   /* Remove most all native input styles */
   -moz-appearance: none;
-       appearance: none;
+  appearance: none;
   /* For iOS < 15 */
   background-color: var(--form-background);
   /* Not removed via appearance */
@@ -57,8 +57,8 @@ input[type=radio] {
   place-content: center;
 }
 
-input[type=radio]::before {
-  content: "";
+input[type='radio']::before {
+  content: '';
   width: 0.65em;
   height: 0.65em;
   border-radius: 50%;
@@ -69,11 +69,11 @@ input[type=radio]::before {
   background-color: CanvasText;
 }
 
-input[type=radio]:checked::before {
+input[type='radio']:checked::before {
   transform: scale(1);
 }
 
-input[type=radio]:focus {
+input[type='radio']:focus {
   outline: max(2px, 0.15em) solid currentColor;
   outline-offset: max(2px, 0.15em);
 }

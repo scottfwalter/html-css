@@ -36,7 +36,7 @@
 
 .checkbox__input {
   display: grid;
-  grid-template-areas: "checkbox";
+  grid-template-areas: 'checkbox';
 }
 .checkbox__input > * {
   grid-area: checkbox;

@@ -1,10 +1,13 @@
-@import url("https://fonts.googleapis.com/css?family=Slabo+27px");
+@import url('https://fonts.googleapis.com/css?family=Slabo+27px');
 body {
-  font-family: "Slabo 27px", serif;
+  font-family: 'Slabo 27px', serif;
   padding: 40px 80px;
 }
 
-.visually-hidden, .checkbox input, .radio input, .hidden-label span {
+.visually-hidden,
+.checkbox input,
+.radio input,
+.hidden-label span {
   border: 0;
   clip: rect(0 0 0 0);
   height: 1px;
@@ -15,15 +18,19 @@ body {
   width: 1px;
 }
 
-label, button {
+label,
+button {
   display: block;
   margin: 0 0 12px;
 }
 
-.icon, .select-field:after, .checkbox label:after, button[data-dojo-icon]:before {
+.icon,
+.select-field:after,
+.checkbox label:after,
+button[data-dojo-icon]:before {
   direction: ltr;
   display: inline-block;
-  font-family: "Material Icons";
+  font-family: 'Material Icons';
   font-weight: normal;
   font-style: normal;
   font-size: 24px;
@@ -34,12 +41,12 @@ label, button {
   vertical-align: middle;
   white-space: nowrap;
   word-wrap: normal;
-  -webkit-font-feature-settings: "liga";
+  -webkit-font-feature-settings: 'liga';
   -webkit-font-smoothing: antialiased;
 }
 
 button {
-  background-color: #4C5B72;
+  background-color: #4c5b72;
   border: none;
   border-radius: 30px;
   box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.3);
@@ -51,8 +58,9 @@ button {
 button.icon-only {
   padding: 12px 14px;
 }
-button:hover, button:focus {
-  background-color: #4E7D57;
+button:hover,
+button:focus {
+  background-color: #4e7d57;
   cursor: pointer;
   outline: 4px solid transparent;
 }
@@ -78,29 +86,33 @@ legend {
   font-size: 18px;
 }
 
-.checkbox, .radio {
+.checkbox,
+.radio {
   position: relative;
 }
-.checkbox label, .radio label {
+.checkbox label,
+.radio label {
   cursor: pointer;
   min-height: 18px;
   padding: 10px 0 10px 40px;
 }
-.checkbox label:before, .radio label:before {
-  content: "";
-  border: 3px solid #4C5B72;
+.checkbox label:before,
+.radio label:before {
+  content: '';
+  border: 3px solid #4c5b72;
   height: 24px;
   left: 0;
   position: absolute;
   top: 4px;
   width: 24px;
 }
-.checkbox input:focus ~ label:before, .radio input:focus ~ label:before {
-  border-color: #72C2C1;
+.checkbox input:focus ~ label:before,
+.radio input:focus ~ label:before {
+  border-color: #72c2c1;
 }
 
 .checkbox label:after {
-  content: "done";
+  content: 'done';
   left: 3px;
   position: absolute;
   top: 7px;
@@ -115,10 +127,10 @@ legend {
   border-radius: 50%;
 }
 .radio label:after {
-  content: "";
-  background-color: #4C5B72;
+  content: '';
+  background-color: #4c5b72;
   border-radius: 50%;
-  content: "";
+  content: '';
   height: 20px;
   left: 5px;
   position: absolute;
@@ -131,14 +143,16 @@ legend {
   transform: scale(1);
 }
 
-.text-field input, .text-field textarea {
-  border: 2px solid #4C5B72;
+.text-field input,
+.text-field textarea {
+  border: 2px solid #4c5b72;
   display: block;
   padding: 6px 12px;
 }
-.text-field input:focus, .text-field textarea:focus {
+.text-field input:focus,
+.text-field textarea:focus {
   outline: 4px solid transparent;
-  border-color: #72C2C1;
+  border-color: #72c2c1;
 }
 
 .select-field {
@@ -146,9 +160,9 @@ legend {
   position: relative;
 }
 .select-field:before {
-  background-color: #4C5B72;
+  background-color: #4c5b72;
   bottom: 0;
-  content: "";
+  content: '';
   height: 36px;
   pointer-events: none;
   position: absolute;
@@ -158,14 +172,14 @@ legend {
 .select-field:after {
   bottom: 4px;
   color: #fff;
-  content: "keyboard_arrow_down";
+  content: 'keyboard_arrow_down';
   pointer-events: none;
   position: absolute;
   right: 6px;
 }
 .select-field select {
   background-color: transparent;
-  border: 3px solid #4C5B72;
+  border: 3px solid #4c5b72;
   border-radius: 0;
   cursor: pointer;
   display: block;
@@ -176,5 +190,5 @@ legend {
   appearance: none;
 }
 .select-field select:focus {
-  border-color: #72C2C1;
+  border-color: #72c2c1;
 }

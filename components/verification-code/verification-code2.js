@@ -25,13 +25,13 @@ function handlePaste(e) {
   })
 }
 
-function handleBackspace(e) { 
+function handleBackspace(e) {
   const input = e.target
   if (input.value) {
     input.value = ''
     return
   }
-  
+
   input.previousElementSibling.focus()
 }
 
@@ -50,15 +50,15 @@ function handleArrowRight(e) {
 form.addEventListener('input', handleInput)
 inputs[0].addEventListener('paste', handlePaste)
 
-inputs.forEach(input => {
-  input.addEventListener('focus', e => {
+inputs.forEach((input) => {
+  input.addEventListener('focus', (e) => {
     setTimeout(() => {
       e.target.select()
     }, 0)
   })
-  
-  input.addEventListener('keydown', e => {
-    switch(e.keyCode) {
+
+  input.addEventListener('keydown', (e) => {
+    switch (e.keyCode) {
       case KEYBOARDS.backspace:
         handleBackspace(e)
         break
@@ -68,7 +68,7 @@ inputs.forEach(input => {
       case KEYBOARDS.arrowRight:
         handleArrowRight(e)
         break
-      default:  
+      default:
     }
   })
 })
