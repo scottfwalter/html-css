@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
 
 :root {
   --ratio: 3.74;
@@ -9,13 +9,17 @@
   --leading: 0.025em;
 }
 
+dialog::backdrop {
+  background: rgba(255,0,0,.25);
+}
+
 * {
   box-sizing: border-box;
 }
 
 html,
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   margin: 0;
   padding: 0;
 }
@@ -67,7 +71,7 @@ button.cta:focus {
 }
 
 dialog {
-  border: none !important; /* !important is needed here to override polyfill CSS, if loaded */
+  border: none !important;
   border-radius: calc(5px * var(--ratio));
   box-shadow: 0 0 #0000, 0 0 #0000, 0 25px 50px -12px rgba(0, 0, 0, 0.25);
   padding: 1.6rem;
@@ -98,8 +102,13 @@ p {
 
 .flex {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .flex.flex-space-between {
   justify-content: space-between;
+}
+
+.flex button {
+  margin: 8px auto;
 }
