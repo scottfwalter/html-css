@@ -1,0 +1,70 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  padding: 3%;
+  background-color: #ccc;
+  font-size: 20px;
+  box-sizing: border-box;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.main {
+  width: 60%;
+  height: 200vh;
+  min-height: 1000px;
+  display: flex;
+  flex-direction: column;
+}
+
+.main,
+.sidebar {
+  border: 5px solid #222;
+  background-color: white;
+  border-radius: 10px;
+  color: #222;
+  padding: 15px;
+}
+
+.sidebar a {
+  color: black;
+}
+
+.sidebar .active {
+  font-weight: 900;
+  font-size: 120%;
+  color:  deepskyblue;
+}
+
+.sidebar {
+  width: 25%;
+  height: 25vh;
+  min-height: 200px;
+  overflow: auto;
+  position: sticky;
+  top: 5%;
+}
+
+section {
+  height: 600px;
+}
+
+#section1 {
+  background: pink;
+}
+
+#section2 {
+  background:  coral;
+}
+
+#section3 {
+  background:  CornflowerBlue;
+}
+
+
+
