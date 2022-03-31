@@ -1,0 +1,18 @@
+* {
+  margin: 0;
+}
+
+html {
+  scroll-snap-type: y mandatory;
+}
+
+section {
+  block-size: 100vh;
+  background: green;
+  scroll-snap-align: center;
+  scroll-snap-stop: always;
+
+  display: grid;
+  place-items: center;
+}
+
