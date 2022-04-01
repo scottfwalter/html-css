@@ -1,0 +1,46 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&subset=devanagari,latin-ext");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: #1b1c24;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.budgecard {
+  background-color: #f4f4f4;
+  height: 60px;
+  width: 60px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  position: relative;
+  border-radius: 10px;
+}
+
+.notification i {
+  font-size: 32px;
+  color: #1b1c24;
+  position: relative;
+}
+
+.notification .badge {
+  right: -10px;
+  position: absolute;
+  top: -10px;
+  background-color: #a52a2a;
+  height: 30px;
+  border-radius: 50px;
+  display: grid;
+  place-items: center;
+  color: #f4f4f4;
+  width: 30px;
+}
