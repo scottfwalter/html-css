@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Templates</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<template id="tabbed-custom-element">
+<style type="text/css">
+*, ::before, ::after {
+  box-sizing: border-box;
+  padding: 1rem;
+}
+:host {
+  display: flex;
+}
+</style>
+<div part="tab active">Tab 1</div>
+<div part="tab">Tab 2</div>
+<div part="tab">Tab 3</div>
+</template>
+
+<tabbed-custom-element></tabbed-custom-element>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>
