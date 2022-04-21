@@ -1,0 +1,7 @@
+.build
+build
+node_modules
+dist
+.log
+.iml
+.DS_Store

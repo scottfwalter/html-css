@@ -1,0 +1,26 @@
+<head>
+  <meta charset="utf-8" />
+  <link rel="icon" href="{{ pathPrefix }}favicon.svg" type="image/svg+xml" />
+  <link rel="icon" href="{{ pathPrefix }}favicon.ico" type="image/ico" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="title" property="og:title" content="{{ title }} - {{ titleTemplate }}" />
+  <meta name="description" property="og:description" content="{{ description }}" />
+  <meta name="twitter:description" content="{{ description }}" />
+  <meta name="twitter:title" content="{{ title }} - {{ titleTemplate }}" />
+  <meta name="author" content="{{ author }}" />
+  <title>{{ title }} - {{ titleTemplate }}</title>
+  <meta name="theme-color" content="{{ themeColor }}" />
+
+  <meta property="og:url" content="{{ url }}{{ pathPrefix }}{{ image }}" />
+  <meta property="og:image" content="{{ url }}{{ pathPrefix }}{{ image }}" />
+
+  <meta name="twitter:creator" content="{{twitter}}" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:image" content="{{ url }}{{ pathPrefix }}{{ image }}" />
+  <link rel="manifest" href="{{ pathPrefix }}manifest.webmanifest" />
+  <link rel="sitemap" type="application/xml" href="{{ pathPrefix }}sitemap.xml" />
+  <link rel="stylesheet" href="{{ pathPrefix }}index.scss" />
+  <link rel="apple-touch-icon" sizes="512x512" href="{{ pathPrefix }}assets/icons/icon-512x512.png" />
+  <link rel="apple-touch-icon" sizes="192x192" href="{{ pathPrefix }}assets/icons/icon-192x192.png" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+</head>

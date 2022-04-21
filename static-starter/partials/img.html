@@ -1,0 +1,13 @@
+<picture>
+  {{#if avif}}
+  <source srcset="{{src}}.avif" type="image/avif" />
+  {{else}}
+  <source srcset="{{src}}.webp" type="image/webp" />
+  {{/if}}
+  <img
+    class="{{ class }}"
+    src="{{src}}.{{ext}}"
+    alt="{{#if alt}}{{alt}}{{else}}{{title}}{{/if}}"
+    loading="{{#if noLazy}}auto{{else}}lazy{{/if}}"
+  />
+</picture>

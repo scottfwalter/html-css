@@ -1,0 +1,9 @@
+@import 'styles/variables';
+@import 'styles/utils/media-queries';
+@import 'styles/utils/easings';
+// Importing the reset
+@import 'styles/reset';
+
+// Importing the global styles
+@import 'styles/global';
+@import 'styles/utils/modifiers';
