@@ -1,0 +1,27 @@
+@layer base, utilities, theme, vendor;
+
+@import './vendor.css' layer(vendor);
+
+@layer base {
+  .box {
+    background-color: red;
+  }
+}
+
+@layer utilities {
+  .box {
+    background-color: green;
+  }
+}
+
+
+@layer theme {
+  .box {
+    background-color: blue;
+  }
+}
+
+.box {
+  height: 200px;
+  width: aspect-ratio: 1/1;
+}
