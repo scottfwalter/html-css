@@ -1,0 +1,27 @@
+/* Generic Styles */
+
+body {
+  color: #333;
+  line-height: 1.4;
+}
+
+h1, h2, h3 {
+  margin: 0;
+}
+
+.main {
+  padding: 2rem;
+}
+
+header, footer {
+  padding: 2rem;
+  background-color: #E0F2FE;
+}
+
+/* Generic Styles */
+
+.container {
+  min-height: 100vh;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+}

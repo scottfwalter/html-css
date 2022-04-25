@@ -1,0 +1,52 @@
+/* Generic Styles */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #FDF2F8;
+}
+
+h2 {
+  margin: 0;
+}
+
+span {
+  font-size: 0.9rem;
+  opacity: 0.8;
+}
+
+p {
+  font-size: 2.4rem;
+  font-weight: bold;
+  margin: 20px 0 0;
+  padding: 0;
+}
+
+.wrapper {
+  margin: 50px auto;
+  min-width: 720px;
+  max-width: 900px;
+}
+
+.plan {
+  background-color: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 6px 6px 50px -35px rgba(0,0,0,0.75);
+}
+
+.plan-highlight {
+  background-color: #DB2777;
+  color: white;
+}
+
+/* Generic Styles End */
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  -moz-column-gap: 2rem;
+       column-gap: 2rem;
+}

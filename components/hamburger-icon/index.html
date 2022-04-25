@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Hamburgers - CSS Animated</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+<link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css'><link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<h1>Hamburger CSS Animations</h1>
+
+<main>
+
+  <section>
+    <!-- Want a larger touch area thus the wrapper div -->
+    <div class="burger burger1">
+      <div></div>
+    </div>
+  </section>
+
+  <section>
+    <div class="burger burger2">
+      <div></div>
+    </div>
+  </section>
+
+  <section>
+    <div class="burger burger3">
+      <div></div>
+    </div>
+  </section>
+
+  <section>
+    <div class="burger burger4">
+      <div></div>
+    </div>
+  </section>
+
+</main>
+
+<div class="controls">
+
+  <div class="sliderBox">
+    <input id="range" type="range" name="font-size" min=".3" max="1.5" value="1" step=".1" data-units="rem" />
+    <div>Scale: <span class="range-value"></span> rem</div>
+
+  </div>
+
+  <div class="customCheckbox">
+    <input type="checkbox" id="customCheckbox" name="customCheckbox" />
+    <label for="customCheckbox"></label>Show Touch Area
+  </div>
+
+</div>
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>

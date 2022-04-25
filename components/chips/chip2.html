@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Chips</title>
+
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/material-design-icons/3.0.1/iconfont/material-icons.min.css'><link rel="stylesheet" href="./chip2.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<html>
+
+<head>
+</head>
+
+<body style="padding:8px;">
+  <fieldset>
+    <legend>
+      Checkbox Chips
+    </legend>
+    <div class="chip-group" tabindex="-1">
+      <div class="chip chip-checkbox" aria-labelledby="checkOneLabel" tabindex="0" role="checkbox" aria-checked="false">
+        <input type="checkbox" name="checkEx" />
+        <span id="checkOneLabel">Cheese</span>
+      </div>
+      <div class="chip chip-checkbox" aria-labelledby="checkTwoLabel" tabindex="0" role="checkbox" aria-checked="false">
+        <input type="checkbox" name="checkEx" />
+        <span id="checkTwoLabel">Pepperoni</span>
+      </div>
+      <div class="chip chip-checkbox" aria-labelledby="checkThreeLabel" tabindex="0" role="checkbox" aria-checked="false">
+        <input type="checkbox" name="checkEx" />
+        <span id="checkThreeLabel">Sausage</span>
+      </div>
+    </div>
+  </fieldset>
+  <fieldset>
+    <legend>
+      Radio Chips
+    </legend>
+    <div class="chip-group" tabindex="-1" role="radiogroup">
+      <div class="chip chip-checkbox" aria-labelledby="radioOneLabel" tabindex="0" role="radio" aria-checked="false">
+        <input type="radio" name="radioEx" />
+        <span id="radioOneLabel">One</span>
+      </div>
+      <div class="chip chip-checkbox" aria-labelledby="radioTwoLabel" tabindex="0" role="radio" aria-checked="false">
+        <input type="radio" name="radioEx" />
+        <span id="radioTwoLabel">Two</span>
+      </div>
+      <div class="chip chip-checkbox" aria-labelledby="radioThreeLabel" tabindex="0" role="radio" aria-checked="false">
+        <input type="radio" name="radioEx" />
+        <span id="radioThreeLabel">Three</span>
+      </div>
+    </div>
+  </fieldset>
+  <fieldset>
+    <legend>Modal Chip</legend>
+    <div id="myChip" role = "button" data-toggle="modal" data-target="#criticalThinkingChipModal" tabindex="0" class="chip clickable">
+      <span>Critical thinking</span>
+      <button>
+    </button>
+    </div>
+  </fieldset>
+
+  <fieldset>
+    <legend>Filter Chips</legend>
+    <div id="filterChipsContainer" class = "chip-group" style = "display:inline-flex;">
+      <div class = "chip" tabindex = "-1">
+        <span>Hello, World</span>
+        <button type = "button" title="Remove chip" aria-label="Remove chip" onclick = "$(this).parent().remove()"><i class = "material-icons">cancel</i></button>
+      </div>
+      <!-- Feed me more!  -->
+    </div>
+    <div style="display:inline-flex;">
+      <input aria-labelledby="addFilterBtn" id="addFilterTxt" type="text" placeholder="Add filter..." />
+      <button aria-label="Add filter" class="btn btn-primary" id="addFilterBtn">ADD</button>
+    </div>
+  </fieldset>
+
+  <fieldset>
+    <legend>Icon Chips</legend>
+    <div class = "chip-group">
+      <div class = "chip">
+        <i class = "material-icons">event</i>
+        <span>Events</span>
+      </div>
+      <div class = "chip">
+        <i class = "material-icons">work</i>
+        <span>Jobs</span>
+      </div>
+      <div class = "chip">
+        <i class = "material-icons">event</i>
+        <span>Companies</span>
+      </div>
+      <div class = "chip">
+        <i class = "material-icons">event</i>
+        <span>Schools</span>
+      </div>
+    </div>
+  </fieldset>
+  <fieldset>
+    <legend>
+      Add Chips
+    </legend>
+    <div class = "chip-group" tabindex="-1">
+      <div class = "chip chip-checkbox" tabindex="0" aria-labelledby="addDramaChip">
+        <input type = "checkbox" />
+        <i class = "material-icons chip-add-icon"></i>
+        <span id = "addDramaChip">Drama</span>
+      </div>
+      <div class = "chip chip-checkbox" tabindex="0" aria-labelledby="addComedyChip">
+        <input type = "checkbox" />
+        <i class = "material-icons chip-add-icon"></i>
+        <span id = "addComedyChip">Comedy</span>
+      </div>
+      <div class = "chip chip-checkbox" tabindex="0" aria-labelledby="addWesternChip">
+        <input type = "checkbox" />
+        <i class = "material-icons chip-add-icon"></i>
+        <span id = "addWesternChip">Western</span>
+      </div>
+    </div>
+  </fieldset>
+
+  <div class="modal fade" id="criticalThinkingChipModal" tabindex="-1" role="dialog" aria-labelledby="criticalThinkingChipModalTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="criticalThinkingChipModalTitle">Critical thinking</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+        </div>
+        <div class="modal-body">
+          The objective analysis and evaluation of an issue in order to form a judgment.
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+<script  src="./chip2.js"></script>
+
+</body>
+</html>

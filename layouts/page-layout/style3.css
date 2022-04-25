@@ -1,0 +1,42 @@
+/* Generic Styles */
+
+*,
+h1,
+h2 {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  min-height: 100vh;
+}
+.sidebar {
+  background-color: #db2777;
+  color: white;
+  padding: 2.4rem;
+}
+.main {
+  padding: 2.4rem;
+}
+ul {
+  list-style-type: none;
+}
+li {
+  height: 5px;
+  background-color: rgba(255, 255, 255, 0.5);
+  margin: 2.4rem 0;
+}
+
+p {
+  height: 5px;
+  background-color: rgba(0, 0, 0, 0.1);
+  margin: 2.4rem 0;
+}
+
+/* Generic Styles End */
+
+.container {
+  display: grid;
+  grid-template-columns: 22rem 1fr;
+}

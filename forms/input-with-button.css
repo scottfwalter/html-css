@@ -1,0 +1,35 @@
+/* Generic Styles */
+
+.wrapper {
+  margin: 3rem auto;
+  max-width: 40rem;
+  padding: 2rem;
+  background-color: #F1F5F9;
+}
+
+#email {
+  padding: 0.8rem 1.1rem;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  border: solid 1px #94A3B8;
+}
+
+#subscribe-btn {
+  padding: 0.8rem 1.1rem;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  background-color: teal;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+/* Generic Styles End */
+
+.container {
+  display: flex;
+}
+
+#email {
+  flex-grow: 1;
+}

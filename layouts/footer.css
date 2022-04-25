@@ -1,0 +1,44 @@
+/* Generic Styles */
+
+footer {
+  min-width: 800px;
+  padding: 40px;
+  background-color: #F0F9FF;
+}
+
+.footer-col:not(:last-child) {
+  margin-right: 5rem;
+}
+
+h3 {
+  margin: 0;
+  color: #075985;
+}
+
+p {
+  margin-top: 5px;
+  color: #64748B;
+  font-size: 0.8rem;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  width: 5rem;
+  height: 4px;
+  background-color: #CBD5E1;
+  margin: 25px 0 0;
+}
+
+/* Generic Styles End */
+
+footer {
+  display: flex;
+}
+
+.footer-col:nth-child(2) {
+  margin-left: auto;
+}
