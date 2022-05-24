@@ -6,6 +6,7 @@ body {
   font-family: "Source Sans Pro", sans-serif;
   justify-content: center;
   height: 100vh;
+  margin: 0;
 }
 .card {
   align-items: center;
