@@ -1,0 +1,14 @@
+main {
+  margin: 0 200px;
+  background-color: hotpink;
+  height: 400px;
+}
+
+.fullwidth {
+  background-color: blue;
+  height: 30px;
+  width: 100vw;
+  margin-top: 100px;
+  margin-left: 50%;
+  transform: translateX(-50%);
+}
