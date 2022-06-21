@@ -1,0 +1,131 @@
+html {
+  --blue: #159ce4;
+  --lgt-blue: #3db5eb;
+  --drk-blue: #147ec1;
+  --gray: #f6f7f8;
+  --drk-gray: #e9eef2;
+  --black: #32383c;
+}
+
+a {
+  display: inline-block;
+  color: var(--blue);
+  transition: all 0.3s ease;
+}
+
+a:hover {
+  color: var(--lgt-blue);
+}
+
+a:focus {
+  outline: none;
+  transform: scale(1.08);
+}
+
+a:active {
+  color: var(--drk-blue);
+}
+
+button {
+  display: block;
+  padding: 10px 38px;
+  font-weight: bold;
+  font-size: 16px;
+  text-align: center;
+  color: var(--blue);
+  background-color: transparent;
+  border: 2px solid transparent;
+  border-radius: 24px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  width: 100%;
+}
+
+i {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  vertical-align: middle;
+  -webkit-mask-image: url(https://astro.magnetis.com.br/static/img/balloon.72762fd2.svg);
+  mask-image: url(https://astro.magnetis.com.br/static/img/balloon.72762fd2.svg);
+  -webkit-mask-position: center center;
+  mask-position: center center;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-size: contain;
+  mask-size: contain;
+  margin: -4px 9px -3px 0;
+  font-size: 32px;
+  background-color: var(--blue);
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  color: var(--lgt-blue);
+  background-color: var(--gray);
+  border-color: var(--gray);
+}
+
+button:hover i {
+  background-color: var(--lgt-blue);
+}
+
+button:active {
+  color: var(--drk-blue);
+  background-color: var(--drk-gray);
+  border-color: var(--drk-gray);
+}
+
+button:active i {
+  background-color: var(--drk-blue);
+}
+
+button:focus {
+  outline: none;
+  transform: scale(1.08);
+}
+
+form {
+  width: 100%;
+}
+
+label {
+  display: block;
+  font-size: 16px;
+  color: var(--black);
+  width: 100%;
+}
+
+input[type="text"] {
+  padding: 10px 16px;
+  font-size: 16px;
+  color: var(--black);
+  background-color: #fff;
+  border: 1px solid #597183;
+  border-radius: 8px;
+  margin-top: 5px;
+  width: 100%;
+  transition: all 0.3s ease;
+}
+
+input[type="text"]:focus {
+  outline: none;
+  transform: scale(1.04);
+}
+
+/* For Demo */
+
+body {
+  height: 100vh;
+  margin: 0;
+  padding: 2rem;
+  display: grid;
+  grid-gap: 2rem;
+  align-items: center;
+  grid-template-columns: repeat(3, 1fr);
+  font: 16px/1.4 system-ui, -apple-system, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
