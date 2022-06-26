@@ -1,0 +1,17 @@
+.color-mode {
+  aspect-ratio: 1;
+  filter: invert(var(--dark-mode));
+  inline-size: 25rem;
+  max-inline-size: 50vw;
+  transform: rotate(calc(var(--dark-mode) * 180deg));
+  transition: all .6s ease;
+}
+
+body {
+  --dark-mode: 0;
+  background-color: hsl(0, 0%, calc(100% * (1 - var(--dark-mode))));
+  display: grid;
+  min-block-size: 95vh;
+  place-content: center;
+  transition: all .6s ease;
+}
