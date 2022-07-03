@@ -2,20 +2,23 @@
 <html lang="en" >
 <head>
   <meta charset="UTF-8">
-  <title>CodePen - CSS Simple Tooltip</title>
+  <title>CodePen - CSS Directional Tooltips</title>
   <meta name="viewport" content="width=device-width, initial-scale=1"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
 <link rel="stylesheet" href="./tooltip4.css">
 
 </head>
 <body>
 <!-- partial:index.partial.html -->
-<h1>CSS Simple Tooltip</h1>
+<h1>CSS Directional Tooltips</h1>
 
-<div class="demo">
-  <p><a href="#" data-tooltip="I’m the tooltip text.">I’m a link with a tooltip.</a></p>
-
-  <p><button data-tooltip="I’m the tooltip text.">I’m a button with a tooltip</button></p>
-</div>
+	<div class="demo">
+  		<p>Data attribute only <a href="#" data-tooltip="I’m the tooltip text">Tooltip</a></p>
+  <p><code>.tooltip</code> <a href="#" class="tooltip" data-tooltip="I’m the tooltip text.">Tooltip</a></p>
+  <p><code>.tooltip-top</code> <a href="#" class="tooltip-top" data-tooltip="I’m the tooltip text.">Tooltip</a></p>
+  <p><code>.tooltip-right</code> <a href="#" class="tooltip-right" data-tooltip="I’m the tooltip text.">Tooltip</a></p>
+  <p><code>.tooltip-bottom</code> <a href="#" class="tooltip-bottom" data-tooltip="I’m the tooltip text.">Tooltip</a></p>
+		  <p><a href="#" class="tooltip-left" data-tooltip="I’m the tooltip text.">Tooltip</a> <code>.tooltip-left</code></p>
+	</div>
 <!-- partial -->
 
 </body>
