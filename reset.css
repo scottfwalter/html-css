@@ -6,6 +6,30 @@
 * {
   /* Remove default margin */
   margin: 0;
+
+  /* Remove default padding */
+  padding: 0;
+
+  /* Dont' take font styles for granted */
+  font: inherit;
+
+
+}
+
+#root, #__next {
+  /* Create a root stacking context */
+  isolation: isolate;
+}
+
+:root {
+  /* Scroll behaivor */
+  scroll-behavior: smooth;
+  scroll-padding-top: 2rem;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
 }
 
 html, body {
@@ -18,6 +42,7 @@ body {
   line-height: 1.5;
 
   /* Improve text rendering */
+  text-rendering: optimizeSpeed;
   -webkit-font-smoothing: antialiased;
 }
 
@@ -41,18 +66,42 @@ p, h1, h2, h3, h4, h5, h6 {
   overflow-wrap: break-word;
 }
 
-#root, #__next {
-  /* Create a root stacking context */
-  isolation: isolate;
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
 }
 
-:root {
-  /* Scroll behaivor */
-  scroll-behavior: smooth;
-  scroll-padding-top: 2rem;
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role='list'],
+ol[role='list'] {
+  list-style: none;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
 }
 
 table {
   /* remove spacing between table cells */
   border-collapse: collapse;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+   scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
 }
