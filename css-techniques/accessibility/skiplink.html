@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    :not(.skip-link):focus {
+      outline: 5px solid red;
+    }
+
+    .skip-link {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      text-align: center;
+      background-color: #333;
+      color: white;
+      padding: 5rem;
+      translate: 0 -100%;
+      transition: translate 150ms ease-in-out;
+    }
+
+    .skip-link:focus {
+      translate: 0;
+    }
+
+    main {
+      margin-top: 500px;
+    }
+
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <a href="#">fred</a>
+
+  <main id="main-content">
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste sint minima nisi consequatur rem sed id repellendus eum, veritatis quo, ducimus doloremque saepe nostrum repudiandae itaque beatae porro dignissimos. Cum, vitae! Vel soluta vero temporibus, perferendis quasi, commodi animi maiores expedita officia, possimus libero porro ipsam minima perspiciatis recusandae quam illum aliquid laborum quae beatae ad exercitationem similique. Laudantium necessitatibus velit aspernatur quo numquam nulla veniam non laborum est voluptatem reiciendis ex expedita, tempore, officia, harum error voluptate odit totam! Est labore error pariatur quaerat aliquam tempora quam! Perferendis illo aliquam, qui ex magni architecto autem sunt. In, voluptatem animi!
+    <input>
+  </main>
+</body>
+</html>
