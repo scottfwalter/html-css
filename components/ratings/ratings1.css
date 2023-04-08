@@ -1,0 +1,143 @@
+/*
+-- Select the range of stars -- 
+between the first star and the star being hovered 
+OR the first star and the star with a checked radio
+*/
+.star:hover,
+.star:has(~ .star:hover),
+.star:has(:checked),
+.star:has(~ .star :checked) {
+  --star-bg: Highlight;
+  --star-rating-bg: dodgerblue;
+}
+
+/*
+-- Select the range of stars -- 
+between the star being hovered and a checked star
+*/
+/* Siblings between a hovered star and a checked star */
+.star:hover ~ .star:has(~ .star :checked),
+.star:hover ~ .star:has(:checked) {
+  --star-bg: Canvas;
+  --star-rating-bg: lightblue;
+}
+
+/* Increase star size when the child radio is checked */
+.star:has(:checked) {
+  transform: scale(1.25);
+}
+
+.star-rating {
+  --star-rating-bg: white;
+  padding: 1rem;
+  font-size: 1.75rem;
+  background-color: var(--star-rating-bg);
+  border-radius: 1rem;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-inline: auto;
+}
+
+.star-rating fieldset {
+  border: none;
+  padding: 0;
+}
+
+.star-rating legend {
+  font-weight: 500;
+  font-size: 1.1rem;
+}
+
+.stars {
+  margin-top: 0.75em;
+  display: grid;
+  grid-auto-flow: column;
+}
+
+.star {
+  display: grid;
+  place-items: center;
+  grid-template-areas: "star" "label";
+  padding: 0 0.25em;
+  transition: transform ease-in-out 130ms;
+}
+
+.star span {
+  grid-area: label;
+  font-size: 0.65em;
+}
+
+.star :checked + span {
+  font-style: italic;
+  font-weight: bold;
+}
+
+.star input,
+.star::before,
+.star::after {
+  grid-area: star;
+  width: 1.25em;
+  height: 1.25em;
+}
+
+.star [type=radio] {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  font: inherit;
+}
+
+.star::before,
+.star::after {
+  content: "";
+  -webkit-clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+          clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+}
+
+.star::before {
+  width: 100%;
+  height: 100%;
+  box-shadow: inset 1em 1em var(--star-outline, black);
+}
+
+.star::after {
+  transition: all ease-in-out 130ms;
+  width: calc(100% - 0.25em);
+  height: calc(100% - 0.25em);
+  background-color: var(--star-bg, ButtonFace);
+  box-shadow: inset 1em 1em var(--star-color, var(--star-rating-bg));
+}
+
+@media (forced-colors: active) {
+  .star::before {
+    --star-outline: CanvasText;
+    forced-color-adjust: none;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .star,
+.star::after {
+    transition-duration: 0.01ms;
+  }
+}
+/* :has() support alert */
+aside {
+  max-width: 30ch;
+  padding: 1rem;
+  background-color: palegoldenrod;
+  border-radius: 0.5rem;
+  -webkit-margin-after: 1rem;
+          margin-block-end: 1rem;
+  line-height: 1.3;
+}
+aside code {
+  font-size: 1.25em;
+  color: firebrick;
+}
+
+@supports selector(:has(+ *)) {
+  aside {
+    display: none;
+  }
+}

@@ -1,0 +1,37 @@
+form {
+  margin: 2em;
+}
+
+.field {
+  float: left;
+}
+
+label {
+  display: inline-block;
+  transform: translate(-170px, 0);
+  transition: all 0.2s ease;
+}
+
+input:focus ~ label,
+input:valid ~ label {
+  transform: translate(-170px, -30px);
+}
+
+input {
+  display: inline-block;
+  border: 0;
+  background: #fff;
+  border-bottom: 2px solid black;
+  text-indent: 0.5em;
+}
+
+input[type=text],
+input[type=email] {
+  padding: 0.75em 0;
+  transition: background 0.2s ease;
+}
+input[type=text]:focus,
+input[type=email]:focus {
+  outline: 0;
+  background: #efefef;
+}
