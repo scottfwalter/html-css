@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Accessible Dropdown Menus</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1"><link rel='stylesheet' href='https://fonts.googleapis.com/css2?family=Heebo:wght@400;500&amp;display=swap'>
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css'><link rel="stylesheet" href="./dropdown-menu2.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div class="dropdown" data-open="false">
+  <span class="dropdown-label">Slide</span>
+  <button class="dropdown-button" aria-haspopup="true" aria-expanded="false">
+    <span>Options</span>
+    <i class="dropdown-button-arrow fas fa-angle-down"></i>
+  </button>
+
+  <ul class="dropdown-menu slide" aria-role="menu" aria-hidden="true">
+    <li class="dropdown-menu-item" tabindex="-1" aria-role="menuitem">
+      <i class="dropdown-item-icon fas fa-pen"></i>
+      <span>Edit</span>
+    </li>
+
+    <li class="dropdown-menu-item" tabindex="-1" aria-role="menuitem">
+      <i class="dropdown-item-icon fas fa-clone"></i>
+      <span>Duplicate</span>
+    </li>
+
+    <li class="dropdown-menu-separator" role="separator"></li>
+
+    <li class="dropdown-menu-item" tabindex="-1" aria-role="menuitem">
+      <i class="dropdown-item-icon fas fa-archive"></i>
+      <span>Archive</span>
+    </li>
+
+    <li class="dropdown-menu-item" tabindex="-1" aria-role="menuitem">
+      <i class="dropdown-item-icon fas fa-arrows-alt"></i>
+      <span>Move</span>
+    </li>
+
+    <li class="dropdown-menu-separator" role="separator"></li>
+
+    <li class="dropdown-menu-item" tabindex="-1" aria-role="menuitem">
+      <i class="dropdown-item-icon fas fa-trash"></i>
+      <span>Delete</span>
+    </li>
+  </ul>
+</div>
+
+<div class="dropdown" data-open="false">
+  <span class="dropdown-label">Scale</span>
+  <button class="dropdown-button" aria-haspopup="true" aria-expanded="false">
+    <span>Options</span>
+    <i class="dropdown-button-arrow fas fa-angle-down"></i>
+  </button>
+
+  <ul class="dropdown-menu scale" aria-role="menu" aria-hidden="true">
+    <li class="dropdown-menu-item" tabindex="-1" aria-role="menuitem">
+      <i class="dropdown-item-icon fas fa-pen"></i>
+      <span>Edit</span>
+    </li>
+
+    <li class="dropdown-menu-item" tabindex="-1" aria-role="menuitem">
+      <i class="dropdown-item-icon fas fa-clone"></i>
+      <span>Duplicate</span>
+    </li>
+
+    <li class="dropdown-menu-separator" role="separator"></li>
+
+    <li class="dropdown-menu-item" tabindex="-1" aria-role="menuitem">
+      <i class="dropdown-item-icon fas fa-archive"></i>
+      <span>Archive</span>
+    </li>
+
+    <li class="dropdown-menu-item" tabindex="-1" aria-role="menuitem">
+      <i class="dropdown-item-icon fas fa-arrows-alt"></i>
+      <span>Move</span>
+    </li>
+
+    <li class="dropdown-menu-separator" role="separator"></li>
+
+    <li class="dropdown-menu-item" tabindex="-1" aria-role="menuitem">
+      <i class="dropdown-item-icon fas fa-trash"></i>
+      <span>Delete</span>
+    </li>
+  </ul>
+</div>
+
+<div class="dropdown" data-open="false">
+  <span class="dropdown-label">Zoom</span>
+  <button class="dropdown-button" aria-haspopup="true" aria-expanded="false">
+    <span>Options</span>
+    <i class="dropdown-button-arrow fas fa-angle-down"></i>
+  </button>
+
+  <ul class="dropdown-menu zoom" aria-role="menu" aria-hidden="true">
+    <li class="dropdown-menu-item" tabindex="-1" aria-role="menuitem">
+      <i class="dropdown-item-icon fas fa-pen"></i>
+      <span>Edit</span>
+    </li>
+
+    <li class="dropdown-menu-item" tabindex="-1" aria-role="menuitem">
+      <i class="dropdown-item-icon fas fa-clone"></i>
+      <span>Duplicate</span>
+    </li>
+
+    <li class="dropdown-menu-separator" role="separator"></li>
+
+    <li class="dropdown-menu-item" tabindex="-1" aria-role="menuitem">
+      <i class="dropdown-item-icon fas fa-archive"></i>
+      <span>Archive</span>
+    </li>
+
+    <li class="dropdown-menu-item" tabindex="-1" aria-role="menuitem">
+      <i class="dropdown-item-icon fas fa-arrows-alt"></i>
+      <span>Move</span>
+    </li>
+
+    <li class="dropdown-menu-separator" role="separator"></li>
+
+    <li class="dropdown-menu-item" tabindex="-1" aria-role="menuitem">
+      <i class="dropdown-item-icon fas fa-trash"></i>
+      <span>Delete</span>
+    </li>
+  </ul>
+</div>
+<!-- partial -->
+  <script  src="./dropdown-menu2.js"></script>
+
+</body>
+</html>

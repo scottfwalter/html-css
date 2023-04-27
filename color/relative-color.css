@@ -1,0 +1,72 @@
+:root {
+	--theme-primary: #8832CC;
+}
+.bg-primary-100 {
+  background-color: hsl(from var(--theme-primary) h s 90%);
+}
+.bg-primary-200 {
+  background-color: hsl(from var(--theme-primary) h s 80%);
+}
+.bg-primary-300 {
+  background-color: hsl(from var(--theme-primary) h s 70%);
+}
+.bg-primary-400 {
+  background-color: hsl(from var(--theme-primary) h s 60%);
+}
+.bg-primary-500 {
+  background-color: hsl(from var(--theme-primary) h s 50%);
+}
+.bg-primary-600 {
+  background-color: hsl(from var(--theme-primary) h s 40%);
+}
+.bg-primary-700 {
+  background-color: hsl(from var(--theme-primary) h s 30%);
+}
+.bg-primary-800 {
+  background-color: hsl(from var(--theme-primary) h s 20%);
+}
+.bg-primary-900 {
+  background-color: hsl(from var(--theme-primary) h s 10%);
+}
+
+html, body {
+	height: 100%;
+}
+
+body {
+	display: grid;
+	place-content: center;
+}
+
+section {
+	display: flex;
+	width: min-content;
+	margin: 0 auto;
+}
+
+section > div {
+	width: 4em;
+	aspect-ratio: 1/1;
+	outline: 1px solid #ccc;
+}
+
+/* Show warning for older browser */
+.warning {
+	width: fit-content;
+	padding: 1em;
+	border: 1px solid black;
+	margin: 1em auto;
+	text-align: center;
+	color: black;
+	background: rgba(255 255 225 / 0.9);
+}
+
+.warning a {
+	color: blue;
+}
+
+@supports(background-color: hsl(from #f00 h s 90%)) {
+	.warning {
+		display: none;
+	}
+}
