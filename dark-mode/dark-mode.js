@@ -1,12 +1,10 @@
-$('.darkmode').click(function () {
-  //1
-  $('body')
-    .toggleClass('dark') //2
-    .css(
-      //3
-      $('body').hasClass('dark') //4
-        ? { background: '#202225', color: '#f9f9f9' }
-        : { background: '#f9f9f9', color: '#202225' } //5
-    )
+const Q = (q) => document.querySelector(q)
+
+Q('.dark-mode-switch').addEventListener('click', (ev) => {
+  Q('body').classList.toggle('switching', true)
+  setTimeout(() => {
+    Q('body').classList.toggle('switching', false)
+  }, 200)
+  Q('.dark-mode-switch').classList.toggle('dark')
+  Q('body').classList.toggle('dark')
 })
-// It's not clear if the ternary counts as 2 lines or 1 when I'm trying to minimise line count, but I'm counting it as 2

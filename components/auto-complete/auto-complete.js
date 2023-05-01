@@ -1,329 +1,376 @@
-var countries = [
-  'Afghanistan',
-  'Albania',
-  'Algeria',
-  'Andorra',
-  'Angola',
-  'Anguilla',
-  'Antigua &amp; Barbuda',
-  'Argentina',
-  'Armenia',
-  'Aruba',
-  'Australia',
-  'Austria',
-  'Azerbaijan',
-  'Bahamas',
-  'Bahrain',
-  'Bangladesh',
-  'Barbados',
-  'Belarus',
-  'Belgium',
-  'Belize',
-  'Benin',
-  'Bermuda',
-  'Bhutan',
-  'Bolivia',
-  'Bosnia &amp; Herzegovina',
-  'Botswana',
-  'Brazil',
-  'British Virgin Islands',
-  'Brunei',
-  'Bulgaria',
-  'Burkina Faso',
-  'Burundi',
-  'Cambodia',
-  'Cameroon',
-  'Canada',
-  'Cape Verde',
-  'Cayman Islands',
-  'Central Arfrican Republic',
-  'Chad',
-  'Chile',
-  'China',
-  'Colombia',
-  'Congo',
-  'Cook Islands',
-  'Costa Rica',
-  'Cote D Ivoire',
-  'Croatia',
-  'Cuba',
-  'Curacao',
-  'Cyprus',
-  'Czech Republic',
-  'Denmark',
-  'Djibouti',
-  'Dominica',
-  'Dominican Republic',
-  'Ecuador',
-  'Egypt',
-  'El Salvador',
-  'Equatorial Guinea',
-  'Eritrea',
-  'Estonia',
-  'Ethiopia',
-  'Falkland Islands',
-  'Faroe Islands',
-  'Fiji',
-  'Finland',
-  'France',
-  'French Polynesia',
-  'French West Indies',
-  'Gabon',
-  'Gambia',
-  'Georgia',
-  'Germany',
-  'Ghana',
-  'Gibraltar',
-  'Greece',
-  'Greenland',
-  'Grenada',
-  'Guam',
-  'Guatemala',
-  'Guernsey',
-  'Guinea',
-  'Guinea Bissau',
-  'Guyana',
-  'Haiti',
-  'Honduras',
-  'Hong Kong',
-  'Hungary',
-  'Iceland',
-  'India',
-  'Indonesia',
-  'Iran',
-  'Iraq',
-  'Ireland',
-  'Isle of Man',
-  'Israel',
-  'Italy',
-  'Jamaica',
-  'Japan',
-  'Jersey',
-  'Jordan',
-  'Kazakhstan',
-  'Kenya',
-  'Kiribati',
-  'Kosovo',
-  'Kuwait',
-  'Kyrgyzstan',
-  'Laos',
-  'Latvia',
-  'Lebanon',
-  'Lesotho',
-  'Liberia',
-  'Libya',
-  'Liechtenstein',
-  'Lithuania',
-  'Luxembourg',
-  'Macau',
-  'Macedonia',
-  'Madagascar',
-  'Malawi',
-  'Malaysia',
-  'Maldives',
-  'Mali',
-  'Malta',
-  'Marshall Islands',
-  'Mauritania',
-  'Mauritius',
-  'Mexico',
-  'Micronesia',
-  'Moldova',
-  'Monaco',
-  'Mongolia',
-  'Montenegro',
-  'Montserrat',
-  'Morocco',
-  'Mozambique',
-  'Myanmar',
-  'Namibia',
-  'Nauro',
-  'Nepal',
-  'Netherlands',
-  'Netherlands Antilles',
-  'New Caledonia',
-  'New Zealand',
-  'Nicaragua',
-  'Niger',
-  'Nigeria',
-  'North Korea',
-  'Norway',
-  'Oman',
-  'Pakistan',
-  'Palau',
-  'Palestine',
-  'Panama',
-  'Papua New Guinea',
-  'Paraguay',
-  'Peru',
-  'Philippines',
-  'Poland',
-  'Portugal',
-  'Puerto Rico',
-  'Qatar',
-  'Reunion',
-  'Romania',
-  'Russia',
-  'Rwanda',
-  'Saint Pierre &amp; Miquelon',
-  'Samoa',
-  'San Marino',
-  'Sao Tome and Principe',
-  'Saudi Arabia',
-  'Senegal',
-  'Serbia',
-  'Seychelles',
-  'Sierra Leone',
-  'Singapore',
-  'Slovakia',
-  'Slovenia',
-  'Solomon Islands',
-  'Somalia',
-  'South Africa',
-  'South Korea',
-  'South Sudan',
-  'Spain',
-  'Sri Lanka',
-  'St Kitts &amp; Nevis',
-  'St Lucia',
-  'St Vincent',
-  'Sudan',
-  'Suriname',
-  'Swaziland',
-  'Sweden',
-  'Switzerland',
-  'Syria',
-  'Taiwan',
-  'Tajikistan',
-  'Tanzania',
-  'Thailand',
-  "Timor L'Este",
-  'Togo',
-  'Tonga',
-  'Trinidad &amp; Tobago',
-  'Tunisia',
-  'Turkey',
-  'Turkmenistan',
-  'Turks &amp; Caicos',
-  'Tuvalu',
-  'Uganda',
-  'Ukraine',
-  'United Arab Emirates',
-  'United Kingdom',
-  'United States of America',
-  'Uruguay',
-  'Uzbekistan',
-  'Vanuatu',
-  'Vatican City',
-  'Venezuela',
-  'Vietnam',
-  'Virgin Islands (US)',
-  'Yemen',
-  'Zambia',
-  'Zimbabwe',
+function _defineProperty(obj, key, value) {
+  if (key in obj) {
+    Object.defineProperty(obj, key, {
+      value: value,
+      enumerable: true,
+      configurable: true,
+      writable: true,
+    })
+  } else {
+    obj[key] = value
+  }
+  return obj
+}
+console.clear()
+
+const data = [
+  'Apple',
+  'Artichoke',
+  'Asparagus',
+  'Banana',
+  'Beets',
+  'Bell pepper',
+  'Broccoli',
+  'Brussels sprout',
+  'Cabbage',
+  'Carrot',
+  'Cauliflower',
+  'Celery',
+  'Chard',
+  'Chicory',
+  'Corn',
+  'Cucumber',
+  'Daikon',
+  'Date',
+  'Edamame',
+  'Eggplant',
+  'Elderberry',
+  'Fennel',
+  'Fig',
+  'Garlic',
+  'Grape',
+  'Honeydew melon',
+  'Iceberg lettuce',
+  'Jerusalem artichoke',
+  'Kale',
+  'Kiwi',
+  'Leek',
+  'Lemon',
+  'Mango',
+  'Mangosteen',
+  'Melon',
+  'Mushroom',
+  'Nectarine',
+  'Okra',
+  'Olive',
+  'Onion',
+  'Orange',
+  'Parship',
+  'Pea',
+  'Pear',
+  'Pineapple',
+  'Potato',
+  'Pumpkin',
+  'Quince',
+  'Radish',
+  'Rhubarb',
+  'Shallot',
+  'Spinach',
+  'Squash',
+  'Strawberry',
+  'Sweet potato',
+  'Tomato',
+  'Turnip',
+  'Ugli fruit',
+  'Victoria plum',
+  'Watercress',
+  'Watermelon',
+  'Yam',
+  'Zucchini',
 ]
 
-function autocomplete(inp, arr) {
-  /*the autocomplete function takes two arguments,
-  the text field element and an array of possible autocompleted values:*/
-  var currentFocus
-  /*execute a function when someone writes in the text field:*/
-  inp.addEventListener('input', function (e) {
-    var a,
-      b,
-      i,
-      val = this.value
-    /*close any already open lists of autocompleted values*/
-    closeAllLists()
-    if (!val) {
-      return false
-    }
-    currentFocus = -1
-    /*create a DIV element that will contain the items (values):*/
-    a = document.createElement('DIV')
-    a.setAttribute('id', this.id + 'autocomplete-list')
-    a.setAttribute('class', 'autocomplete-items')
-    /*append the DIV element as a child of the autocomplete container:*/
-    this.parentNode.appendChild(a)
-    /*for each item in the array...*/
-    for (i = 0; i < arr.length; i++) {
-      /*check if the item starts with the same letters as the text field value:*/
-      if (arr[i].substr(0, val.length).toUpperCase() == val.toUpperCase()) {
-        /*create a DIV element for each matching element:*/
-        b = document.createElement('DIV')
-        /*make the matching letters bold:*/
-        b.innerHTML = '<strong>' + arr[i].substr(0, val.length) + '</strong>'
-        b.innerHTML += arr[i].substr(val.length)
-        /*insert a input field that will hold the current array item's value:*/
-        b.innerHTML += "<input type='hidden' value='" + arr[i] + "'>"
-        /*execute a function when someone clicks on the item value (DIV element):*/
-        b.addEventListener('click', function (e) {
-          /*insert the value for the autocomplete text field:*/
-          inp.value = this.getElementsByTagName('input')[0].value
-          /*close the list of autocompleted values,
-              (or any other open lists of autocompleted values:*/
-          closeAllLists()
-        })
-        a.appendChild(b)
+class Autocomplete {
+  constructor({
+    rootNode,
+    inputNode,
+    resultsNode,
+    searchFn,
+    shouldAutoSelect = false,
+    onShow = () => {},
+    onHide = () => {},
+  } = {}) {
+    _defineProperty(
+      this,
+      'handleDocumentClick',
+
+      (event) => {
+        if (
+          event.target === this.inputNode ||
+          this.rootNode.contains(event.target)
+        ) {
+          return
+        }
+        this.hideResults()
       }
-    }
-  })
-  /*execute a function presses a key on the keyboard:*/
-  inp.addEventListener('keydown', function (e) {
-    var x = document.getElementById(this.id + 'autocomplete-list')
-    if (x) x = x.getElementsByTagName('div')
-    if (e.keyCode == 40) {
-      /*If the arrow DOWN key is pressed,
-        increase the currentFocus variable:*/
-      currentFocus++
-      /*and and make the current item more visible:*/
-      addActive(x)
-    } else if (e.keyCode == 38) {
-      //up
-      /*If the arrow UP key is pressed,
-        decrease the currentFocus variable:*/
-      currentFocus--
-      /*and and make the current item more visible:*/
-      addActive(x)
-    } else if (e.keyCode == 13) {
-      /*If the ENTER key is pressed, prevent the form from being submitted,*/
-      e.preventDefault()
-      if (currentFocus > -1) {
-        /*and simulate a click on the "active" item:*/
-        if (x) x[currentFocus].click()
+    )
+    _defineProperty(
+      this,
+      'handleKeyup',
+
+      (event) => {
+        const { key } = event
+
+        switch (key) {
+          case 'ArrowUp':
+          case 'ArrowDown':
+          case 'Escape':
+          case 'Enter':
+            event.preventDefault()
+            return
+          default:
+            this.updateResults()
+        }
+
+        if (this.hasInlineAutocomplete) {
+          switch (key) {
+            case 'Backspace':
+              return
+            default:
+              this.autocompleteItem()
+          }
+        }
       }
-    }
-  })
-  function addActive(x) {
-    /*a function to classify an item as "active":*/
-    if (!x) return false
-    /*start by removing the "active" class on all items:*/
-    removeActive(x)
-    if (currentFocus >= x.length) currentFocus = 0
-    if (currentFocus < 0) currentFocus = x.length - 1
-    /*add class "autocomplete-active":*/
-    x[currentFocus].classList.add('autocomplete-active')
-  }
-  function removeActive(x) {
-    /*a function to remove the "active" class from all autocomplete items:*/
-    for (var i = 0; i < x.length; i++) {
-      x[i].classList.remove('autocomplete-active')
-    }
-  }
-  function closeAllLists(elmnt) {
-    /*close all autocomplete lists in the document,
-    except the one passed as an argument:*/
-    var x = document.getElementsByClassName('autocomplete-items')
-    for (var i = 0; i < x.length; i++) {
-      if (elmnt != x[i] && elmnt != inp) {
-        x[i].parentNode.removeChild(x[i])
+    )
+    _defineProperty(
+      this,
+      'handleKeydown',
+
+      (event) => {
+        const { key } = event
+        let activeIndex = this.activeIndex
+
+        if (key === 'Escape') {
+          this.hideResults()
+          this.inputNode.value = ''
+          return
+        }
+
+        if (this.resultsCount < 1) {
+          if (
+            this.hasInlineAutocomplete &&
+            (key === 'ArrowDown' || key === 'ArrowUp')
+          ) {
+            this.updateResults()
+          } else {
+            return
+          }
+        }
+
+        const prevActive = this.getItemAt(activeIndex)
+        let activeItem
+
+        switch (key) {
+          case 'ArrowUp':
+            if (activeIndex <= 0) {
+              activeIndex = this.resultsCount - 1
+            } else {
+              activeIndex -= 1
+            }
+            break
+          case 'ArrowDown':
+            if (activeIndex === -1 || activeIndex >= this.resultsCount - 1) {
+              activeIndex = 0
+            } else {
+              activeIndex += 1
+            }
+            break
+          case 'Enter':
+            activeItem = this.getItemAt(activeIndex)
+            this.selectItem(activeItem)
+            return
+          case 'Tab':
+            this.checkSelection()
+            this.hideResults()
+            return
+          default:
+            return
+        }
+
+        event.preventDefault()
+        activeItem = this.getItemAt(activeIndex)
+        this.activeIndex = activeIndex
+
+        if (prevActive) {
+          prevActive.classList.remove('selected')
+          prevActive.setAttribute('aria-selected', 'false')
+        }
+
+        if (activeItem) {
+          this.inputNode.setAttribute(
+            'aria-activedescendant',
+            `autocomplete-result-${activeIndex}`
+          )
+          activeItem.classList.add('selected')
+          activeItem.setAttribute('aria-selected', 'true')
+          if (this.hasInlineAutocomplete) {
+            this.inputNode.value = activeItem.innerText
+          }
+        } else {
+          this.inputNode.setAttribute('aria-activedescendant', '')
+        }
       }
-    }
+    )
+    _defineProperty(
+      this,
+      'handleFocus',
+
+      (event) => {
+        this.updateResults()
+      }
+    )
+    _defineProperty(
+      this,
+      'handleResultClick',
+
+      (event) => {
+        if (event.target && event.target.nodeName === 'LI') {
+          this.selectItem(event.target)
+        }
+      }
+    )
+    _defineProperty(
+      this,
+      'getItemAt',
+
+      (index) => {
+        return this.resultsNode.querySelector(`#autocomplete-result-${index}`)
+      }
+    )
+    _defineProperty(
+      this,
+      'selectItem',
+
+      (node) => {
+        if (node) {
+          this.inputNode.value = node.innerText
+          this.hideResults()
+        }
+      }
+    )
+    _defineProperty(
+      this,
+      'checkSelection',
+
+      () => {
+        if (this.activeIndex < 0) {
+          return
+        }
+        const activeItem = this.getItemAt(this.activeIndex)
+        this.selectItem(activeItem)
+      }
+    )
+    _defineProperty(
+      this,
+      'autocompleteItem',
+
+      (event) => {
+        const autocompletedItem = this.resultsNode.querySelector('.selected')
+        const input = this.inputNode.value
+        if (!autocompletedItem || !input) {
+          return
+        }
+
+        const autocomplete = autocompletedItem.innerText
+        if (input !== autocomplete) {
+          this.inputNode.value = autocomplete
+          this.inputNode.setSelectionRange(input.length, autocomplete.length)
+        }
+      }
+    )
+    _defineProperty(
+      this,
+      'updateResults',
+
+      () => {
+        const input = this.inputNode.value
+        const results = this.searchFn(input)
+
+        this.hideResults()
+        if (results.length === 0) {
+          return
+        }
+
+        this.resultsNode.innerHTML = results
+          .map((result, index) => {
+            const isSelected = this.shouldAutoSelect && index === 0
+            if (isSelected) {
+              this.activeIndex = 0
+            }
+            return `
+        <li
+          id='autocomplete-result-${index}'
+          class='autocomplete-result${isSelected ? ' selected' : ''}'
+          role='option'
+          ${isSelected ? "aria-selected='true'" : ''}
+        >
+          ${result}
+        </li>
+      `
+          })
+          .join('')
+
+        this.resultsNode.classList.remove('hidden')
+        this.rootNode.setAttribute('aria-expanded', true)
+        this.resultsCount = results.length
+        this.shown = true
+        this.onShow()
+      }
+    )
+    _defineProperty(
+      this,
+      'hideResults',
+
+      () => {
+        this.shown = false
+        this.activeIndex = -1
+        this.resultsNode.innerHTML = ''
+        this.resultsNode.classList.add('hidden')
+        this.rootNode.setAttribute('aria-expanded', 'false')
+        this.resultsCount = 0
+        this.inputNode.setAttribute('aria-activedescendant', '')
+        this.onHide()
+      }
+    )
+    this.rootNode = rootNode
+    this.inputNode = inputNode
+    this.resultsNode = resultsNode
+    this.searchFn = searchFn
+    this.shouldAutoSelect = shouldAutoSelect
+    this.onShow = onShow
+    this.onHide = onHide
+    this.activeIndex = -1
+    this.resultsCount = 0
+    this.showResults = false
+    this.hasInlineAutocomplete =
+      this.inputNode.getAttribute('aria-autocomplete') === 'both' // Setup events
+    document.body.addEventListener('click', this.handleDocumentClick)
+    this.inputNode.addEventListener('keyup', this.handleKeyup)
+    this.inputNode.addEventListener('keydown', this.handleKeydown)
+    this.inputNode.addEventListener('focus', this.handleFocus)
+    this.resultsNode.addEventListener('click', this.handleResultClick)
   }
-  /*execute a function when someone clicks in the document:*/
-  document.addEventListener('click', function (e) {
-    closeAllLists(e.target)
-  })
 }
 
-autocomplete(document.getElementById('myInput'), countries)
+const search = (input) => {
+  if (input.length < 1) {
+    return []
+  }
+  return data.filter((item) =>
+    item.toLowerCase().startsWith(input.toLowerCase())
+  )
+}
+
+const autocomplete = new Autocomplete({
+  rootNode: document.querySelector('.autocomplete'),
+  inputNode: document.querySelector('.autocomplete-input'),
+  resultsNode: document.querySelector('.autocomplete-results'),
+  searchFn: search,
+  shouldAutoSelect: true,
+})
+
+document.querySelector('form').addEventListener('submit', (event) => {
+  event.preventDefault()
+  const result = document.querySelector('.search-result')
+  const input = document.querySelector('.autocomplete-input')
+  result.innerHTML = 'Searched for: ' + input.value
+})
