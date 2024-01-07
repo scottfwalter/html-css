@@ -12,8 +12,6 @@
 
   /* Dont' take font styles for granted */
   font: inherit;
-
-
 }
 
 #root, #__next {
@@ -27,14 +25,21 @@
   scroll-padding-top: 2rem;
 }
 
-/* Set core root defaults */
-html:focus-within {
-  scroll-behavior: smooth;
+html {
+  color-scheme: dark light;
+  hanging-punctuation: first last;
 }
 
 html, body {
   /* Allow percentage-based heights in the application */
   height: 100%;
+
+  min-height: 100svh;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
 }
 
 body {
@@ -64,6 +69,8 @@ input, button, textarea, select, input[type="file"])::-webkit-file-upload-button
 p, h1, h2, h3, h4, h5, h6 {
   /* Avoid text overflows */
   overflow-wrap: break-word;
+
+  text-wrap: balance;
 }
 
 /* A elements that don't have a class get default styles */
@@ -89,6 +96,15 @@ table {
   /* remove spacing between table cells */
   border-collapse: collapse;
 }
+
+/* improve readability with max-width on paragraphs and lists */
+/* prevent orphans in supported browsers */
+p,
+li {
+  max-width: var(--p-max-width, 65ch);
+  text-wrap: pretty;
+}
+
 
 /* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
 @media (prefers-reduced-motion: reduce) {
