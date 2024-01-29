@@ -1,0 +1,50 @@
+@keyframes sticky {
+  0% {
+    box-shadow: none;
+  }
+  
+  0.00001%, 100% {
+    box-shadow: 0 0 0.25rem rgb(0 0 0 / 25%);
+  }
+}
+
+thead tr {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  animation: sticky;
+  animation-timeline: scroll();
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: sans-serif;
+  margin: 0;
+}
+
+section {
+  height: 50vh;
+  overflow: hidden auto;
+}
+
+table {
+  width: 16rem;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+tr {
+  background: whitesmoke;
+}
+
+th, td {
+  text-align: left;
+  padding: 16px;
+}
