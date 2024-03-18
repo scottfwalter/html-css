@@ -1,0 +1,32 @@
+.goal-progress {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  max-width: 30rem;
+}
+
+.goal-progress span {
+  font-weight: 700;
+}
+
+.goal-progress .bar-outer {
+  border-radius: 5px;
+  border-color: green;
+  border-style: solid;
+  background: #fff;
+  padding: 3px;
+  width: 200px;
+  height: 8px;
+  display: flex;
+
+  align-items: center;
+}
+
+.goal-progress .bar-inner {
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  background-color: black;
+  width: var(--goal-percent);
+  height: 8px;
+}
+
