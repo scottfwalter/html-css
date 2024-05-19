@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Stateful Dialog Transitions in CSS</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<link rel="stylesheet" href="./dialog-animate.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<button onClick="window.dialog.showModal()">Open Dialog</button>
+
+<dialog id="dialog">
+	<h2>Hello</h2>
+	<p>Click the button or press esc to close</p>
+	<input type="text" placeholder="You shouldn't be able to type in me until I'm open">
+	<form method="dialog">
+		<button type="submit">Close</button>
+	</form>
+</dialog>
+<!-- partial -->
+  <script  src="./dialog-animate.js"></script>
+
+</body>
+</html>
