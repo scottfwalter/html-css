@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>CodePen - Pure CSS accordion component with animation</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Titillium+Web:300,700,300italic" />
+    <link rel="stylesheet" href="./accordion3.css" />
+  </head>
+  <body>
+    <!-- partial:index.partial.html -->
+    <div class="box">
+      <header>
+        <h1>Pure CSS accordion component with animation</h1>
+      </header>
+      <details open name="foo">
+        <summary>What features are used?</summary>
+        <div class="content">
+          <ul>
+            <li>CSS calc-size()</li>
+            <li>CSS transition-behavior: allow-discrete</li>
+            <li>CSS ::details-content</li>
+            <li>
+              <a target="_blank" href="https://developer.chrome.com/docs/css-ui/exclusive-accordion">Exclusive Accordion</a> with
+              &lt;details name=""&gt;
+            </li>
+          </ul>
+        </div>
+      </details>
+      <details name="foo">
+        <summary>How it Works?</summary>
+        <div class="content">calc-size() can automatically animate the height from 0 to auto.</div>
+      </details>
+      <details name="foo">
+        <summary>Browser compatibility</summary>
+        <div class="content">
+          Currently only supported by Chrome, you need to enable flag in Canary.
+          <p>chrome://flags/#enable-experimental-web-platform-features</p>
+        </div>
+      </details>
+      <footer>
+        <a href="https://codepen.io/yisi/pen/dyEYxBY" target="_blank">Another way to hack is to use the Grid's fr unit.</a>
+      </footer>
+    </div>
+    <!-- partial -->
+    <script src="./accordion3.js"></script>
+  </body>
+</html>
