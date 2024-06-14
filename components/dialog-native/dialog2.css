@@ -1,0 +1,187 @@
+/* Animation things */
+[popover],
+dialog,
+::backdrop{
+  opacity: 0;
+  transition: opacity 1s, display 1s allow-discrete;
+}
+
+:popover-open,
+[open],
+[open]::backdrop {
+  opacity: 1;
+}
+
+@starting-style {
+  :popover-open,
+  [open],
+  [open]::backdrop {
+    opacity: 0;
+  }
+}
+
+.overlay, .overlay::backdrop {
+  transition: opacity 1s, display 1s allow-discrete, overlay 1s allow-discrete;
+}
+
+::backdrop {
+  background-color: rgba(0,0,0,.6);
+}
+
+/* ETC */
+@import url('https://fonts.googleapis.com/css2?family=Anybody&display=swap');
+
+:root {
+  --orange: #ff7b22;
+}
+
+.warn-icon svg {
+  rotate: -10deg;
+  vertical-align: middle;
+  width: 2rem;
+}
+
+dialog {
+  border: 6px solid var(--orange);
+  border-radius: 1rem;
+  padding: 2rem;
+  min-width: 300px;
+}
+
+.dialog-text {
+  display: flex;
+  line-height: 0;
+  margin-bottom: 2rem;
+}
+
+.confirmation-btn {
+  color: var(--orange);
+  border: 3px solid var(--orange);
+  border-radius: 1rem;
+  transition-duration: 0.25s;
+
+  &:hover {
+    background: var(--orange);
+    color: white;
+  }
+}
+
+.close-btn {
+  position: absolute;
+  top: 0.1rem;
+  right: 0.6rem;
+  border: 0;
+  background: none;
+  filter: grayscale(1);
+}
+
+.info-tooltip {
+  --spacer: 0.25rem;
+  position-fallback: --top-then-bottom;
+  translate: -50% 0;
+  font-size: 90%;
+  background: #222;
+  color: white;
+  border: none;
+  padding: 1rem;
+  max-width: 200px;
+}
+
+@position-fallback --top-then-bottom {
+  @try {
+    bottom: calc(anchor(top) + var(--spacer));
+    left: anchor(center);
+  }
+
+  @try {
+    top: calc(anchor(bottom) + var(--spacer));
+    left: anchor(center);
+  }
+}
+
+dialog h2 {
+  margin: 2rem 0;
+}
+
+.info-btn {
+  background: gold;
+  font-weight: 800;
+  border-radius: 1.2rem;
+  height: 1.5rem;
+  width: 1.5rem;
+  display: grid;
+  place-content: center;
+  border: 2px solid var(--orange);
+  transition-duration: 0.25s;
+  margin-top: 0.5rem;
+
+  &:hover {
+    background-color: blue;
+    color: white;
+  }
+}
+
+body {
+  font-family: 'Anybody', system-ui, sans-serif;
+  font-size: 1.1rem;
+  line-height: 1.4;
+  margin: 0;
+}
+
+h2 {
+  line-height: 1;
+}
+
+.sr-only {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+.overlay-toggle {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: gold;
+  font-weight: 700;
+  padding: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.app {
+  margin: 5rem auto 0;
+  padding: 1rem 3rem 2rem;
+  border: 6px solid blue;
+  border-radius: 1rem;
+  width: clamp(200px, 60vw, 500px);
+}
+
+button {
+  border: 3px solid blue;
+  border-radius: 1rem;
+  background: white;
+  padding: 0.5rem;
+  font-weight: 800;
+  letter-spacing: 0.8px;
+  font-size: 100%;
+  text-transform: uppercase;
+  font-family: Anybody, system-ui;
+
+  :is(disabled) {
+    border-color: lightgray;
+  }
+}
+
+/* SVG */
+.cls-1 {
+  fill: #1601f2;
+}
+
+.cls-2 {
+  fill: #fff;
+}

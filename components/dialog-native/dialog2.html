@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - #CSSWrapped2023 Overlay</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anybody:wght@400;700&display=swap" rel="stylesheet"><link rel="stylesheet" href="./dialog2.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div class="overlay-toggle"><label>Transition overlay<input type=checkbox checked></label></div>
+
+<div class="app">
+  <h2>Account Actions</h2>
+  <p>This might be a section in your preferences where you can take some actions on your account.</p>
+  <h3>Delete account</h3>
+  <p>Delete your account forever. This is the button you click to open the dialog in this demo.</p>
+  <div class="actionbar">
+    <button onclick="document.querySelector('dialog').showModal();">Delete</button>
+  </div>
+  <h3>Archive Account</h3>
+  <p>Archive your account for now. Note: this is a demo, you can't click on this button.</p>
+  <div class="actionbar">
+    <button disabled>Archive</button>
+  </div>
+</div>
+
+<dialog>
+  <div class="top">
+    <h2>Delete this user account</h2>
+    <button class="close-btn" onclick="document.querySelector('dialog').close();">
+     <p aria-hidden="true">❌</p>
+     <p class="sr-only">Close dialog</p>
+    </button>
+  </div>
+  <div class="dialog-text">
+  <p><span class="warn-icon">
+    <?xml version="1.0" encoding="UTF-8"?>
+<svg id="Isolation_Mode" data-name="Isolation Mode" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 110.64 101.43">
+  <path class="cls-1" d="m38,9.45L2.28,74.41c-6.76,12.3,2.33,27.31,16.36,27.02l74.12-1.55c14.03-.29,22.49-15.67,15.22-27.68L69.58,8.79c-7.27-12.01-24.82-11.64-31.58.66h0Z"/>
+  <path class="cls-2" d="m47.86,22.39l13.77-.29-.66,44.8-10.48.22-2.63-44.73h0Zm2.3,50.6l10.88-.23.21,10.13-10.88.23-.21-10.13Z"/>
+</svg>
+  </span>Warning: This is a destructive action.</p>
+  <button id="anchor-btn" class="info-btn" popovertarget="my-tooltip">
+    <p aria-hidden="true">?</p>
+    <p class="sr-only">Open Tooltip</p>
+  </button>
+  </div>
+  <form method="dialog">
+    <button class="confirmation-btn">Confirm deletion</button>
+  </form
+</dialog>
+
+<p id="my-tooltip" class="info-tooltip" anchor="anchor-btn" popover>"Destructive action" means that this cannot be undone. Do not open a ticket. You've been warned. Good luck.
+</p>
+<!-- partial -->
+  <script  src="./dialog2.js"></script>
+
+</body>
+</html>
