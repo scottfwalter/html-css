@@ -1,0 +1,85 @@
+body {
+  font-family: "Arial";
+}
+
+.wrapper {
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 3em;
+}
+
+header {
+  background: grey;
+}
+
+nav ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+nav li {
+  flex: 1 1 auto;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 0.85rem;
+  padding: 1em 1.5em;
+  display: block;
+  border-right: 1px solid;
+  border-bottom: 1px solid;
+}
+nav a:hover, nav a:focus {
+  background: #000;
+}
+
+.skip-link {
+  position: fixed;
+  top: -200px;
+  background: green;
+  color: #fff;
+  text-decoration: none;
+  padding: 10px;
+  display: inline-block;
+}
+.skip-link:focus {
+  top: 0;
+}
+
+#content {
+  padding: 2em 1em;
+}
+
+#content:target {
+  -webkit-animation: highlight 0.75s ease-out;
+          animation: highlight 0.75s ease-out;
+}
+
+p {
+  font-size: 1.2em;
+  line-height: 1.4;
+}
+
+p + p {
+  margin-top: 2em;
+}
+
+@-webkit-keyframes highlight {
+  from {
+    background: yellow;
+  }
+  to {
+    background: white;
+  }
+}
+
+@keyframes highlight {
+  from {
+    background: yellow;
+  }
+  to {
+    background: white;
+  }
+}

@@ -1,0 +1,59 @@
+body {
+  background-color: hsla(32, 100%, 85%, 0.35);
+
+  --fancyColor: hsla(214, 72%, 48%, 1);
+  --fancyColorHover: hsla(214, 72%, 20%, 1);
+  --fancyBgHover: hsla(214, 100%, 80%, 1);
+  --fancyUnderline: hsla(214, 72%, 48%, 1);
+}
+
+.fancyLnk:link,
+.fancyLnk:visited {
+  color: var(--fancyColor);
+  white-space: nowrap;
+  position: relative;
+  text-decoration: none;
+  border-bottom: 1px solid var(--fancyUnderline);
+  transition: color 0.3s ease-out;
+}
+.fancyLnk:hover,
+.fancyLnk:focus {
+  color: var(--fancyColorHover);
+}
+.fancyLnk:focus {
+  outline: none;
+}
+.fancyLnk::before,
+.fancyLnk::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  width: 100%;
+  opacity: 0.5;
+  transform: scaleX(0);
+  transition: none;
+  /* Set to the delayed-on time, or as close as possible */
+  transition: all 0.15s linear;
+}
+.fancyLnk::before {
+  background-color: var(--fancyBgHover);
+  outline-offset: -0.25rem;
+  outline: var(--fancyBgHover) solid 0.5rem;
+  height: 100%;
+  bottom: 0;
+  z-index: -1;
+}
+.fancyLnk::after {
+  background-color: var(--fancyColor);
+  bottom: -0.1rem;
+  height: 0.1rem;
+}
+.fancyLnk:hover::before,
+.fancyLnk:focus::before,
+.fancyLnk:hover::after,
+.fancyLnk:focus::after {
+  opacity: 1;
+  transform: scaleX(1);
+  /* Delayed to reduce annoying unintentional activations */
+  transition: all 0.3s ease-in 0.15s;
+}
