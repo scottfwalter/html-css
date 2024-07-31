@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>
+      CodePen - Transitioning dialog and popover in and out - minimal demo
+    </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="./dialog-animate2.css" />
+  </head>
+  <body>
+    <!-- partial:index.partial.html -->
+    <button popovertarget="tip">Show Popup</button>
+    <button onclick="dialog.showModal()">Show Dialog</button>
+
+    <p id="tip" popover>tip</p>
+
+    <dialog id="dialog">
+      <button onclick="dialog.close()">Close</button>
+    </dialog>
+    <!-- partial -->
+  </body>
+</html>

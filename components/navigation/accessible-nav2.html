@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Accessible Navigation (Manual Button Triggers Without Landing Page)</title>
+  <link rel="stylesheet" href="./accessible-nav2.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<nav aria-label="manual button triggers" class="navigation">
+  <ul class="top--nav">
+    <li class="top-link">
+      <div class="dropdown">
+        <button onClick="submenuToggle(event)" onKeydown="submenuToggle(event)" aria-expanded="false" aria-controls="submenu--owls">
+          Owls <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708"/>
+</svg>
+        </button>
+        <div class="submenu" id="submenu--owls" onKeydown="submenuClose(event)">
+          <ul>
+            <li><a href="/">Barn owl</a></li>
+            <li>
+              <a href="/">Barred owl</a>
+            </li>
+            <li>
+              <a href="/">Burrowing owl</a>
+            </li>
+            <li>
+              <a href="/">Great grey owl</a>
+            </li>
+            <li>
+              <a href="/">Great horned owl</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </li>
+    <li class="top-link">
+      <div class="dropdown">
+        <button onClick="submenuToggle(event)" onKeydown="submenuToggle(event)" aria-expanded="false" aria-controls="submenu--woodpeckers">Woodpeckers <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708"/>
+</svg></button>
+        <div class="submenu" id="submenu--woodpeckers" onKeydown="submenuClose(event)">
+          <ul>
+			<li><a href="/">Woodpeckers</a></li>
+            <li>
+              <a href="/">Black woodpecker</a>
+            </li>
+            <li>
+              <a href="/">Downy woodpecker</a>
+            </li>
+            <li>
+              <a href="/">Pileated woodpecker</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </li>
+    <li class="top-link">
+      <a href="/">Bird watching</a>
+    </li>
+    <li class="top-link">
+      <a href="/">Taxonomy</a></li>
+  </ul>
+</nav>
+<!-- partial -->
+  <script  src="./accessible-nav2.js"></script>
+
+</body>
+</html>

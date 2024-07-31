@@ -1,0 +1,54 @@
+body {
+  margin: 0;
+  background: #eedbff;
+  font-family: "Montserrat", sans-serif;
+}
+
+.visually-hidden {
+  position: absolute !important;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px);
+}
+
+.menu {
+  display: flex;
+  list-style: none;
+}
+.menu__item {
+  position: relative;
+}
+.menu__item:hover .submenu, .menu__item:focus-within .submenu {
+  transform: scaleY(1);
+}
+.menu .menu__link {
+  display: inline-block;
+  position: relative;
+  color: #6505cc;
+  padding: 1rem;
+  margin: 0 0.5rem;
+  font-size: 1.5rem;
+  text-decoration: none;
+}
+
+.submenu {
+  position: absolute;
+  margin-left: 0.5rem;
+  padding: 0;
+  width: 12rem;
+  list-style: none;
+  background: #6505cc;
+  transform: scaleY(0);
+  transform-origin: top;
+  transition: transform 0.3s ease;
+}
+.submenu a {
+  display: block;
+  padding: 0.5rem;
+  color: #eedbff;
+  text-decoration: none;
+}
+
+/*# sourceMappingURL=style.css.map */
