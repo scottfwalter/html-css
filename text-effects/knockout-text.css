@@ -1,0 +1,62 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: system-ui, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #111;
+  background-color: #fff;
+  padding: 2rem;
+}
+
+.dubai {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  aspect-ratio: 1 / 0.4;
+  margin-bottom: 2rem;
+
+  /*   background-color: cornflowerblue; */
+  background: url(https://images.unsplash.com/photo-1512453979798-5ea266f8880c)
+    center;
+  background-size: cover;
+}
+
+.dubai h1 {
+  font-size: 8vw;
+  line-height: 1.25;
+  font-weight: 800;
+  text-transform: uppercase;
+  padding: 1rem 2rem;
+  color: #000;
+  background-color: #fff;
+  outline: 4px solid;
+  outline-offset: -10px;
+  mix-blend-mode: lighten;
+  /* mix-blend-mode: soft-light; */
+  /* mix-blend-mode: overlay; */
+  /* mix-blend-mode: multiply; */
+}
+
+.sydney {
+  text-align: center;
+  background: url(https://images.unsplash.com/photo-1523482580672-f109ba8cb9be)
+    center;
+  background-size: cover;
+}
+
+.sydney h1 {
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-size: 11vw;
+  letter-spacing: 1px;
+  line-height: 1.5;
+  font-weight: 800;
+  text-transform: uppercase;
+  color: #000;
+  background-color: #fff;
+  mix-blend-mode: lighten;
+}
