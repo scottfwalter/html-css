@@ -1,0 +1,136 @@
+html {
+  color-scheme: dark;
+  font-family: system-ui;
+}
+
+body {
+  font-size: 1.5rem;
+  -webkit-margin-after: 3rem;
+          margin-block-end: 3rem;
+}
+
+.article-previews {
+  display: grid;
+  align-items: start;
+  grid-template-columns: 1fr 300px;
+
+  timeline-scope: --one, --two, --three, --four, --five, --six, --seven, --eight,
+    --nine, --ten;
+}
+
+article {
+  height: 70vb;
+  padding: 1rem;
+  border: 1px solid;
+  border-radius: 1rem;
+  view-timeline-name: var(--vt-name);
+}
+
+.articles {
+  display: grid;
+  gap: 3rem;
+}
+
+.toc {
+  display: grid;
+  list-style: "";
+  position: sticky;
+  top: 100px;
+}
+.toc > li {
+  --scroll-indicator-gap: 10px;
+
+  position: relative;
+  padding-block: 1rem;
+  -webkit-padding-start: var(--scroll-indicator-gap);
+          padding-inline-start: var(--scroll-indicator-gap);
+  /*   line-height: 1; */
+}
+.toc > li::before {
+  content: "";
+  width: 3px;
+  height: 100%;
+  background: white;
+  position: absolute;
+  top: 0;
+  left: calc(var(--scroll-indicator-gap) * -1);
+  transform: scaleY(0);
+  transform-origin: top;
+
+  -webkit-animation: i-spy linear;
+
+          animation: i-spy linear;
+  animation-timeline: var(--vt);
+}
+
+@-webkit-keyframes i-spy {
+  entry 40% {
+    transform-origin: top;
+    transform: scaleY(0);
+  }
+
+  entry 60% {
+    transform-origin: top;
+    transform: scaleY(1);
+  }
+
+  exit 80% {
+    transform-origin: bottom;
+    transform: scaleY(1);
+  }
+
+  exit 100% {
+    transform-origin: bottom;
+    transform: scaleY(0);
+  }
+}
+
+@keyframes i-spy {
+  entry 40% {
+    transform-origin: top;
+    transform: scaleY(0);
+  }
+
+  entry 60% {
+    transform-origin: top;
+    transform: scaleY(1);
+  }
+
+  exit 80% {
+    transform-origin: bottom;
+    transform: scaleY(1);
+  }
+
+  exit 100% {
+    transform-origin: bottom;
+    transform: scaleY(0);
+  }
+}
+
+@-webkit-keyframes particle-enter {
+  from {
+    translate: 0cqi 0cqi;
+    rotate: 0turn;
+  }
+}
+
+@keyframes particle-enter {
+  from {
+    translate: 0cqi 0cqi;
+    rotate: 0turn;
+  }
+}
+
+@-webkit-keyframes particle-scroll {
+  to {
+    translate: 0cqi 0cqi;
+    rotate: 0turn;
+  }
+}
+
+@keyframes particle-scroll {
+  to {
+    translate: 0cqi 0cqi;
+    rotate: 0turn;
+  }
+}
