@@ -28,6 +28,7 @@
 html {
   color-scheme: dark light;
   hanging-punctuation: first last;
+  font-size: 16p;
 }
 
 html, body {
@@ -45,6 +46,9 @@ html:focus-within {
 body {
   /* Add accessible line-height */
   line-height: 1.5;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #fff;
+  color: #333;
 
   /* Improve text rendering */
   text-rendering: optimizeSpeed;
@@ -55,6 +59,7 @@ img, picture, video, canvas, svg {
   /* Improve media defaults */
   display: block;
   max-width: 100%;
+  height: auto;
 }
 
 input, button, textarea, select, input[type="file"])::-webkit-file-upload-button {
@@ -69,12 +74,18 @@ input, button, textarea, select, input[type="file"])::-webkit-file-upload-button
 p, h1, h2, h3, h4, h5, h6 {
   /* Avoid text overflows */
   overflow-wrap: break-word;
-
   text-wrap: balance;
+  font-weight: normal;
+  margin-bottom: 1rem;
 }
 
 /* A elements that don't have a class get default styles */
-a:not([class]) {
+/* a:not([class]) { */
+/*   text-decoration-skip-ink: auto; */
+/* } */
+a {
+  text-decoration: none;
+  color: inherit;
   text-decoration-skip-ink: auto;
 }
 
@@ -90,6 +101,12 @@ button,
 textarea,
 select {
   font: inherit;
+}
+
+button {
+  background: none;
+  border: none;
+  cursor: pointer;
 }
 
 table {

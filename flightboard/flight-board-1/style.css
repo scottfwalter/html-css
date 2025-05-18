@@ -1,0 +1,78 @@
+:root,
+html {
+  font-size: 16px;
+  font-size: 1rem;
+}
+
+.board {
+  display: flex;
+  padding: 15px;
+  width: 560px;
+  background-color: #1e1e1e;
+  font-size: 1.25rem;
+  font-weight: 500;
+}
+
+ul.departures {
+  margin-left: 0;
+  padding-left: 0;
+  width: 504px;
+  margin: auto;
+  list-style: none;
+  color: #e4e4e4;
+}
+ul.departures span {
+  padding: 1px;
+}
+ul.departures .headers {
+  display: grid;
+  width: 100%;
+  grid-template-columns: 16% 51.2% 9% 23.8%;
+  font-family: sans-serif;
+}
+ul.departures .headers .h-plat {
+  text-align: right;
+}
+ul.departures .headers .h-expt {
+  text-align: right;
+}
+ul.departures .footer {
+  padding: 5px 0 0;
+  font-family: sans-serif;
+  text-align: center;
+}
+ul.departures .departure {
+  display: grid;
+  width: 100%;
+  padding: 0;
+  grid-template-columns: 16% 51.2% 9% 23.8%;
+  font-family: consolas, monospace;
+  color: yellow;
+  background-color: #141414;
+  overflow-x: hidden;
+}
+ul.departures .departure .time {
+  order: 1;
+}
+ul.departures .departure .dest {
+  order: 2;
+  white-space: nowrap;
+  overflow: hidden;
+}
+ul.departures .departure .dest > span {
+  display: inline-block;
+}
+ul.departures .departure .plat {
+  order: 3;
+  text-align: right;
+}
+ul.departures .departure .expt {
+  order: 4;
+  text-align: right;
+}
+ul.departures .departure .message {
+  width: auto;
+  grid-column: 1/5;
+  grid-row: auto-flow;
+  white-space: nowrap;
+}
